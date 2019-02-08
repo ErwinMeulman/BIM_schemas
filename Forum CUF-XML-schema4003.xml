@@ -1,0 +1,611 @@
+<!--===========================================================================
+Dit Schema definieert het CUF-XML versie 4.003.
+
+CUF staat voor Calculatie Uitwissel Formaat en is een formaat bedoeld om
+data uit te wisselen tussen bouw calculatie software onderling (horizontale
+uitwisseling) maar ook tussen calculatie software en bijvoorbeeld de
+nacalculatie, administratie, planning, bestek, CAD, SAP etc. etc. (verticale
+uitwisseling).
+Het CUF is een initiatief van het "Forum Systeemhuizen Bouw"
+en wordt ondersteund door alle aangesloten systeemhuizen. Sinds versie 4.000
+is de CUF definitie vastgelegd in een XML Schema (cufSchema.xml).
+
+FUNCTIONELE BESCHRIJVING
+
+Algemeen
+
+Het nieuwe uitwisselingsformaat van het Forum Systeemhuizen Bouw gaat uit van de volgende voorwaarden:
+- Het formaat wordt gedefinieerd op basis van Extensible Markup Language (XML).
+- Alle informatie in CUF 3.000 van januari 2000 kan worden ondergebracht.
+- Het formaat wordt uitgebreid met meer informatie.
+
+Functioneel
+
+In vergelijking met CUF 3.000 worden de volgende uitbreidingen / wijzigingen ondergebracht:
+
+- Meer mogelijkheden en vrijheden om informatie onder te brengen.
+  Inleesroutines in de calculatieprogramma's zullen meer informatie moeten filteren.
+- Formaat tekstvelden. Tekstvelden als omschrijvingen en commentaarregels zullen niet
+  meer beperkt zijn tot een vastgesteld aantal karakters. Dit worden tekstvelden,
+  waarin harde returns toegestaan zijn.
+- Bundelingen. Hoofdstuk- en paragraafregels worden vervangen door bundeling, bedoeld
+  om een hierarchische structuur aan te brengen. De voorwaarden gesteld aan de codering vervallen.
+- Onderbouwingsregels MAMO. Begrotingsregels kunnen onderbouwd worden met MAMO-regels
+  voor loonkosten, materiaal, materieel, onderaanneming of overig.
+- Begrotingsregels. Kosten blijven ondergebracht worden in begrotingsregels.
+  Bundelingen en MAMO-regels zijn optioneel tenzij het attribuut DOORREKEN_HOEVEELHEID
+  gebruikt wordt, dan heeft een BUNDELING invloed op de totaal kosten van de begroting.
+- Sorteercodes. Er kunnen een theoretisch onbeperkt aantal sorteercodes worden gebruikt.
+- Artikelinformatie. Aan MAMO-regels kunnen diverse informatievelden gekoppeld worden.
+- Factor. Aan MAMO-regels kan een factor worden toegekend voor de kosten.
+- BTW. Per begrotingsregels moet een BTW-percentage worden vermeld, het kan 0.00 zijn maar
+  moet worden vermeld.
+- Vermelding van valuta is verplicht geworden.
+- Codes zijn niet meer verplicht.
+- Getalswaarden worden niet meer met 100 of 1000 vermenigvuldigd, maar bevatten
+  indien nodig een decimaalteken maar geen duizendtal scheidingsteken.
+
+Toelichting:
+
+- Bundelingsregels kunnen gebruikt worden voor het aanbrengen van een hierarchie (elementen)
+  in de begroting of voor hoofdstukken en paragrafen.
+- Begrotingsregels mogen aan alle niveaus van bundeling gekoppeld worden, dus niet
+  noodzakelijk alleen aan het laagste.
+- De parent-child verhoudingen (onderbouwingen) worden weergegeven door de geneste opbouw
+  van het XML bestand. In de bundelingsregel worden de bundelingen van het lagere niveau opgenomen,
+  de begrotingsregels worden in de bundelingsregels opgenomen.
+  MAMO-onderbouwingen van begrotingsregels worden in de begrotingsregel opgenomen.
+Dit geldt ook voor hoeveelhedenstaten.
+De plaats in het XML-document van de begrotingsregel of MAMO-regel bepaalt dus waar het een onderdeel van vormt.
+schematisch:
+<bundeling1>
+	<bundeling2>
+		<begrotingsregel>
+			<MAMO/>
+		</begrotingsregel>
+	</bundeling2>
+</bundeling1>
+
+- Hoeveelhedenstaten kunnen bij alle bundelingsregels, begrotingsregels en MAMO-regels voorkomen.
+- Sorteercodes kunnen gebruikt worden voor diverse doeleinden waaronder werkbegrotingsbudgetcode,
+  inkoopbudget, kostensoortcode, bestekcode, administratiecode, objectcode etc.
+- Sorteercodes gebruikt bij bundelingsregels of begrotingsregels gelden voor alle onderliggende
+  regels (default), tenzij bij een onderliggende regel een andere sorteercode is opgenomen (uitzondering).
+- BTW bij een begrotingsregel, geldt voor alle onderliggende kosten.
+- De prijs per eenheid van een MAMO-regel moet vermenigvuldigd worden met de factor,
+  indien de factor voorkomt.
+- De totalen bij bundelingsregels en prijzen bij begrotingsregels zijn gelijk aan de kosten
+  van de onderliggende MAMO-regels inclusief de vermenigvulding met de factoren.
+
+Tijdens overleggen van de werkgroep CUF-XML op 29-01-2003 en 18-03-2003 zijn diverse
+wijzigingen en toevoegingen op het CUF gemaakt die in dit Schema zijn verwerkt.
+
+============================================================================-->
+<Schema name="cufSchema" xmlns="urn:schemas-microsoft-com:xml-data"
+        xmlns:dt="urn:schemas-microsoft-com:datatypes">
+  <AttributeType name="AANMAAKDATUMTIJD" required="yes" dt:type="dateTime" />
+  <AttributeType name="CUF_VERSIE" required="yes" dt:type="enumeration"
+     dt:values="4.003"/>
+    <AttributeType name="SYSTEEMHUIS" required="no" dt:type="enumeration"
+        dt:values="ADMICOM ARKEY BRINK CTB DUNCAN ENK KOOIJMAN KPD KRAAN NCCWCASA PIRAMIDE PLUSINTEGRATION SCAB SETZ STABIPLAN TWEESNOEKEN VANENBURG VANMEIJEL VMV"/>
+  <AttributeType name="AANMAAKDATUM" required="yes" dt:type="date" />
+  <AttributeType name="PROJECTNUMMER" required="no" dt:type="string" />
+  <AttributeType name="PROJECTNAAM" required="no" dt:type="string" />
+  <AttributeType name="CALCULATOR" required="no" dt:type="string" />
+  <AttributeType name="OPDRACHTGEVER" required="no" dt:type="string" />
+  <AttributeType name="ADRESGEGEVENS" required="no" dt:type="string" />
+  <AttributeType name="PROJECTSTARTDATUM" required="no" dt:type="date" />
+  <AttributeType name="VALUTA" required="yes" dt:type="enumeration"
+     dt:values="AWG
+		AUD
+		BHD
+		BEF
+		BGL
+		CAD
+		CNY
+		CYP
+		DKK
+		DEM
+		EGP
+		GBP
+		ESK
+		EUR
+		PHP
+		FIM
+		FRF
+		GRD
+		HKD
+		HUF
+		IEP
+		ISK
+		ILS
+		INR
+		IDR
+		ILS
+		ITL
+		JPY
+		KES
+		KWD
+		LTL
+		LUF
+		MAD
+		MWK
+		MTL
+		MAD
+		MXN
+		ANG
+		NLG
+		NZD
+		NOK
+		UAH
+		OMR
+		ATS
+		PKR
+		PLN
+		PTE
+		QAR
+		ROL
+		RUB
+		SAR
+		SGD
+		SIT
+		SKK
+		ESP
+		LKR
+		SRG
+		THB
+		CZK
+		TND
+		TRL
+		AED
+		USD
+		ZWD
+		ZAR
+		SEK
+		CHF
+	        " />
+  <AttributeType name="EURO_KOERS" required="no" dt:type="number" />
+  <AttributeType name="VRIJE_TEKST" required="no" dt:type="string" />
+
+  <AttributeType name="CODE" required="no" dt:type="string"/>
+  <AttributeType name="OMSCHRIJVING" required="no" dt:type="string"/>
+  <AttributeType name="EENHEID" required="no" dt:type="string"/>
+  <AttributeType name="HOEVEELHEID_EENHEID" required="no" dt:type="string"/>
+  <AttributeType name="HOEVEELHEID" required="no" dt:type="number"/>
+  <AttributeType name="TERUGDEEL_HOEVEELHEID" required="no" dt:type="number"/>
+  <AttributeType name="DOORREKEN_HOEVEELHEID" required="no" dt:type="number"/>
+  <AttributeType name="AANTAL_EENHEID" required="no" dt:type="string"/>
+  <AttributeType name="AANTAL" required="no" dt:type="number"/>
+  <AttributeType name="INZET_EENHEID" required="no" dt:type="string"/>
+  <AttributeType name="INZET" required="no" dt:type="number"/>
+  <AttributeType name="PRODUCTIE_EENHEID" required="no" dt:type="string"/>
+  <AttributeType name="PRODUCTIE" required="no" dt:type="number"/>
+  <AttributeType name="BTW" required="yes" dt:type="number"/>
+  <AttributeType name="HOEVEELHEID_FACTOR" required="no" dt:type="number" />
+
+  <AttributeType name="UUR_NORM" required="no" dt:type="number" />
+  <AttributeType name="UUR_TARIEF" required="no" dt:type="number" />
+  <AttributeType name="UUR_TARIEFCODE" required="no" dt:type="string" />
+  <AttributeType name="MATERIAALPRIJS" required="no" dt:type="number" />
+  <AttributeType name="MATERIEELPRIJS" required="no" dt:type="number" />
+  <AttributeType name="ONDERAANNEMINGSPRIJS" required="no" dt:type="number" />
+  <AttributeType name="OVERIGE_KOSTEN" required="no" dt:type="number" />
+  <AttributeType name="STELPOST" required="no" dt:type="boolean" />
+  <AttributeType name="COMMENTAAR" required="no" dt:type="string" />
+
+  <AttributeType name="KOSTENSOORT" required="yes" dt:type="enumeration"
+     dt:values="LOON MATERIAAL MATERIEEL ONDERAANNEMING OVERIG"/>
+  <AttributeType name="PRIJS" required="no" dt:type="number" />
+  <AttributeType name="PRIJS_FACTOR" required="no" dt:type="number" />
+  <AttributeType name="FACTORCODE" required="no" dt:type="string" />
+  <AttributeType name="EAN_CODE" required="no" dt:type="string" />
+  <AttributeType name="ARTIKELGROEP" required="no" dt:type="string" />
+  <AttributeType name="BESTELEENHEID" required="no" dt:type="string" />
+  <AttributeType name="HOEVEELHEIDPEREENHEID" required="no" dt:type="number" />
+  <AttributeType name="LEVERANCIERSCODE" required="no" dt:type="string" />
+
+  <AttributeType name="RUIMTE_NAAM" required="no" dt:type="string" />
+  <AttributeType name="LENGTE" required="no" dt:type="number" />
+  <AttributeType name="BREEDTE" required="no" dt:type="number" />
+  <AttributeType name="HOOGTE" required="no" dt:type="number" />
+  <AttributeType name="FACTOR_1" required="no" dt:type="number" />
+  <AttributeType name="FACTOR_2" required="no" dt:type="number" />
+
+  <AttributeType name="AANNEEMSOM" required="yes" dt:type="number" />
+
+  <AttributeType name="FUNCTIE" required="no" dt:type="string" />
+  <AttributeType name="SORTERING" required="yes" dt:type="string"/>
+  <AttributeType name="WAARDE" required="no" dt:type="string"/>
+  <AttributeType name="CODERING_METHODE" required="no" dt:type="string" />
+  <AttributeType name="UREN" required="no" dt:type="number" />
+  <AttributeType name="LOONKOSTEN" required="no" dt:type="number" />
+  <AttributeType name="MATERIAALKOSTEN" required="no" dt:type="number" />
+  <AttributeType name="MATERIEELKOSTEN" required="no" dt:type="number" />
+  <AttributeType name="ONDERAANNEMING" required="no" dt:type="number" />
+
+
+  <AttributeType name="BEDRAG" required="yes" dt:type="number" />
+
+<!--===========================================================================
+VRIJE_GROOTHEID
+Subelement van het element STAARTGEGEVENS zodat data die niet thuis hoort in
+de attributen van de STAARTGEGEVENS toch naar het XML kan worden geschreven
+OMSCHRIJVING: Omschrijving van de staartregel.
+BEDRAG: Het bedrag van de staartregel.
+============================================================================-->
+  <ElementType name="VRIJE_GROOTHEID">
+    <attribute type="OMSCHRIJVING"/>
+    <attribute type="BEDRAG"/>
+  </ElementType>
+
+<!--===========================================================================
+PROJECTGEGEVENS
+CUF_VERSIE: is een verplicht attribuut van het element PROJECTGEGEVENS en
+            moet de waarde "4.003" hebben.
+AANMAAKDATUM: is een verplicht attribuut en bevat de aanmaakdatum van de begroting.
+              formaat "CCYY-MM-DD", bijvoorbeeld: "2003-01-31".
+VALUTA: is een verplicht attribuut en geeft aan in welke valuta de begroting is opgesteld.
+EURO_KOERS: bevat de koers van de, in de begroting, gebruikte valuta t.o.v. de Euro.
+============================================================================-->
+  <ElementType name="PROJECTGEGEVENS">
+    <attribute type="CUF_VERSIE"/>
+    <attribute type="SYSTEEMHUIS"/>
+    <attribute type="AANMAAKDATUM"/>
+    <attribute type="PROJECTNUMMER"/>
+    <attribute type="PROJECTNAAM"/>
+    <attribute type="CALCULATOR"/>
+    <attribute type="OPDRACHTGEVER"/>
+    <attribute type="ADRESGEGEVENS"/>
+    <attribute type="PROJECTSTARTDATUM"/>
+    <attribute type="VALUTA"/>
+    <attribute type="EURO_KOERS"/>
+    <attribute type="VRIJE_TEKST"/>
+  </ElementType>
+
+<!--===========================================================================
+SORTEERCODE_REGEL
+Subelement van het element SORTEERCODES en kan worden gebruikt om een volledige
+tabel met sorteercodes in het CUF-XML te "dumpen". De functie van de SORTEERCODE_REGEL
+is bij het gebruik van een andere sortering vergelijkbaar met die van de BUNDELING.
+CODE: Sorteercode
+OMSCHRIJVING:
+EENHEID:
+TERUGDEEL_HOEVEELHEID: Is vergelijkbaar met hetzelfde attribuut van de BUNDELING
+============================================================================-->
+  <ElementType name="SORTEERCODE_REGEL">
+    <attribute type="CODE"/>
+    <attribute type="OMSCHRIJVING"/>
+    <attribute type="EENHEID"/>
+    <attribute type="TERUGDEEL_HOEVEELHEID"/>
+  </ElementType>
+
+<!--===========================================================================
+SORTEERCODES
+SORTEERCODES (let op meervoud) dit element geeft de mogelijkheid om als
+het ware een tabel, met de in de begroting gebruikte sorteercodes, in het
+CUF-XML op te nemen.
+Voor iedere gebruikte SORTERING in de begroting dient een SORTEERCODES
+element in het CUF-XML te worden opgenomen. Het attribuut FUNCTIE is een
+informatieve omschrijving van de SORTERING bijv:
+<SORTEERCODES SORTERING = "ADMICODE" FUNCTIE="De administratieve bewakingscode voor gebruik in de nacalculatie" />
+De ontvangende software kan de waarde van FUNCTIE gebruiken om de
+gebruiker te vragen waar de ADMICODE in het ontvangende programma naar
+toe moet. Het element SORTEERCODE_REGEL is optioneel en kan worden gebruikt
+om de complete inhoud van de code tabel in weg te schrijven.
+SORTERING: is een vrij te gebruiken string die de producent van het CUF-XML
+           bestand kan gebruiken om iedere door hem in de begroting gebruikte sorteercode
+           een naam te geven, bijv: "PLANCODE", "VERZAMELCODE1", "BESTEKCODE" of "REGELNUMMER".
+           SORTERING is een verplicht attribuut.
+FUNCTIE: Omschrijving die aangeeft wat de functie van de sorteercode is.
+SORTEERCODE_REGEL: Deze subelementen zijn optioneel.
+============================================================================-->
+  <ElementType name="SORTEERCODES">
+    <attribute type="SORTERING"/>
+    <attribute type="FUNCTIE"/>
+    <element type="SORTEERCODE_REGEL" minOccurs="0" maxOccurs="*"/>
+  </ElementType>
+
+<!--===========================================================================
+SORTEERCODE (let op enkelvoud) met dit element kunnen een theoretisch
+onbeperkt aantal sorteer codes worden toegekend aan een element.
+Het attribuut SORTERING geeft het soort van de sorteercode aan
+bijv: "PLANCODE", "ADMICODE", "BESTEKCODE" of "REGELNUMMER".
+Het attribuut WAARDE bevat de waarde van de betreffende sorteercode bijv:
+"A04099", "10885", "42.10.10" of "00001". Het element SORTEERCODE is nieuw
+in CUF versie 4.003 en komt in de plaats van de attributen SC1 t/m SC6.
+SORTERING: is een verplicht attribuut dat het soort van de sorteercode aangeeft.
+WAARDE: is de inhoud van de sorteercode.
+============================================================================-->
+  <ElementType name="SORTEERCODE">
+    <attribute type="SORTERING"/>
+    <attribute type="WAARDE"/>
+  </ElementType>
+
+<!--===========================================================================
+HOEVEELHEDENSTAAT_REGEL
+Een HOEVEELHEID kan het resultaat zijn van een onderbouwing van HOEVEELHEDENSTAAT_REGELs
+============================================================================-->
+  <ElementType name="HOEVEELHEDENSTAAT_REGEL">
+    <attribute type="RUIMTE_NAAM"/>
+    <attribute type="OMSCHRIJVING"/>
+    <attribute type="AANTAL"/>
+    <attribute type="LENGTE"/>
+    <attribute type="BREEDTE"/>
+    <attribute type="HOOGTE"/>
+    <attribute type="FACTOR_1"/>
+    <attribute type="FACTOR_2"/>
+  </ElementType>
+
+<!--===========================================================================
+MAMO_REGEL
+Tijdens het CUF overleg van 29-01-2003 is besloten om de elementen
+MAMO_REGEL en BEGROTINGSREGEL qua attributen zo veel mogelijk gelijk
+te trekken, wel blijft een MAMO_REGEL 1 specifieke kostensoort
+beschrijven, in tegenstelling tot een BEGROTINGSREGEL die 5 kostensoorten
+tegelijkertijd kan bevatten.
+Nieuw in versie 4.003 zijn AANTAL, INZET en PRODUCTIE met hun bijbehorende eenheid.
+Uiteindelijk blijft HOEVEELHEID bepalend voor de berekening van de kosten
+van de begroting.
+
+FORMULES:
+Als KOSTENSOORT = "LOON" dan
+MAMO_REGEL totaal excl BTW = HOEVEELHEID * UUR_NORM * UUR_TARIEF * PRIJS_FACTOR
+Als KOSTENSOORT != "LOON" dan
+MAMO_REGEL totaal excl BTW = HOEVEELHEID * PRIJS * PRIJS_FACTOR
+
+De som van alle MAMO_REGEL totalen per KOSTENSOORT vormen de eenheidsprijzen en uurnorm
+op BEGROTINGSREGEL niveau. Indien bedragen van BEGROTINGSREGEL en MAMO_REGELs met elkaar
+in tegenspraak zijn dan zijn die van de BEGROTINGSREGEL leidend.
+
+KOSTENSOORT: De KOSTENSOORT bepaald of het om een PRIJS of om een UUR_NORM met
+             UUR_TARIEF gaat, beiden is niet mogelijk.
+HOEVEELHEID: De hoeveelheid is bepalend voor het totaal van de MAMO_REGEL zie formules.
+             Indien niet aanwezig of leeg dan als 0 interpreteren.
+AANTAL: zie BEGROTINGSREGEL
+INZET: zie BEGROTINGSREGEL
+PRODUCTIE: zie BEGROTINGSREGEL
+PRIJS:  bevat, afhankelijk van de waarde van het attribuut KOSTENSOORT,
+       de materiaal, materieel, onderaanneming of de overige eenheidsprijs.
+       Indien niet aanwezig of leeg dan als 0 interpreteren.
+PRIJS_FACTOR: is een factor over PRIJS of het UUR_TARIEF en bevat dus een
+              factor en geen percentage, bijvoorbeeld FACTOR="1.10" komt overeen
+              met een opslag van 10%. FACTORCODE is nieuw in versie 4.003 en
+              vertegenwoordigd een bepaalde factor, net als een uurtariefcode
+              een bepaald uurtarief vertegenwoordigd. Indien PRIJS_FACTOR en
+              FACTORCODE met elkaar in tegenspraak zijn is de PRIJS_FACTOR
+              bepalend. Indien niet aanwezig of leeg dan als 1 interpreteren.
+UUR_NORM: zie BEGROTINGSREGEL. Heeft alleen een functie indien KOSTENSOORT="LOON"
+UUR_TARIEF: zie BEGROTINGSREGEL. Heeft alleen een functie indien KOSTENSOORT="LOON"
+============================================================================-->
+  <ElementType name="MAMO_REGEL">
+    <attribute type="KOSTENSOORT"/>
+    <attribute type="CODE"/>
+    <attribute type="OMSCHRIJVING"/>
+    <attribute type="HOEVEELHEID_EENHEID"/>
+    <attribute type="HOEVEELHEID"/>
+    <attribute type="AANTAL_EENHEID"/>
+    <attribute type="AANTAL"/>
+    <attribute type="INZET_EENHEID"/>
+    <attribute type="INZET"/>
+    <attribute type="PRODUCTIE_EENHEID"/>
+    <attribute type="PRODUCTIE"/>
+    <attribute type="PRIJS"/>
+    <attribute type="PRIJS_FACTOR"/>
+    <attribute type="FACTORCODE"/>
+    <attribute type="UUR_NORM"/>
+    <attribute type="UUR_TARIEF"/>
+    <attribute type="UUR_TARIEFCODE"/>
+    <attribute type="EAN_CODE"/>
+    <attribute type="ARTIKELGROEP"/>
+    <attribute type="BESTELEENHEID"/>
+    <attribute type="HOEVEELHEIDPEREENHEID"/>
+    <attribute type="LEVERANCIERSCODE"/>
+    <attribute type="COMMENTAAR"/>
+    <element type="HOEVEELHEDENSTAAT_REGEL" minOccurs="0" maxOccurs="*"/>
+    <element type="SORTEERCODE" minOccurs="0" maxOccurs="*"/>
+  </ElementType>
+
+<!--===========================================================================
+BEGROTINGSREGEL
+
+FORMULES:
+BEGROTINGSREGEL totaal excl. BTW = HOEVEELHEID * HOEVEELHEID_FACTOR * (UUR_NORM * UUR_TARIEF + MATERIAALPRIJS + MATERIEELPRIJS + ONDERAANNEMINGSPRIJS + OVERIGE_KOSTEN)
+BUNDELING.UREN = de som van alle HOEVEELHEID * HOEVEELHEID_FACTOR * UUR_NORM
+BUNDELING.LOONKOSTEN = de som van alle HOEVEELHEID * HOEVEELHEID_FACTOR * UUR_NORM * UUR_TARIEF
+BUNDELING.MATERIAALKOSTEN = de som van alle HOEVEELHEID * HOEVEELHEID_FACTOR * MATERIAALPRIJS
+BUNDELING.MATERIEELKOSTEN = de som van alle HOEVEELHEID * HOEVEELHEID_FACTOR * MATERIEELPRIJS
+BUNDELING.ONDERAANNEMING = de som van alle HOEVEELHEID * HOEVEELHEID_FACTOR * ONDERAANNEMINGSPRIJS
+BUNDELING.OVERIGE_KOSTEN = de som van alle HOEVEELHEID * HOEVEELHEID_FACTOR * BEGROTINGSREGEL.OVERIGE_KOSTEN
+
+CODE, een vrij te gebruiken code.
+OMSCHRIJVING, een vrij te gebruiken omschrijving
+HOEVEELHEID_EENHEID, de eenheid waar de hoeveelheid betrekking op heeft (stuks, m1, m2, m3 etc.) en
+                     waarin de prijs of de uurnorm is uitgedrukt.
+HOEVEELHEID, Het aantal eenheden. Met de HOEVEELHEID wordt het BEGROTINGSREGEL totaal berekend.
+             Indien niet aanwezig of leeg dan als 0 interpreteren.
+AANTAL: Voor tijdgebonden kosten AANTAL * INZET = HOEVEELHEID bijvoorbeeld: de huur van 2 puincontainers
+        voor 5 weken. AANTAL="2", AANTAL_EENHEID="st", INZET="5", INZET_EENHEID="wk", HOEVEELHEID="10".
+        De HOEVEELHEID blijft altijd leidend ook al geldt  AANTAL * INZET != HOEVEELHEID.
+        Indien niet aanwezig of leeg dan als 0 interpreteren.
+INZET: Voor tijdgebonden kosten zie AANTAL. Indien niet aanwezig of leeg dan als 0 interpreteren.
+PRODUCTIE: Geeft een productie capaciteit aan:
+           MAMO_REGEL.HOEVEELHEID = BEGROTINGSREGEL.HOEVEELHEID / MAMO_REGEL.PRODUCTIE
+           In de begrotingsregel staat bijvoorbeeld genoemd dat er 100 m2 meter gevoegd moet worden.
+           Op de mamo-regel voor arbeid wordt opgegeven dat de productie 2 is.
+           Dit betekend dat er 2 m2 per eenheid capaciteit gerealiseerd kan worden.
+           De uitkomst is dat er dus 100/2 = 50 uur capaciteit nodig is.
+           Ook bij de PRODUCTIE geldt de BEGROTINGSREGEL.HOEVEELHEID blijft altijd leidend.
+           Indien niet aanwezig of leeg dan als 0 interpreteren.
+HOEVEELHEID_FACTOR: factor over de hoeveelheid, bijvoorbeeld 1.10 voor een opslag van 10%
+                    op de hoeveelheid. De HOEVEELHEID bevat de netto hoeveelheid, dus excl.
+                    HOEVEELHEID_FACTOR. Als FACTOR en FACTORCODE met elkaar in tegenspraak zijn,
+                    dan is de FACTOR bepalend. Indien niet aanwezig of leeg dan als 1 interpreteren.
+FACTORCODE: een code die refereert aan de gebruikte HOEVEELHEID_FACTOR.
+UUR_NORM: uurnorm (in uren met decimalen, dus geen minuten) die betrekking heeft op 1 eenheid.
+          Indien niet aanwezig of leeg dan als 0 interpreteren.
+UUR_TARIEF: uurloon. Als UUR_TARIEF en UUR_TARIEFCODE met elkaar in tegenspraak zijn, dan is
+            het UUR_TARIEF bepalend. Indien niet aanwezig of leeg dan als 0 interpreteren.
+UUR_TARIEFCODE: een code die refereert aan het gebruikte UUR_TARIEF.
+MATERIAALPRIJS: materiaal eenheidsprijs excl. BTW. Indien niet aanwezig of leeg dan als 0 interpreteren.
+MATERIEELPRIJS: materieel eenheidsprijs excl. BTW. Indien niet aanwezig of leeg dan als 0 interpreteren.
+ONDERAANNEMINGSPRIJS: onderaanneming eenheidsprijs excl. BTW. Indien niet aanwezig of leeg dan als 0 interpreteren.
+OVERIGE_KOSTEN: overige kosten eenheidsprijs excl. BTW. Indien niet aanwezig of leeg dan als 0 interpreteren.
+STELPOST: geeft aan of het totaal bedrag van de BEGROTINGSREGEL een stelpost is. Stelposten worden verder gewoon bij
+          de kosten getotaliseerd en dus niet apart getotaliseerd. In de totalen op Bundeling niveau zitten dus ook
+          de eventuele stelposten.
+BTW: Verplicht, bevat een percentage (bijvoorbeeld BTW="19").
+     Indien niet aanwezig (kan niet want is verplicht) of leeg dan als 0 interpreteren.
+EAN_CODE: EAN streepjescode voor toepassing van de EAN artikelcodering.
+ARTIKELGROEP: code voor het groeperen van artikelen.
+BESTELEENHEID:
+HOEVEELHEIDPEREENHEID: aantal stuks in de BESTELEENHEID
+LEVERANCIERSCODE:
+COMMENTAAR:
+HOEVEELHEDENSTAAT_REGEL: optionele onderbouwing van de hoeveelheid.
+MAMO_REGEL: optionele onderbouwing van de diverse prijzen
+SORTEERCODE: Optionele sorteercodes elementen waarvan de functie dient te worden beschreven
+             in het element SORTEERCODES.
+============================================================================-->
+  <ElementType name="BEGROTINGSREGEL">
+    <attribute type="CODE"/>
+    <attribute type="OMSCHRIJVING"/>
+    <attribute type="HOEVEELHEID_EENHEID"/>
+    <attribute type="HOEVEELHEID"/>
+    <attribute type="AANTAL_EENHEID"/>
+    <attribute type="AANTAL"/>
+    <attribute type="INZET_EENHEID"/>
+    <attribute type="INZET"/>
+    <attribute type="PRODUCTIE_EENHEID"/>
+    <attribute type="PRODUCTIE"/>
+    <attribute type="HOEVEELHEID_FACTOR"/>
+    <attribute type="FACTORCODE"/>
+    <attribute type="UUR_NORM"/>
+    <attribute type="UUR_TARIEF"/>
+    <attribute type="UUR_TARIEFCODE"/>
+    <attribute type="MATERIAALPRIJS"/>
+    <attribute type="MATERIEELPRIJS"/>
+    <attribute type="ONDERAANNEMINGSPRIJS"/>
+    <attribute type="OVERIGE_KOSTEN"/>
+    <attribute type="STELPOST"/>
+    <attribute type="BTW"/>
+    <attribute type="EAN_CODE"/>
+    <attribute type="ARTIKELGROEP"/>
+    <attribute type="BESTELEENHEID"/>
+    <attribute type="HOEVEELHEIDPEREENHEID"/>
+    <attribute type="LEVERANCIERSCODE"/>
+    <attribute type="COMMENTAAR"/>
+    <element type="HOEVEELHEDENSTAAT_REGEL" minOccurs="0" maxOccurs="*"/>
+    <element type="MAMO_REGEL" minOccurs="0" maxOccurs="*"/>
+    <element type="SORTEERCODE" minOccurs="0" maxOccurs="*"/>
+  </ElementType>
+
+<!--===========================================================================
+BUNDELING
+De BUNDELING kan zelf ook weer onderbouwd zijn met BUNDELING elementen en/of
+BEGROTINGSREGELs. Indien het attribuut DOORREKEN_HOEVEELHEID een waarde heeft
+betreft het een elementen begroting en bevatten de diverse kosten totalen en
+de uren op BUNDELING niveau de totalen exclusief DOORREKEN_HOEVEELHEID.
+De BUNDELING totalen worden berekend vanuit de som van al de directe subBUNDELING
+totalen plus de som van al de directe BEGROTINGSREGELs excl BTW.
+De totalen op BUNDELING niveau zijn excl. BTW. Indien bedragen van een BUNDELING
+en onderliggende BEGROTINGSREGELs met elkaar in tegenspraak zijn dan zijn die van
+de BEGROTINGSREGEL leidend.
+
+CODE: Code van de BUNDELING, de code is niet bepalend voor de hierarchie binnen de begroting.
+CODERING_METHODE: zegt iets over de gebruikte coderings methode op BUNDELING niveau.
+TERUGDEEL_HOEVEELHEID: Deze hoeveelheid heeft kostentechnisch geen functie maar kan worden
+                       gebruikt voor het berekenen van een eenheidsprijs per BUNDELING
+                       (kengetal). Indien niet aanwezig of leeg dan als 0 interpreteren.
+DOORREKEN_HOEVEELHEID: nieuw in versie 4.003 is het attribuut DOORREKEN_HOEVEELHEID,
+                       als dit attribuut een waarde heeft hebben we te maken met een
+                       elementen BUNDELING. De diverse kostentotalen en het uren totaal
+                       op BUNDELING niveau zijn exclusief deze DOORREKEN_HOEVEELHEID.
+                       Voor het berekenen van het begrotingstotaal dienen deze BUNDELING
+                       totalen te worden doorvermenigvuldigd met de DOORREKEN_HOEVEELHEID.
+                       Indien niet aanwezig of leeg dan als 1 interpreteren.
+BUNDELING totaal excl. BTW = DOORREKEN_HOEVEELHEID * (LOONKOSTEN + METERIAALKOSTEN + MATERIEELKOSTEN + ONDERAANNEMING + OVERIGE_KOSTEN)
+UREN: Totaal van de onderliggende BUNDELINGen en/of BEGROTINGSREGELs
+LOONKOSTEN: Totaal van de onderliggende BUNDELINGen en/of BEGROTINGSREGELs excl BTW.
+MATERIAALKOSTEN: Totaal van de onderliggende BUNDELINGen en/of BEGROTINGSREGELs excl BTW.
+MATERIEELKOSTEN: Totaal van de onderliggende BUNDELINGen en/of BEGROTINGSREGELs excl BTW.
+ONDERAANNEMING: Totaal van de onderliggende BUNDELINGen en/of BEGROTINGSREGELs excl BTW.
+OVERIGE_KOSTEN: Totaal van de onderliggende BUNDELINGen en/of BEGROTINGSREGELs excl BTW.
+============================================================================-->
+  <ElementType name="BUNDELING">
+    <attribute type="CODE"/>
+    <attribute type="CODERING_METHODE"/>
+    <attribute type="OMSCHRIJVING"/>
+    <attribute type="EENHEID"/>
+    <attribute type="TERUGDEEL_HOEVEELHEID"/>
+    <attribute type="DOORREKEN_HOEVEELHEID"/>
+    <attribute type="UREN"/>
+    <attribute type="LOONKOSTEN"/>
+    <attribute type="MATERIAALKOSTEN"/>
+    <attribute type="MATERIEELKOSTEN"/>
+    <attribute type="ONDERAANNEMING"/>
+    <attribute type="OVERIGE_KOSTEN"/>
+    <attribute type="COMMENTAAR"/>
+    <element type="BUNDELING" minOccurs="0" maxOccurs="*"/>
+    <element type="BEGROTINGSREGEL" minOccurs="0" maxOccurs="*"/>
+    <element type="HOEVEELHEDENSTAAT_REGEL" minOccurs="0" maxOccurs="*"/>
+    <element type="SORTEERCODE" minOccurs="0" maxOccurs="*"/>
+  </ElementType>
+
+<!--===========================================================================
+BEGROTING
+De begroting kan, onafhankelijk van een code een hierarchische opbouw hebben d.m.v.
+BUNDELING subelementen. De som van de BEGROTINGSREGELs is uiteindelijk verantwoordelijk
+voor de totaal kosten binnen de BEGROTING en alleen de DOORREKEN_HOEVEELHEID
+van een BUNDELING heeft hier invloed op (elementen begroting). De totalen van de
+BEGROTING zijn excl. BTW en fungeren als controle middel.
+UREN: Het totaal aantal uren van de begroting. De som van alle BEGROTINGSREGEL uren
+      inclusief het eventueel gebruik van de DOORREKEN_HOEVEELHEID op BUNDELING niveau.
+LOONKOSTEN: Het totaal van alle loonkosten van de begroting. De som van alle BEGROTINGSREGEL
+      loonkosten excl BTW en inclusief het eventueel gebruik van de DOORREKEN_HOEVEELHEID
+      op BUNDELING niveau.
+MATERIAALKOSTEN: idem voor materiaal
+MATERIEELKOSTEN: idem voor materieel
+ONDERAANNEMING:  idem voor onderaanneming
+OVERIGE_KOSTEN:  idem voor overige kosten
+BUNDELING: Een BUNDELING kan onderbouwd zijn met subBUNDELINGen
+BEGROTINGSREGEL: Een BUNDELING kan onderbouwd zijn met BEGROTINGSREGELs
+============================================================================-->
+  <ElementType name="BEGROTING">
+    <attribute type="UREN" required="yes"/>
+    <attribute type="LOONKOSTEN" required="yes"/>
+    <attribute type="MATERIAALKOSTEN" required="yes"/>
+    <attribute type="MATERIEELKOSTEN" required="yes"/>
+    <attribute type="ONDERAANNEMING" required="yes"/>
+    <attribute type="OVERIGE_KOSTEN" required="yes"/>
+    <element type="BUNDELING" minOccurs="0" maxOccurs="*"/>
+    <element type="BEGROTINGSREGEL" minOccurs="0" maxOccurs="*"/>
+  </ElementType>
+
+<!--===========================================================================
+STAARTGEGEVENS
+AANNEEMSOM: Bevat het bruto totaalbedrag van de begroting inclusief
+            opslagen en staart etc. en kan als controle worden gebruikt.
+            De AANNEEMSOM is een verplicht attribuut.
+============================================================================-->
+  <ElementType name="STAARTGEGEVENS">
+    <attribute type="AANNEEMSOM"/>
+    <element type="VRIJE_GROOTHEID" minOccurs="0" maxOccurs="*"/>
+  </ElementType>
+
+<!--===========================================================================
+CUF
+Nieuw in versie 4.003 is het attribuut AANMAAKDATUMTIJD het is de systeemdatum
+en tijd van het moment van aanmaken van het CUF-XML bestand, het is een verplicht
+attribuut van het element CUF. Het formaat is "CCYY-MM-DDThh:mm:ss",
+bijvoorbeeld: "2003-01-31T15:58:00"
+Het element SORTEERCODES is optioneel dit in tegenstelling tot de overige
+drie elementen die eenmalig verplicht moeten voorkomen.
+============================================================================-->
+ <ElementType name="CUF" order="seq" content="eltOnly">
+    <attribute type="AANMAAKDATUMTIJD"/>
+    <element type="PROJECTGEGEVENS" minOccurs="1" maxOccurs="1"/>
+    <element type="SORTEERCODES" minOccurs="0" maxOccurs="*"/>
+    <element type="BEGROTING" minOccurs="1" maxOccurs="1"/>
+    <element type="STAARTGEGEVENS" minOccurs="1" maxOccurs="1"/>
+  </ElementType>
+</Schema>
