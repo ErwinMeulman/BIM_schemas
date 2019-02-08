@@ -1,0 +1,2439 @@
+1	grond	1	
+1A	verwerving	2	
+1B	infrastructurele voorziengen	2	
+1C	bouwrijp maken	2	
+2	bouwkundige werken	1	
+2A	fundering	2	
+2A(11)	bodemvoorziengen	3	
+2A(11.1)	grond	4	
+2A(11.10)	algemeen (verzamelniveau)	5	
+2A(11.11)	grond, ontgravingen	5	
+2A(11.12)	grond, aanvullingen	5	
+2A(11.13)	grond, sloop- en rooiwerkzaamheden	5	
+2A(11.15)	grond, damwanden	5	
+2A(11.2)	water	4	
+2A(11.20)	algemeen (verzamelniveau)	5	
+2A(11.24)	water, bemalingen	5	
+2A(11.25)	water, damwanden	5	
+2A(13)	vloeren op grondslag	3	
+2A(13.1)	niet constructief	4	
+2A(13.10)	algemeen (verzamelniveau)	5	
+2A(13.11)	bodemafsluitingen	5	
+2A(13.11.11)	bodemafsluiting, folie	6	
+2A(13.11.12)	bodemafsluiting, zand	6	
+2A(13.11.13)	bodemafsluiting, schelp	6	
+2A(13.11.14)	bodemafsluiting, stampbeton	6	
+2A(13.11.15)	bodemafsluiting, schuimbeton	6	
+2A(13.11.16)	bodemafsluiting, steenslag	6	
+2A(13.11.17)	bodemafsluiting, isolatiekorrel	6	
+2A(13.11.18)	bodemafsluiting, keramische korrel	6	
+2A(13.12)	vloeren als gebouwonderdeel	5	
+2A(13.12.11)	betonplaat op grondslag	6	
+2A(13.12.12)	betonplaat op werkvloer	6	
+2A(13.12.13)	betonplaat op isolatie	6	
+2A(13.13)	vloeren als bestrating	5	
+2A(13.13.11)	betontegelvloer	6	
+2A(13.13.12)	bedrijfsplaatvloer	6	
+2A(13.13.13)	straatsteenvloer	6	
+2A(13.13.14)	asfaltbetonvloer	6	
+2A(13.2)	constructief	4	
+2A(13.20)	algemeen (verzamelniveau)	5	
+2A(13.21)	bodemafsluitingen	5	
+2A(13.21.12)	werkvloer, zand	6	
+2A(13.21.15)	werkvloer, stampbeton	6	
+2A(13.21.16)	werkvloer, schuimbeton	6	
+2A(13.21.18)	werkvloer, keramische korrel	6	
+2A(13.22)	vloeren als gebouwonderdeel	5	
+2A(13.22.11)	betonvloer op grondslag	6	
+2A(13.22.12)	betonvloer op werkvloer	6	
+2A(13.22.13)	betonvloer op isolatie	6	
+2A(13.22.14)	betonvloer met vorstrand	6	
+2A(13.25)	grondverbeteringen	5	
+2A(13.25.11)	grondvervanging, zandkoffer	6	
+2A(13.25.12)	grondvervanging, gestabiliseerd	6	
+2A(13.25.13)	grondverbetering, verdichten	6	
+2A(13.25.14)	grondverbetering, bodeminjectie	6	
+2A(16)	funderingsconstructies	3	
+2A(16.1)	voeten en balken	4	
+2A(16.10)	algemeen (verzamelniveau)	5	
+2A(16.11)	fundatievoeten	5	
+2A(16.11.11)	strokenfundering, baksteen	6	
+2A(16.11.21)	strokenfundering, kalkzandsteen	6	
+2A(16.11.31)	strokenfundering, betonsteen	6	
+2A(16.11.41)	strokenfundering, gestort beton	6	
+2A(16.11.42)	strokenfundering, betonelement	6	
+2A(16.12)	fundatie balken	5	
+2A(16.12.41)	balkenfundering, gestort beton	6	
+2A(16.12.42)	balkenfundering, betonelement	6	
+2A(16.13)	fundatie poeren	5	
+2A(16.13.11)	poerfundering, baksteen	6	
+2A(16.13.21)	poerfundering, kalkzandsteen	6	
+2A(16.13.31)	poerfundering, betonsteen	6	
+2A(16.13.41)	poerfundering, gestort beton	6	
+2A(16.13.43)	poerfundering, betonelement	6	
+2A(16.14)	gevelwanden (-200)	5	
+2A(16.14.11)	funderingsmuur, baksteen	6	
+2A(16.14.12)	funderingsspouwmuur, baksteen	6	
+2A(16.14.13)	funderingsmuur/spouwblad, baksteen	6	
+2A(16.14.21)	funderingsmuur, kalkzandsteen	6	
+2A(16.14.22)	funderingsspouwmuur, kalkzandsteen	6	
+2A(16.14.23)	funderingsmuur/spouwblad, kalkzandsteen	6	
+2A(16.14.31)	funderingsmuur, betonsteen	6	
+2A(16.14.32)	funderingsspouwmuur, betonsteen	6	
+2A(16.14.33)	funderignsmuur/spouwblad, betonsteen	6	
+2A(16.14.41)	funderingsmuur, gestort beton	6	
+2A(16.14.42)	funderingsmuur, betonelement	6	
+2A(16.15)	grondverbeteringen	5	
+2A(16.15.13)	grondverbetering, grondverdichting	6	
+2A(16.15.14)	grondverbetering, bodemstabilisatie	6	
+2A(16.2)	keerwanden	4	
+2A(16.20)	algemeen (verzamelniveau)	5	
+2A(16.21)	grondkerende wanden	5	
+2A(16.21.11)	grondkering, baksteen	6	
+2A(16.21.21)	grondkering, kalkzandsteen	6	
+2A(16.21.31)	grondkering, betonsteen	6	
+2A(16.21.41)	grondkering, gestort beton	6	
+2A(16.21.42)	grondkering, betonelement	6	
+2A(16.22)	waterkerende wanden	5	
+2A(16.22.41)	waterkering, gestort beton	6	
+2A(16.22.42)	waterkering, betonelement	6	
+2A(16.23)	gevelwanden (-200)	5	
+2A(16.23.11)	kelderwand, baksteen	6	
+2A(16.23.12)	kelderspouwwand, baksteen	6	
+2A(16.23.13)	kelderwand/spouwblad, baksteen	6	
+2A(16.23.21)	kelderwand, kalkzandsteen	6	
+2A(16.23.22)	kelderspouwwand, kalkzandsteen	6	
+2A(16.23.23)	kelderwand/spouwblad, kalkzandsteen	6	
+2A(16.23.31)	kelderwand, betonsteen	6	
+2A(16.23.32)	kelderspouwwand, betonsteen	6	
+2A(16.23.33)	kelderwand/spouwblad, betonsteen	6	
+2A(16.23.41)	kelderwand, gestort beton	6	
+2A(16.23.42)	kelderwand, betonelement	6	
+2A(16.25)	grondverbeteringen	5	
+2A(16.25.11)	grondkerende wand, bodeminjectie	6	
+2A(16.25.21)	waterkerende wand, bodeminjectie	6	
+2A(16.25.81)	verankering	6	
+2A(17)	paalfunderingen	3	
+2A(17.1)	niet geheid	4	
+2A(17.10)	algemeen (verzamelniveau)	5	
+2A(17.11)	dragende palen, geboord	5	
+2A(17.11.10)	paalfundering, boorpaal	6	
+2A(17.11.11)	paalfundering, drukpaal	6	
+2A(17.12)	dragende palen, geschroefd	5	
+2A(17.12.10)	paalfundering, mortelschroefpaal	6	
+2A(17.13)	trekverankeringen	5	
+2A(17.13.11)	groutanker	6	
+2A(17.14)	pijler-putring funderingen	5	
+2A(17.14.12)	putfundering	6	
+2A(17.15)	bodeminjekties	5	
+2A(17.15.11)	grondverbetering, bodemstabilisatie	6	
+2A(17.2)	geheid	4	
+2A(17.20)	algemeen (verzamelniveau)	5	
+2A(17.21)	dragende palen	5	
+2A(17.21.11)	paalfundering, hout	6	
+2A(17.21.12)	paalfundering, beton	6	
+2A(17.21.13)	paalfundering, staal	6	
+2A(17.22)	ingeheide bekisting	5	
+2A(17.22.10)	damwand, hout	6	
+2A(17.22.20)	damwand, staal	6	
+2A(17.22.21)	damwand, samengesteld	6	
+2A(17.22.40)	damwand, beton	6	
+2A(17.22.41)	diepwand bekisting, beton	6	
+2A(17.23)	trekverankeringen	5	
+2A(17.23.11)	trekpaal	6	
+2A(17.25)	damwanden-funderingen	5	
+2A(17.25.11)	damwandfundering, hout	6	
+2A(17.25.21)	damwandfundering, staal	6	
+2A(17.25.41)	damwandfundering, beton	6	
+2AU	algemene uitvoeringskosten	3	
+2B	skelet	2	
+2B(21)	dragende buitenwanden	3	
+2B(21.2)	dragende buitenwanden	4	
+2B(21.20)	algemeen (verzamelniveau)	5	
+2B(21.20.80)	metselwerk, onderhoud	6	
+2B(21.21)	massieve wanden	5	
+2B(21.21.11)	buitenmuur, baksteen	6	
+2B(21.21.21)	buitenmuur, kalkzandsteen	6	
+2B(21.21.31)	buitenmuur, betonsteen	6	
+2B(21.21.41)	buitenmuur, gestort beton	6	
+2B(21.21.42)	buitenmuur, betonelement	6	
+2B(21.21.81)	buitenmuur, cellenbeton	6	
+2B(21.21.82)	buitenmuur, leemsteen	6	
+2B(21.22)	spouwwanden	5	
+2B(21.22.11)	spouwmuur, baksteen	6	
+2B(21.22.12)	spouwmuur/spouwblad, baksteen	6	
+2B(21.22.21)	spouwmuur, kalkzandsteen	6	
+2B(21.22.22)	spouwmuur/spouwblad, kalkzandsteen	6	
+2B(21.22.31)	spouwmuur, betonsteen	6	
+2B(21.22.32)	spouwmuur/spouwblad,  betonsteen	6	
+2B(21.22.41)	spouwmuur, gestort beton	6	
+2B(21.22.42)	spouwmuur/spouwblad, gestort beton	6	
+2B(21.22.45)	spouwmuur, betonelement	6	
+2B(21.22.46)	spouwmuur/spouwblad, betonelement	6	
+2B(21.22.81)	spouwmuur, cellenbeton	6	
+2B(21.22.82)	spouwmuur/spouwblad, cellenbeton	6	
+2B(21.23)	systeemwanden	5	
+2B(21.23.18)	buitenwand, houtskeletbouw	6	
+2B(21.23.42)	gevelelement, cellenbeton	6	
+2B(21.25)	borstweringen	5	
+2B(21.25.10)	borstwering, hout	6	
+2B(21.25.20)	borstwering, metaal	6	
+2B(21.25.40)	borstwering, steenachtig	6	
+2B(21.25.42)	borstwering, betonelement	6	
+2B(22)	dragende binnenwanden	3	
+2B(22.2)	dragende binnenwanden	4	
+2B(22.20)	algemeen (verzamelniveau)	5	
+2B(22.21)	massieve wanden	5	
+2B(22.21.11)	binnenmuur, baksteen	6	
+2B(22.21.21)	binnenmuur, kalkzandsteen	6	
+2B(22.21.31)	binnenmuur, betonsteen	6	
+2B(22.21.41)	binnenmuur, gestort beton	6	
+2B(22.21.42)	binnenmuur, betonelement	6	
+2B(22.21.81)	binnenmuur, cellenbeton	6	
+2B(22.21.82)	binnenmuur, leemsteen	6	
+2B(22.22)	spouwwanden	5	
+2B(22.22.11)	binnenspouwmuur, baksteen	6	
+2B(22.22.12)	binnenmuur/spouwblad, baksteen	6	
+2B(22.22.21)	binnenspouwmuur, kalkzandsteen	6	
+2B(22.22.22)	binnenmuur/spouwblad, kalkzandsteen	6	
+2B(22.22.31)	binnenspouwmuur, betonsteen	6	
+2B(22.22.32)	binnenmuur/spouwblad, betonsteen	6	
+2B(22.22.41)	binnenspouwmuur, gestort beton	6	
+2B(22.22.42)	binnenmuur/spouwblad, gestort beton	6	
+2B(22.22.45)	binnenspouwmuur, betonelement	6	
+2B(22.22.46)	binnenmuur/spouwblad, betonelement	6	
+2B(22.22.81)	binnenspouwmuur, cellenbeton	6	
+2B(22.22.82)	binnenmuur/spouwblad, cellenbeton	6	
+2B(22.22.83)	binnenspouwmuur, leemsteen	6	
+2B(22.22.84)	binnenmuur/spouwblad, leemsteen	6	
+2B(22.23)	systeemwanden, vast	5	
+2B(22.23.18)	binnenwand, houtskeletbouw	6	
+2B(22.23.20)	binnenwand, metaal	6	
+2B(23)	dragende vloeren	3	
+2B(23.2)	dragende vloeren	4	
+2B(23.20)	algemeen (verzamelniveau)	5	
+2B(23.21)	vrijdragende vloeren	5	
+2B(23.21.10)	vloerconstructie, hout	6	
+2B(23.21.41)	vloerconstructie, gestort beton	6	
+2B(23.21.42)	vloerconstructie, betonelement	6	
+2B(23.22)	balkons	5	
+2B(23.22.10)	balkon, hout	6	
+2B(23.22.20)	balkon, metaal	6	
+2B(23.22.41)	balkon, gestort beton	6	
+2B(23.22.42)	balkon, betonelemenet	6	
+2B(23.23)	galerijen	5	
+2B(23.23.10)	galerij, hout	6	
+2B(23.23.20)	galerij, metaal	6	
+2B(23.23.41)	galerij, gestort beton	6	
+2B(23.23.42)	galerij, betonelement	6	
+2B(23.24)	bordessen	5	
+2B(23.24.10)	bordesvloer, hout	6	
+2B(23.24.20)	bordesvloer, metaal	6	
+2B(23.24.41)	bordesvloer, gestort beton	6	
+2B(23.24.42)	bordesvloer, betonelement	6	
+2B(23.25)	vloeren t.b.v. technische voorziengen	5	
+2B(23.25.10)	tussenvloer, hout	6	
+2B(23.25.20)	roostervloer, metaal	6	
+2B(23.25.41)	tussenvloer, gestort beton	6	
+2B(23.25.42)	tussenvloer, betonelement	6	
+2B(27)	dragende daken	3	
+2B(27.2)	dragende daken	4	
+2B(27.20)	algemeen (verzamelniveau)	5	
+2B(27.20.11)	dakconstructie, hout	6	
+2B(27.20.12)	dakconstructie, metaal	6	
+2B(27.20.14)	dakconstructie, steenachtig	6	
+2B(27.21)	vlakke daken	5	
+2B(27.21.11)	vlak dak, hout	6	
+2B(27.21.12)	vlak dak, metaal	6	
+2B(27.21.14)	vlak dak, steenachtig	6	
+2B(27.21.20)	afschotlaag	6	
+2B(27.22)	hellende daken	5	
+2B(27.22.11)	hellend dak, hout	6	
+2B(27.22.12)	hellend dak, metaal	6	
+2B(27.22.14)	hellend dak, steenachtig	6	
+2B(27.23)	luifels	5	
+2B(27.24)	overkappingen	5	
+2B(27.26)	gootconstructies	5	
+2B(28)	hoofddraagconstructies	3	
+2B(28.1)	kolommen en liggers 	4	
+2B(28.10)	algemeen (verzamelniveau)	5	
+2B(28.11)	kolom-/liggerconstructies	5	
+2B(28.11.11)	kolom-/liggerconstructie, hout	6	
+2B(28.11.21)	kolom-/liggerconstructie, metaal	6	
+2B(28.11.41)	kolom-/liggerconstructie, gestort beton	6	
+2B(28.11.42)	kolom-/liggerconstructie, betonelement	6	
+2B(28.11.43)	kolom-/liggerconstructie, natuursteen	6	
+2B(28.12)	spanten	5	
+2B(28.12.11)	spantconstructie, hout	6	
+2B(28.12.21)	spantconstructie, metaal	6	
+2B(28.2)	wanden en vloeren 	4	
+2B(28.20)	algemeen (verzamelniveau)	5	
+2B(28.21)	wand-/vloerconstructies	5	
+2B(28.21.11)	wand-/vloerconstructie, hout	6	
+2B(28.21.21)	wand-/vloerconstructie, metaal/beton	6	
+2B(28.21.41)	wand-/vloerconstructie, gestort beton	6	
+2B(28.21.42)	wand-/vloerconstructie, betonelement	6	
+2B(28.3)	ruimte-eenheden	4	
+2B(28.30)	algemeen (verzamelniveau)	5	
+2B(28.31)	doosconstructies	5	
+2B(28.31.10)	ruimtelijk element, hout	6	
+2B(28.31.20)	ruimtelijk element, metaal	6	
+2B(28.31.42)	ruimtelijk element, betonelement	6	
+2B(28.31.43)	kelder, betonelement	6	
+2BU	algemene uitvoeringskosten	3	
+2C	daken	2	
+2C(27)	dakafbouwconstructie	3	
+2C(27.1)	dakafbouwconstructie 	4	
+2C(27.10)	algemeen (verzamelniveau)	5	
+2C(27.11)	vlakke daken	5	
+2C(27.12)	hellende daken	5	
+2C(27.13)	luifels	5	
+2C(27.13.10)	luifel, hout	6	
+2C(27.13.20)	luifel, metaal	6	
+2C(27.13.30)	luifel, kunststof	6	
+2C(27.13.40)	luifel, steenachtig	6	
+2C(27.14)	overkappingen	5	
+2C(27.14.10)	overkapping, hout	6	
+2C(27.16)	gootconstructies	5	
+2C(27.16.10)	gootconstructie, hout	6	
+2C(27.16.20)	gootconstructie, metaal	6	
+2C(27.16.30)	gootconstructie, kunststof	6	
+2C(27.16.40)	gootconstructie, steenachtig	6	
+2C(37)	dakopeningen	3	
+2C(37.1)	niet gevuld 	4	
+2C(37.10)	algemeen (verzamelniveau)	5	
+2C(37.11)	daglichtopeningen	5	
+2C(37.11.10)	loggia	6	
+2C(37.12)	buitenluchtopeningen	5	
+2C(37.12.10)	dakopening	6	
+2C(37.2)	gevuld	4	
+2C(37.20)	algemeen (verzamelniveau)	5	
+2C(37.21)	gesloten ramen	5	
+2C(37.21.11)	daklichtkoepel	6	
+2C(37.21.30)	lichtstraat	6	
+2C(37.21.80)	dakkapel/vast raam	6	
+2C(37.22)	ramen draaiend aan één kant	5	
+2C(37.22.20)	dakraam	6	
+2C(37.22.28)	dakluik	6	
+2C(37.22.30)	lichtstraat/uitzetraam	6	
+2C(37.22.80)	dakkapel/draairaam	6	
+2C(37.23)	schuiframen	5	
+2C(37.23.80)	dakkapel/schuifraam	6	
+2C(37.24)	ramen draaiend op een as	5	
+2C(37.24.20)	kantelraam	6	
+2C(37.25)	combinatieramen	5	
+2C(37.25.80)	dakkapel/draai-valraam	6	
+2C(47)	dakafwerkingen	3	
+2C(47.1)	dakafwerkingen	4	
+2C(47.10)	algemeen (verzamelniveau)	5	
+2C(47.11)	vlakke dakafwerkingen	5	
+2C(47.11.13)	vlak-dakbedekking, kunststof	6	
+2C(47.11.14)	vlak-dakbedekking, bitumineus	6	
+2C(47.11.21)	vlak-dakbedekking, lood	6	
+2C(47.11.22)	vlak-dakbedekking, zink	6	
+2C(47.11.23)	vlak-dakbedekking, koper	6	
+2C(47.11.78)	tuindak	6	
+2C(47.12)	hellende dakafwerkingen.	5	
+2C(47.12.13)	dakbedekking, kunststof	6	
+2C(47.12.14)	dakbedekking, bitumineus	6	
+2C(47.12.21)	dakbedekking, lood	6	
+2C(47.12.22)	dakbedekking, zink	6	
+2C(47.12.23)	dakbedekking, koper	6	
+2C(47.12.75)	rietdak	6	
+2C(47.12.78)	gras-/kruidendak	6	
+2C(47.13)	luifelafwerkingen	5	
+2C(47.13.13)	afdekking, kunststof	6	
+2C(47.13.14)	afdekking, bitumineus	6	
+2C(47.13.21)	afdekking, lood	6	
+2C(47.13.22)	afdekking, zink	6	
+2C(47.13.23)	afdekking, koper	6	
+2C(47.14)	overkappingsafwerkingen	5	
+2C(47.14.13)	bedekking, kunststof	6	
+2C(47.14.14)	bedekking, bitumineus	6	
+2C(47.14.21)	bedekking, lood	6	
+2C(47.14.22)	bedekking, zink	6	
+2C(47.14.23)	bedekking, koper	6	
+2C(47.15)	beloopbare dakafwerkingen	5	
+2C(47.15.15)	dakterras	6	
+2C(47.16)	berijdbare dakafwerkingen	5	
+2C(47.16.15)	parkeerdak	6	
+2C(47.2)	dakbekledingen	4	
+2C(47.20)	algemeen (verzamelniveau)	5	
+2C(47.21)	vlakke dak bekledingen	5	
+2C(47.21.25)	vlak roevendak	6	
+2C(47.21.26)	vlak felsdak	6	
+2C(47.22)	hellende dak bekledingen	5	
+2C(47.22.25)	rovendak	6	
+2C(47.22.26)	felsdak	6	
+2C(47.22.27)	schakeldak	6	
+2C(47.22.32)	pannendak, metaal	6	
+2C(47.22.34)	pannendak, beton	6	
+2C(47.22.37)	pannendak, keramisch	6	
+2C(47.22.41)	leiendak, hout	6	
+2C(47.22.42)	leiendak, metaal	6	
+2C(47.22.44)	leiendak, steen	6	
+2C(47.22.47)	leiendak, bitumineus	6	
+2C(47.22.52)	dakplaten, metaal	6	
+2C(47.22.53)	dakplaten, kunststof	6	
+2C(47.22.55)	dakplaten, vezelcement	6	
+2C(47.22.60)	lichtkap, samengesteld	6	
+2C(47.22.68)	structurele dakbeglazing	6	
+2C(47.22.76)	zonnedak	6	
+2C(47.23)	luifel bekledingen	5	
+2C(47.23.61)	luifeldak	6	
+2C(47.23.63)	dakrand	6	
+2C(47.23.64)	dakgoot	6	
+2C(47.24)	overkapping bekledingen	5	
+2C(47.24.13)	overdekking, kunststof	6	
+2C(47.24.14)	overdekking, bitumineus	6	
+2C(47.24.60)	lichtoverdekking	6	
+2C(47.25)	beloopbare dak bekledingen	5	
+2C(47.25.13)	loopdek, kunststof	6	
+2C(47.25.14)	loopdek, bitumineus	6	
+2C(47.26)	berijdbare dak bekledingen	5	
+2C(47.26.13)	verkeersdek, kunststof	6	
+2C(47.26.14)	verkeersdek, bitumineus	6	
+2CU	algemene uitvoeringskosten	3	
+2D	gevel	2	
+2D(21)	buitenwandafbouwconstructie	3	
+2D(21.1)	buitenwandafbouwconstructie 	4	
+2D(21.10)	algemeen (verzamelniveau)	5	
+2D(21.11)	massieve wanden	5	
+2D(21.11.11)	buitenwand, baksteen	6	
+2D(21.11.21)	buitenwand, kalkzandsteen	6	
+2D(21.11.31)	buitenwand, betonsteen	6	
+2D(21.11.41)	buitenwand, gestort beton	6	
+2D(21.11.42)	buitenwand, betonelement	6	
+2D(21.11.47)	buitenwand, natuursteen	6	
+2D(21.11.61)	buitenwand, glazen bouwsteen	6	
+2D(21.11.81)	buitenwand, cellenbeton	6	
+2D(21.11.82)	buitenwand, leemsteen	6	
+2D(21.12)	spouwwanden	5	
+2D(21.12.11)	spouwwand, baksteen	6	
+2D(21.12.12)	spouwwand/spouwblad, baksteen	6	
+2D(21.12.21)	spouwwand, kalkzandsteen	6	
+2D(21.12.22)	spouwwand/spouwblad, kalkzandsteen	6	
+2D(21.12.31)	spouwwand, betonsteen	6	
+2D(21.12.32)	spouwwand/spouwblad, betonsteen	6	
+2D(21.12.41)	spouwwand, gestort beton	6	
+2D(21.12.42)	spouwwand/spouwblad, gestort beton	6	
+2D(21.12.45)	spouwwand, betonelement	6	
+2D(21.12.46)	spouwwand/spouwblad, betonelement	6	
+2D(21.12.81)	spouwwand, cellenbeton	6	
+2D(21.12.82)	spouwwand/spouwblad, cellenbeton	6	
+2D(21.13)	systeemwanden	5	
+2D(21.13.11)	systeembouwwand, aluminium	6	
+2D(21.13.12)	systeembouwwand, staal	6	
+2D(21.13.18)	systeembouwwand, staal/aluminium	6	
+2D(21.13.21)	systeembouwwand sandwichpanelen, aluminium	6	
+2D(21.13.22)	systeembouwwand sandwichpanelen, staal	6	
+2D(21.13.23)	systeembouwwand sandwichpanelen, kunststof	6	
+2D(21.13.24)	systeembouwwand sandwichpanelen, metaal/kunststof	6	
+2D(21.13.26)	systeembouwwand sandwichpanelen, glas	6	
+2D(21.13.41)	elementenbouwwand, hout	6	
+2D(21.14)	vlieswanden	5	
+2D(21.14.20)	vliesgevel, metaal	6	
+2D(21.14.30)	vliesgevel, kunststof	6	
+2D(21.14.68)	structurele glasgevel	6	
+2D(21.14.80)	vliesgevel, hout/metaal	6	
+2D(21.15)	borstweringen	5	
+2D(21.15.10)	balustrade, hout	6	
+2D(21.15.20)	balustrade, metaal	6	
+2D(21.15.40)	balustrade, steenachtig	6	
+2D(21.15.42)	balustrade, betonelement	6	
+2D(21.16)	boeiboorden	5	
+2D(21.16.10)	boeiboord, hout	6	
+2D(21.16.11)	boeiboord, hout/kunststof	6	
+2D(21.16.20)	boeiboord, metaal	6	
+2D(21.16.30)	boeiboord, kunststof	6	
+2D(21.16.50)	boeiboord, minerale vezel	6	
+2D(21.17)	schoorstenen/kanalen (bouwkundig)	5	
+2D(21.17.21)	schoorsteen/kanaal, metaal	6	
+2D(21.17.23)	schoorsteen/kanaal, steenachtig	6	
+2D(31)	buitenwandopeningen	3	
+2D(31.1)	niet gevuld 	4	
+2D(31.10)	algemeen (verzamelniveau)	5	
+2D(31.11)	daglichtopeningen	5	
+2D(31.11.40)	venster	6	
+2D(31.12)	buitenluchtopeningen	5	
+2D(31.12.40)	ventilatieopening	6	
+2D(31.2)	gevuld met ramen 	4	
+2D(31.20)	algemeen (verzamelniveau)	5	
+2D(31.21)	gesloten ramen	5	
+2D(31.21.21)	buitenkozijn/vast raam, hout	6	
+2D(31.21.22)	buitenkozijn/vast raam, metaal	6	
+2D(31.21.23)	buitenkozijn/vast raam, kunststof	6	
+2D(31.22)	ramen draaiend aan één kant	5	
+2D(31.22.21)	buitenkozijn/draairaam, hout	6	
+2D(31.22.22)	buitenkozijn/draairaam, metaal	6	
+2D(31.22.23)	buitenkozijn/draairaam, kunststof	6	
+2D(31.22.31)	buitenkozijn/uitzetraam, hout	6	
+2D(31.22.32)	buitenkozijn/uitzetraam, metaal	6	
+2D(31.22.33)	buitenkozijn/uitzetraam, kunststof	6	
+2D(31.22.41)	buitenkozijn/valraam, hout	6	
+2D(31.22.42)	buitenkozijn/valraam, metaal	6	
+2D(31.22.43)	buitenkozijn/valraam, kunststof	6	
+2D(31.23)	schuiframen	5	
+2D(31.23.21)	buitenkozijn/schuifraam, hout	6	
+2D(31.23.22)	buitenkozijn/schuifraam, metaal	6	
+2D(31.23.23)	buitenkozijn/schuifraam, kunststof	6	
+2D(31.24)	ramen draaiend op verticale of horizontale as	5	
+2D(31.24.21)	buitenkozijn/taatsraam, hout	6	
+2D(31.24.22)	buitenkozijn/taatsraam, metaal	6	
+2D(31.24.23)	buitenkozijn/taatsraam, kunststof	6	
+2D(31.24.31)	buitenkozijn/tuimelraam, hout	6	
+2D(31.24.32)	buitenkozijn/tuimelraam, metaal	6	
+2D(31.24.33)	buitenkozijn/tuimelraam, kunststof	6	
+2D(31.25)	combinatieramen	5	
+2D(31.25.21)	buitenkozijn/draai-valraam, hout	6	
+2D(31.25.22)	buitenkozijn/draai-valraam, metaal	6	
+2D(31.25.23)	buitenkozijn/draai-valraam, kunststof	6	
+2D(31.25.31)	buitenkozijn/uitzetzakraam, hout	6	
+2D(31.25.32)	buitenkozijn/uitzetzakraam, metaal	6	
+2D(31.25.33)	buitenkozijn/uitzetzakraam, kunststof	6	
+2D(31.3)	gevuld met deuren 	4	
+2D(31.30)	algemeen (verzamelniveau)	5	
+2D(31.31)	draaideuren	5	
+2D(31.31.21)	buitenkozijn/-deur, hout	6	
+2D(31.31.22)	buitenkozijn/-deur, metaal	6	
+2D(31.31.23)	buitenkozijn/-deur, kunststof	6	
+2D(31.32)	schuifdeuren	5	
+2D(31.32.30)	buitendeur schuifsysteem	6	
+2D(31.33)	tuimeldeuren	5	
+2D(31.33.30)	tuimeldeursysteem	6	
+2D(31.34)	tourniquet	5	
+2D(31.34.30)	buitendeur sluissysteem	6	
+2D(31.4)	gevuld met puien	4	
+2D(31.40)	algemeen (verzamelniveau)	5	
+2D(31.40.10)	buitenpui, samengesteld	6	
+2D(31.40.11)	buitenpui, hout	6	
+2D(31.40.12)	buitenpui, metaal	6	
+2D(31.40.13)	buitenpui, kunststof	6	
+2D(31.40.30)	buitenpui, systeem	6	
+2D(31.40.32)	vliesgevelsysteem, metaal	6	
+2D(31.40.34)	vliesgevelsysteem, kunststof	6	
+2D(31.40.38)	vliesgevelsysteem, hout/metaal	6	
+2D(31.40.80)	buitenpui, onderhoud	6	
+2D(31.41)	gesloten puien	5	
+2D(31.41.11)	buitenpui dicht, hout	6	
+2D(31.41.12)	buitenpui dicht, metaal	6	
+2D(31.41.13)	buitenpui dicht, kunststof	6	
+2D(41)	buitenwandafwerkingen	3	
+2D(41.1)	buitenwandafwerkingen	4	
+2D(41.10)	algemeen (verzamelniveau) 	5	
+2D(41.11)	afwerklagen 	5	
+2D(41.11.10)	buitenpleister samengesteld	6	
+2D(41.11.11)	buitenpleister/raaplaag	6	
+2D(41.11.12)	buitenpleister/pleisterlaag	6	
+2D(41.11.13)	buitenpleister/schuurwerk	6	
+2D(41.11.14)	buitensspuitpleister	6	
+2D(41.11.15)	buitensierpleister	6	
+2D(41.11.16)	buitenisolatiepleister	6	
+2D(41.11.17)	buitengevelisolatiesysteem pleisterwerk	6	
+2D(41.11.21)	buitenschilderwerk hout	6	
+2D(41.11.23)	buitenschilderwerk metaal	6	
+2D(41.11.25)	buitenschilderwerk steen	6	
+2D(41.11.27)	buitenschilderwerk kunststof	6	
+2D(41.11.28)	buitenwand beschermlaag	6	
+2D(41.12)	bekledingen 	5	
+2D(41.12.31)	tegelbuitenwand, keramisch	6	
+2D(41.12.32)	tegelbuitenwand, mozaïek	6	
+2D(41.12.34)	tegelbuitenwand, natuursteen	6	
+2D(41.12.35)	tegelbuitenwand, kunststeen	6	
+2D(41.12.41)	buitenwandbekleding, hout	6	
+2D(41.12.43)	buitenwandbekleding, kunststof	6	
+2D(41.12.44)	buitenwandbekleding, vezelcement	6	
+2D(41.12.45)	buitenwandbekleding, minerale vezel	6	
+2D(41.12.51)	buitenwandbekleding, staal	6	
+2D(41.12.52)	buitenwandbekleding, aluminium	6	
+2D(41.12.53)	buitenwandbekleding, zink	6	
+2D(41.12.54)	buitenwandbekleding, koper	6	
+2D(41.12.55)	buitenwandbekleding, lood	6	
+2D(41.12.56)	buitenwandbekleding, glas	6	
+2D(41.12.61)	buitenwandbekleding, leisteen	6	
+2D(41.12.62)	buitenwandbekleding, dakpan	6	
+2D(41.12.64)	buitenwandbekleding, natuur-/kunststeen	6	
+2D(41.12.75)	buitenwandbekleding, riet	6	
+2D(41.12.77)	buitenwandbekleding, steen	6	
+2D(41.12.78)	buitenwandbekleding, vegetatie	6	
+2D(41.13)	voorzetwanden	5	
+2D(41.13.66)	glasscherm	6	
+2DU	algemene uitvoeringskosten	3	
+2E	binnenwanden	2	
+2E(22)	binnenwandafbouwconstructie	3	
+2E(22.1)	binnenwandafbouwconstructie 	4	
+2E(22.10)	algemeen (verzamelniveau)	5	
+2E(22.11)	massieve wanden	5	
+2E(22.11.11)	binnenwand, baksteen	6	
+2E(22.11.21)	binnenwand, kalkzandsteen	6	
+2E(22.11.31)	binnenwand, betonsteen	6	
+2E(22.11.41)	binnenwand, gestort beton	6	
+2E(22.11.42)	binnenwand, betonelement	6	
+2E(22.11.47)	binnenwand, natuursteen	6	
+2E(22.11.61)	binnenwand, glazen bouwsteen	6	
+2E(22.11.81)	binnenwand, cellenbeton	6	
+2E(22.11.82)	binnenwand, leemsteen	6	
+2E(22.11.83)	binnenwand, gipsblok	6	
+2E(22.12)	spouwwanden	5	
+2E(22.12.11)	binnenspouwwand, baksteen	6	
+2E(22.12.12)	binnenwand/spouwblad, baksteen	6	
+2E(22.12.21)	binnenspouwwand, kalkzandsteen	6	
+2E(22.12.22)	binnenwand/spouwblad, kalkzandsteen	6	
+2E(22.12.31)	binnenspouwwand, betonsteen	6	
+2E(22.12.32)	binnenwand/spouwblad, betonsteen	6	
+2E(22.12.41)	binnenspouwwand, gestort beton	6	
+2E(22.12.42)	binnenwand/spouwblad, gestort beton	6	
+2E(22.12.45)	binnenspouwwand, betonelement	6	
+2E(22.12.46)	binnenwand/spouwblad, betonelement	6	
+2E(22.12.81)	binnenspouwwand, cellenbeton	6	
+2E(22.12.82)	binnenwand/spouwblad, cellenbeton	6	
+2E(22.12.83)	binnenspouwwand, leemsteen	6	
+2E(22.12.84)	binnenwand/spouwblad, leemsteen	6	
+2E(22.13)	systeemwanden, vast	5	
+2E(22.13.12)	systeemwand, OSB plaat	6	
+2E(22.13.13)	systeemwand, MDF plaat	6	
+2E(22.13.14)	systeemwand, spaanplaat	6	
+2E(22.13.15)	systeemwand, vezelplaat	6	
+2E(22.13.16)	systeemwand, vezelcementplaat	6	
+2E(22.13.17)	systeemwand, gipsplaat	6	
+2E(22.13.21)	sandwichpanelen systeemwand, aluminium	6	
+2E(22.13.22)	sandwichpanelen systeemwand, staal	6	
+2E(22.13.23)	sandwichpanelen systeemwand, kunststof	6	
+2E(22.13.24)	sandwichpanelen systeemwand, metaal/kunststof	6	
+2E(22.13.26)	sandwichpanelen systeemwand, glas	6	
+2E(22.13.31)	panelen systeemwand, hout	6	
+2E(22.13.32)	panelen systeemwand, metaal	6	
+2E(22.13.33)	panelen systeemwand, kunststof	6	
+2E(22.13.34)	panelen systeemwand, houtachtig/kunststof	6	
+2E(22.13.37)	panelen systeemwand, gips	6	
+2E(22.13.41)	elementenwand, hout	6	
+2E(22.14)	systeemwanden, verplaatsbaar	5	
+2E(22.14.51)	vouw-schuifwand	6	
+2E(22.14.52)	panelen-schuifwand	6	
+2E(22.14.53)	harmonika-schuifwand	6	
+2E(22.17)	schoorstenen/kanalen (bouwkundig)	5	
+2E(22.17.11)	ventilatieschacht/kanaal, metaal	6	
+2E(22.17.12)	ventilatieschacht/kanaal, kunststof	6	
+2E(22.17.13)	ventilatieschacht/kanaal, steenachtig	6	
+2E(22.17.21)	rookgasafvoer/kanaal, metaal	6	
+2E(22.17.23)	rookgasafvoer/kanaal, steenachtig	6	
+2E(32)	binnenwandopeningen	3	
+2E(32.1)	niet gevuld 	4	
+2E(32.10)	algemeen (verzamelniveau)	5	
+2E(32.11)	openingen als doorgang	5	
+2E(32.11.40)	doorgang	6	
+2E(32.12)	openingen als doorzicht	5	
+2E(32.12.40)	doorzicht	6	
+2E(32.2)	gevuld met ramen 	4	
+2E(32.20)	algemeen (verzamelniveau)	5	
+2E(32.21)	gesloten ramen	5	
+2E(32.21.21)	binnenkozijn/vast raam, hout	6	
+2E(32.21.22)	binnenkozijn/vast raam, metaal	6	
+2E(32.21.23)	binnenkozijn/vast raam, kunststof	6	
+2E(32.22)	ramen draaiend aan één kant	5	
+2E(32.22.21)	binnenkozijn/draairaam, hout	6	
+2E(32.22.22)	binnenkozijn/draairaam, metaal	6	
+2E(32.22.23)	binnenkozijn/draairaam, kunststof	6	
+2E(32.22.31)	binnenkozijn/uitzetraam, hout	6	
+2E(32.22.32)	binnenkozijn/uitzetraam, metaal	6	
+2E(32.22.33)	binnenkozijn/uitzetraam, kunststof	6	
+2E(32.22.41)	binnenkozijn/valraam, hout	6	
+2E(32.22.42)	binnenkozijn/valraam, metaal	6	
+2E(32.22.43)	binnenkozijn/valraam, kunststof	6	
+2E(32.23)	schuiframen	5	
+2E(32.23.21)	binnenkozijn/schuifraam, hout	6	
+2E(32.23.22)	binnenkozijn/schuifraam, metaal	6	
+2E(32.23.23)	binnenkozijn/schuifraam, kunststof	6	
+2E(32.24)	ramen draaiend op verticale of horizontale as	5	
+2E(32.24.21)	binnenkozijn/taatsraam, hout	6	
+2E(32.24.22)	binnenkozijn/taatsraam, metaal	6	
+2E(32.24.23)	binnenkozijn/taatsraam, kunststof	6	
+2E(32.24.31)	binnenkozijn/tuimelraam, hout	6	
+2E(32.24.32)	binnenkozijn/tuimelraam, metaal	6	
+2E(32.24.33)	binnenkozijn/tuimelraam, kunststof	6	
+2E(32.25)	combinatieramen	5	
+2E(32.25.21)	binnenkozijn/draai-valraam, hout	6	
+2E(32.25.22)	binnenkozijn/draai-valraam, metaal	6	
+2E(32.25.23)	binnenkozijn/draai-valraam, kunststof	6	
+2E(32.25.31)	binnenkozijn/uitzetzakraam, hout	6	
+2E(32.25.32)	binnenkozijn/uitzetzakraam, metaal	6	
+2E(32.25.33)	binnenkozijn/uitzetzakraam, kunststof	6	
+2E(32.3)	gevuld met deuren 	4	
+2E(32.30)	algemeen (verzamelniveau)	5	
+2E(32.31)	draaideuren	5	
+2E(32.31.21)	binnenkozijn/-deur, hout	6	
+2E(32.31.22)	binnenkozijn/-deur, metaal	6	
+2E(32.31.23)	binnenkozijn/-deur, kunststof	6	
+2E(32.32)	schuifdeuren	5	
+2E(32.32.21)	binnenkozijn/schuifdeur, hout	6	
+2E(32.32.22)	binnenkozijn/schuifdeur, metaal	6	
+2E(32.32.23)	binnenkozijn/schuifdeur, kunststof	6	
+2E(32.32.30)	binnendeur, schuifsysteem	6	
+2E(32.33)	tuimeldeuren	5	
+2E(32.33.30)	tuimeldeursysteem	6	
+2E(32.34)	tourniqets	5	
+2E(32.34.30)	binnendeur, sluitsysteem	6	
+2E(32.4)	gevuld met puien	4	
+2E(32.40)	algemeen (verzamelniveau)	5	
+2E(32.40.10)	binnenpui, samengesteld	6	
+2E(32.40.11)	binnenpui, hout	6	
+2E(32.40.12)	binnenpui, metaal	6	
+2E(32.40.13)	binnenpui, kunststof	6	
+2E(32.40.30)	binnenpui systeem	6	
+2E(32.40.80)	binnenpui, onderhoud	6	
+2E(32.41)	gesloten puien	5	
+2E(32.41.11)	binnenpui dicht, hout	6	
+2E(32.41.12)	binnenpui dicht, metaal	6	
+2E(32.41.13)	binnenpui dicht, kunststof	6	
+2E(42)	binnenwandafwerkingen	3	
+2E(42.1)	binnenwandafwerkingen 	4	
+2E(42.10)	algemeen (verzamelniveau)	5	
+2E(42.11)	afwerklagen	5	
+2E(42.11.10)	binnenpleister samengesteld	6	
+2E(42.11.11)	binnenpleister/raaplaag	6	
+2E(42.11.12)	binnenpleister/pleisterlaag	6	
+2E(42.11.13)	binnenpleister/schuurwerk	6	
+2E(42.11.14)	spuitpleister	6	
+2E(42.11.15)	sierpleister	6	
+2E(42.11.16)	isolatiepleister	6	
+2E(42.11.21)	binnenschilderwerk hout, watergedragen	6	
+2E(42.11.23)	binnenschilderwerk metaal, watergedragen	6	
+2E(42.11.25)	binnenschilderwerk steen, watergedragen	6	
+2E(42.11.27)	binnenschilderwerk kunststof, watergedragen	6	
+2E(42.12)	bekledingen	5	
+2E(42.12.31)	tegelwand, keramisch	6	
+2E(42.12.32)	tegelwand, mozaïek	6	
+2E(42.12.34)	tegelwand, natuursteen	6	
+2E(42.12.35)	tegelwand, kunststeen	6	
+2E(42.12.36)	binnenwandbekleding, steenstrip	6	
+2E(42.12.41)	binnenwandbekleding, hout	6	
+2E(42.12.42)	binnenwandbekleding, gips	6	
+2E(42.12.43)	binnenwandbekleding, kunststof	6	
+2E(42.12.44)	binnenwandbekleding, vezelcement	6	
+2E(42.12.45)	binnenwandbekleding, mineraalvezel	6	
+2E(42.12.47)	binnenwandbekleding, natuursteen	6	
+2E(42.12.51)	binnenwandbekleding, staal	6	
+2E(42.12.52)	binnenwandbekleding, aluminium	6	
+2E(42.12.53)	binnenwandbekleding, zink	6	
+2E(42.12.54)	binnenwandbekleding, koper	6	
+2E(42.12.65)	behang, weefsel	6	
+2E(42.12.67)	behang, papier	6	
+2E(42.13)	voorzetwanden	5	
+2E(42.13.18)	wandvoorziening	6	
+2E(42.13.31)	voorzet-systeemwand, hout/kunststof	6	
+2E(42.13.35)	voorzet-systeemwand, vezelcement	6	
+2E(42.13.37)	voorzet-systeemwand, gips	6	
+2E(42.13.41)	voorzet-montagewand, hout/kunststof	6	
+2E(42.13.42)	voorzet-montagewand, metaal	6	
+2E(42.13.43)	voorzet-montagewand, kunststof	6	
+2E(42.13.46)	voorzet-montagewand, glas	6	
+2EU	algemene uitvoeringskosten	3	
+2F	vloeren	2	
+2F(23)	vloerafbouwconstructie	3	
+2F(23.1)	vloerafbouwconstructie 	4	
+2F(23.10)	algemeen (verzamelniveau)	5	
+2F(23.11)	vrijdragende Vloeren	5	
+2F(23.12)	balkons	5	
+2F(23.13)	galerijen	5	
+2F(23.14)	bordessen	5	
+2F(23.15)	vloeren t.b.v. technische voorzieningen	5	
+2F(33)	vloeropeningen	3	
+2F(33.1)	niet gevuld 	4	
+2F(33.10)	algemeen (verzamelniveau)	5	
+2F(33.11)	openingen als doorgang	5	
+2F(33.11.18)	vloeropening	6	
+2F(33.12)	openingen als doorzicht	5	
+2F(33.12.18)	vide	6	
+2F(33.2)	gevuld	4	
+2F(33.20)	algemeen (verzamelniveau)	5	
+2F(33.20.30)	vloeropening, samengesteld	6	
+2F(33.21)	beloopbare vullingen	5	
+2F(33.21.22)	roostervloer	6	
+2F(33.21.28)	vloerluik	6	
+2F(33.21.30)	vloer, glas	6	
+2F(33.21.33)	vloer, glassteen	6	
+2F(33.22)	niet beloopbare vullingen	5	
+2F(33.22.38)	vloeropening/beglazing	6	
+2F(43)	vloerafwerkingen	3	
+2F(43.1)	verhoogd 	4	
+2F(43.10)	algemeen (verzamelniveau)	5	
+2F(43.11)	podia	5	
+2F(43.11.11)	podium, hout	6	
+2F(43.11.12)	podium, metaal	6	
+2F(43.12)	installatie-vloeren	5	
+2F(43.12.10)	verhoogd vloersysteem	6	
+2F(43.2)	niet verhoogd	4	
+2F(43.20)	algemeen (verzamelniveau)	5	
+2F(43.20.70)	vloerrand	6	
+2F(43.20.80)	dekvloer, onderhoud	6	
+2F(43.21)	afwerklagen	5	
+2F(43.21.11)	cementdekvloer	6	
+2F(43.21.12)	cementdekvloer/isolatie	6	
+2F(43.21.13)	gietvloer	6	
+2F(43.21.14)	gietvloer/isolatie	6	
+2F(43.21.15)	terazzodekvloer	6	
+2F(43.21.16)	terazzodekvloer/isolatie	6	
+2F(43.22)	bekledingen	5	
+2F(43.22.31)	tegelvloer, keramisch	6	
+2F(43.22.32)	tegelvloer, staal	6	
+2F(43.22.33)	tegelvloer, mozaïek	6	
+2F(43.22.34)	tegelvloer, natuursteen	6	
+2F(43.22.35)	tegelvloer, kunststeen	6	
+2F(43.22.36)	tegelvloer, beton	6	
+2F(43.22.61)	tapijt vloerbedekking	6	
+2F(43.22.62)	vloermat	6	
+2F(43.22.63)	linoleum vloerbedekking	6	
+2F(43.22.64)	elastische vloerbedekking	6	
+2F(43.22.65)	parketvloer	6	
+2F(43.22.66)	laminaatvloer	6	
+2F(43.22.67)	kurkvloer	6	
+2F(43.23)	systeemvloerafwerkingen	5	
+2F(43.23.31)	kunstharsmortel gebonden dekvloer	6	
+2F(43.23.32)	bitumengebonden dekvloersysteem	6	
+2F(43.23.40)	droogbouw dekvloersysteem	6	
+2F(43.23.43)	kunststof spaan-/gietvloer	6	
+2F(43.23.47)	siergrindvloer	6	
+2F(43.23.48)	sportvloer	6	
+2FU	algemene uitvoeringskosten	3	
+2G	trappen en hellingen	2	
+2G(24)	trap- en hellingconstructie	3	
+2G(24.1)	trappen 	4	
+2G(24.10)	algemeen (verzamelniveau)	5	
+2G(24.10.10)	vaste trap, samengesteld	6	
+2G(24.10.11)	vaste trap, hout	6	
+2G(24.10.12)	vaste trap, metaal	6	
+2G(24.10.14)	vaste trap, steenachtig	6	
+2G(24.11)	rechte steektrappen	5	
+2G(24.11.11)	steektrap, hout	6	
+2G(24.11.12)	steektrap, metaal	6	
+2G(24.11.14)	steektrap, steenachtig	6	
+2G(24.11.21)	scheluwe trap, hout	6	
+2G(24.11.22)	scheluwe trap, metaal	6	
+2G(24.11.24)	scheluwe trap, steenachtig	6	
+2G(24.12)	niet rechte steektrappen	5	
+2G(24.12.11)	trap met kwart, hout	6	
+2G(24.12.12)	trap met kwart, metaal	6	
+2G(24.12.14)	trap met kwart, steenachtig	6	
+2G(24.12.21)	trap met 2 kwarten, hout	6	
+2G(24.12.22)	trap met 2 kwarten, metaal	6	
+2G(24.12.24)	trap met 2 kwarten, steenachtig	6	
+2G(24.13)	spiltrappen	5	
+2G(24.13.11)	spiltrap, hout	6	
+2G(24.13.12)	spiltrap, metaal	6	
+2G(24.13.14)	spiltrap, steenachtig	6	
+2G(24.13.21)	wenteltrap, hout	6	
+2G(24.13.22)	wenteltrap, metaal	6	
+2G(24.13.23)	wenteltrap, steenachtig	6	
+2G(24.15)	bordessen	5	
+2G(24.15.11)	bordes, hout	6	
+2G(24.15.12)	bordes, metaal	6	
+2G(24.15.14)	bordes, steenachtig	6	
+2G(24.15.16)	bordes, glas	6	
+2G(24.2)	hellingen 	4	
+2G(24.20)	algemeen (verzamelniveau)	5	
+2G(24.21)	beloopbare hellingen	5	
+2G(24.21.11)	hellingtrap, hout	6	
+2G(24.21.12)	hellingtrap, metaal	6	
+2G(24.21.14)	hellingtrap, steenachtig	6	
+2G(24.22)	berijdbare hellingen	5	
+2G(24.22.11)	hellingbaan, hout	6	
+2G(24.22.12)	hellingbaan, metaal	6	
+2G(24.22.14)	hellingbaan, steenachtig	6	
+2G(24.25)	bordessen	5	
+2G(24.25.11)	plateau, hout	6	
+2G(24.25.12)	plateau, metaal	6	
+2G(24.25.14)	plateau, steenachtig	6	
+2G(24.3)	ladders en klimijzers	4	
+2G(24.30)	algemeen (verzamelniveau)	5	
+2G(24.31)	ladders	5	
+2G(24.31.11)	vast klimmaterieel, hout	6	
+2G(24.31.12)	vast klimmaterieel, metaal	6	
+2G(24.31.21)	draagbaar klimmaterieel, hout	6	
+2G(24.31.22)	draagbaar klimmaterieel, metaal	6	
+2G(24.32)	klimijzers	5	
+2G(24.32.12)	klimbeugel	6	
+2G(24.35)	bordessen	5	
+2G(24.35.11)	overstap, hout	6	
+2G(24.35.12)	overstap, metaal	6	
+2G(34)	balustrades en leuningen	3	
+2G(34.1)	balustrades 	4	
+2G(34.10)	algemeen (verzamelniveau)	5	
+2G(34.11)	binnenbalustrades	5	
+2G(34.11.10)	binnenbalustrade, hout	6	
+2G(34.11.20)	binnenbalustrade, metaal	6	
+2G(34.11.40)	binnenbalustrade, steenachtig	6	
+2G(34.11.60)	binnenbalustrade, glas	6	
+2G(34.11.80)	binnenbalustrade, samengesteld	6	
+2G(34.12)	buitenbalustrades	5	
+2G(34.12.10)	buitenbalustrade, hout	6	
+2G(34.12.20)	buitenbalustrade, metaal	6	
+2G(34.12.40)	buitenbalustrade, steenachtig	6	
+2G(34.12.60)	buitenbalustrade, glas	6	
+2G(34.12.80)	buitenbalustrade, samengesteld	6	
+2G(34.2)	leuningen	4	
+2G(34.20)	algemeen (verzamelniveau)	5	
+2G(34.21)	binnenleuningen	5	
+2G(34.21.10)	binnenleuning, hout	6	
+2G(34.21.20)	binnenleuning, metaal	6	
+2G(34.22)	buitenleuningen	5	
+2G(34.22.10)	buitenleuning, hout	6	
+2G(34.22.20)	buitenleuning, metaal	6	
+2G(44)	trap- en hellingafwerkingen	3	
+2G(44.1)	trapafwerkingen 	4	
+2G(44.10)	algemeen (verzamelniveau)	5	
+2G(44.11)	afwerklagen	5	
+2G(44.11.48)	trapwandafwerking	6	
+2G(44.11.71)	trapbeschieting	6	
+2G(44.12)	bekledingen	5	
+2G(44.12.44)	trapbetegeling	6	
+2G(44.12.45)	trapstoffering	6	
+2G(44.13)	systeemafwerkingen	5	
+2G(44.13.46)	trapbeschildering	6	
+2G(44.2)	hellingafwerkingen	4	
+2G(44.20)	algemeen (verzamelniveau)	5	
+2G(44.21)	afwerklagen	5	
+2G(44.21.48)	hellingbaan-wandafwerking	6	
+2G(44.21.71)	hellingbaan-beschieting	6	
+2G(44.22)	bekledingen	5	
+2G(44.22.44)	hellingbaan-betegeling	6	
+2G(44.22.45)	hellingbaan-stoffering	6	
+2G(44.23)	systeemafwerkingen	5	
+2G(44.23.46)	hellingbaan-beschildering	6	
+2GU	algemene uitvoeringskosten	3	
+2H	plafonds	2	
+2H(45)	plafondafwerkingen	3	
+2H(45.1)	verlaagd 	4	
+2H(45.10)	algemeen (verzamelniveau)	5	
+2H(45.10.10)	plenum	6	
+2H(45.10.14)	plafondluik	6	
+2H(45.10.18)	plafondvoorziening	6	
+2H(45.11)	verlaagde Plafonds	5	
+2H(45.11.14)	baffle plafond	6	
+2H(45.11.17)	gipsplaat plafond	6	
+2H(45.11.18)	eilandplafond	6	
+2H(45.11.20)	rasterplafond	6	
+2H(45.11.21)	spanplafond	6	
+2H(45.11.31)	binnenschilderwerk hout, watergedragen	6	
+2H(45.11.32)	buitenschilderwerk hout	6	
+2H(45.11.33)	binnenschilderwerk metaal, watergedragen	6	
+2H(45.11.34)	buitenschilderwerk metaal	6	
+2H(45.11.35)	binnenschilderwerk steen, watergedragen	6	
+2H(45.11.36)	buitenschilderwerk steen	6	
+2H(45.11.37)	binnenschilderwerk kunststof, watergedragen	6	
+2H(45.11.38)	buitenschilderwerk kunststof	6	
+2H(45.12)	systeemPlafonds	5	
+2H(45.12.11)	panelenplafond, hout	6	
+2H(45.12.12)	panelenplafond, metaal	6	
+2H(45.12.14)	panelenplafond, mineraal	6	
+2H(45.12.15)	panelenplafond, vezelcement	6	
+2H(45.12.16)	panelenplafond, houtwol-/houtspaanplaat	6	
+2H(45.12.17)	panelenplafond, gips	6	
+2H(45.12.21)	strokenplafond, hout	6	
+2H(45.12.32)	lamellenplafond, metaal	6	
+2H(45.12.41)	roosterplafond, hout	6	
+2H(45.12.42)	roosterplafond, metaal	6	
+2H(45.12.43)	roosterplafond, kunststof	6	
+2H(45.12.44)	roosterplafond, mineraal	6	
+2H(45.12.47)	roosterplafond, gips	6	
+2H(45.14)	koofconstructies	5	
+2H(45.14.61)	systeemplafondovergang	6	
+2H(45.14.62)	systeemplafondkoof	6	
+2H(45.15)	gordijnplanken	5	
+2H(45.15.61)	gordijnvoorziening	6	
+2H(45.2)	niet verlaagd	4	
+2H(45.20)	algemeen (verzamelniveau)	5	
+2H(45.20.70)	dilitatie plafond	6	
+2H(45.21)	afwerkingen	5	
+2H(45.21.10)	plafondpleister, samengesteld	6	
+2H(45.21.11)	plafondpleister/raaplaag	6	
+2H(45.21.12)	plafondpleister/pleisterlaag	6	
+2H(45.21.13)	plafondpleister/schuurwerk	6	
+2H(45.21.14)	plafondspuitpleister	6	
+2H(45.21.15)	plafondsierpleister	6	
+2H(45.21.16)	plafondisolatiepleister	6	
+2H(45.21.21)	binnenschilderwerk hout, watergedragen	6	
+2H(45.21.22)	buitenschilderwerk hout	6	
+2H(45.21.23)	buitenschilderwerk metaal, watergedragen	6	
+2H(45.21.24)	buitenschilderwerk metaal	6	
+2H(45.21.25)	binnenschilderwerk steen, watergedragen	6	
+2H(45.21.26)	buitenschilderwerk steen	6	
+2H(45.21.27)	binnenschilderwerk kunststof, watergedragen	6	
+2H(45.21.28)	buitenschilderwerk kunststof	6	
+2H(45.22)	bekledingen	5	
+2H(45.22.31)	plafondbekleding, keramisch	6	
+2H(45.22.32)	plafondbekleding, mozaïek	6	
+2H(45.22.34)	plafondbekleding, natuursteen	6	
+2H(45.22.35)	plafondbekleding, kunststeen	6	
+2H(45.22.41)	plafondbekleding, hout	6	
+2H(45.22.42)	plafondbekleding, gips	6	
+2H(45.22.43)	plafondbekleding, kunststof	6	
+2H(45.22.44)	plafondbekleding, vezelcement	6	
+2H(45.22.45)	plafondbekleding, mineraalvezel	6	
+2H(45.22.51)	plafondbekleding, staal	6	
+2H(45.22.52)	plafondbekleding, aluminium	6	
+2H(45.22.65)	plafondbekleding, weefsel	6	
+2H(45.22.67)	plafondbehang, papier	6	
+2H(45.23)	systeemafwerkingen	5	
+2H(45.24)	koofconstructies	5	
+2H(45.24.61)	plafondovergang	6	
+2H(45.24.62)	plafondkoof	6	
+2H(45.25)	gordijnplanken	5	
+2H(45.25.61)	gordijnplank	6	
+2HU	algemene uitvoeringskosten	3	
+3	installaties	1	
+3A	werktuigbouwkundige installaties	2	
+3A(51)	warmte-opwekking	3	
+3A(51.1)	lokaal 	4	
+3A(51.10)	algemeen (verzamelniveau)	5	
+3A(51.11)	gasvormige brandstoffen	5	
+3A(51.11.11)	gasverwarmingstoestel	6	
+3A(51.12)	vloeibare brandstoffen	5	
+3A(51.12.11)	olieverwarmingstoestel	6	
+3A(51.12.91)	olieverwarmingstoestel	6	
+3A(51.13)	vaste brandstoffen	5	
+3A(51.13.11)	vaste brandstof verwarmingstoestel	6	
+3A(51.14)	schoorstenen/kanalen (niet bouwk.)	5	
+3A(51.14.11)	rookgaskanaal, metaal, verwarmingstoestel	6	
+3A(51.14.21)	rookgaskanaal, kunststof, verwarmingstoestel	6	
+3A(51.14.31)	verbrandingsluchttoevoer, metaal, verwarmingstoestel	6	
+3A(51.14.41)	verbrandingsluchttoevoer, kunststof, verwarmingstoestel	6	
+3A(51.14.51)	rookgasafvoer/verbrandingsluchttoevoer, verwarmingstoestel	6	
+3A(51.15)	installatie met elektriciteit	5	
+3A(51.15.11)	elektrische verwarmingstoestel	6	
+3A(51.15.21)	elektrische vloerverwarming	6	
+3A(51.15.31)	elektrische wandverwarming	6	
+3A(51.16)	gecombineerde tapwaterverwarming	5	
+3A(51.19)	brandstoffen opslag	5	
+3A(51.19.11)	gasopslag, verwarmingstoestel	6	
+3A(51.19.21)	olieopslag, verwarmingstoestel	6	
+3A(51.19.31)	vaste brandstofopslag, verwarmingstoestel	6	
+3A(51.2)	centraal 	4	
+3A(51.20)	algemeen (verzamelniveau)	5	
+3A(51.21)	gasvormige brandstoffen	5	
+3A(51.21.11)	gasketeleenheid, water	6	
+3A(51.21.12)	gasketeleenheid, thermische vloeistof	6	
+3A(51.21.13)	gasketeleenheid, stoom	6	
+3A(51.21.14)	gasketeleenheid, stoom, generator	6	
+3A(51.21.15)	gasketeleenheid, lucht	6	
+3A(51.21.16)	gasketeleenheid, lucht, ventilatie	6	
+3A(51.22)	vloeibare brandstoffen	5	
+3A(51.22.11)	olieketeleenheid, water	6	
+3A(51.22.12)	olieketeleenheid, thermische vloeistof	6	
+3A(51.22.13)	olieketeleenheid, stoom	6	
+3A(51.22.14)	olieketeleenheid, stoom, generator	6	
+3A(51.22.15)	olieketeleenheid, lucht	6	
+3A(51.22.16)	olieketeleenheid, lucht, ventilatie	6	
+3A(51.23)	vaste brandstoffen	5	
+3A(51.23.11)	vaste brandstofketeleenheid, water	6	
+3A(51.23.12)	vaste brandstofketeleenheid, thermische vloeistof	6	
+3A(51.23.13)	vaste brandstofketeleenheid, stoom	6	
+3A(51.24)	schoorstenen/kanalen (niet bouwk.)	5	
+3A(51.24.11)	rookgasafvoer, metaal, verwarmingseenheid	6	
+3A(51.24.21)	rookgaskanaal, kunststof, verwarmingseenheid	6	
+3A(51.24.31)	verbrandingsluchttoevoer, metaal, verwarmingseenheid	6	
+3A(51.24.41)	verbrandingsluchttoevoer, kunststof, verwarmingseenheid	6	
+3A(51.24.51)	rookgasavoer/verbrandingsluchttoevoer, verwarmingseenheid	6	
+3A(51.25)	installatie met elektriciteit	5	
+3A(51.25.11)	elektrisch verwarmingsketel	6	
+3A(51.26)	gecombineerde tapwaterverwarming	5	
+3A(51.26.11)	gasketeleenheid, tabwater, doorstroom	6	
+3A(51.26.12)	gasketeleenheid, tapwater, voorraad	6	
+3A(51.26.13)	olieketeleenheid, tapwater, doorstroom	6	
+3A(51.26.14)	olieketeleenheid, tapwater, voorraad	6	
+3A(51.27)	warmteciruit	5	
+3A(51.27.11)	cv-ketelcircuit, metaal	6	
+3A(51.27.21)	cv-verdeler/verzamelaar	6	
+3A(51.29)	brandstoffen opslag	5	
+3A(51.29.11)	gasopslag, verwarmingseenheid	6	
+3A(51.29.21)	olieopslag, verwarmingseenheid	6	
+3A(51.29.31)	vaste brandstofopslag, verwarmingseenheid	6	
+3A(51.3)	toegeleverde warmte 	4	
+3A(51.30)	algemeen (verzamelniveau)	5	
+3A(51.31)	water tot 140 gr. C.	5	
+3A(51.31.11)	warmtewisselaareenheid, water	6	
+3A(51.32)	water boven 140 gr. C.	5	
+3A(51.32.11)	warmtewisselaareenheid, warmwater	6	
+3A(51.33)	stoom	5	
+3A(51.36)	gecombineerde tapwaterverwarming	5	
+3A(51.36.11)	warmtewisselaareenheid, water, tapwater, doorstroom	6	
+3A(51.36.12)	warmtewisselaareenheid, water, tapwater, voorraad	6	
+3A(51.37)	warmtecircuit	5	
+3A(51.37.11)	cv-ketelcircuit, metaal, stadsverwarming	6	
+3A(51.37.21)	cv-verdeler/verzamelaar, stadsverwarming	6	
+3A(51.4)	warmte-krachtkoppeling 	4	
+3A(51.40)	algemeen (verzamelniveau)	5	
+3A(51.41)	total-energy	5	
+3A(51.41.11)	warmte-krachtkoppelingeenheid	6	
+3A(51.44)	schoorstenen/kanalen (niet bouwkundig)	5	
+3A(51.44.11)	rookgasafvoer, metaal, verbrandingsmotor	6	
+3A(51.44.21)	rookgaskanaal, kunststof verbrandingsmotor	6	
+3A(51.44.31)	verbrandingsluchttoevoer, metaal, verbrandingsmotor	6	
+3A(51.44.41)	verbrandingsluchttoevoer, kunststof, verbrandingsmotor	6	
+3A(51.46)	gecombineerde tapwaterverwarming	5	
+3A(51.46.11)	warmte-krachtkoppelingeenheid, tapwater, doorstroom	6	
+3A(51.46.12)	warmte-krachtkoppelingeenheid, tapwater, voorraad	6	
+3A(51.47)	warmte-/elektrisch circuit	5	
+3A(51.47.11)	cv-ketelcircuit, metaal, wkk	6	
+3A(51.47.21)	cv-verdeler/verzamelaar, wkk	6	
+3A(51.49)	brandstoffen opslag	5	
+3A(51.49.11)	gasopslag, verbrandingsmotor	6	
+3A(51.49.21)	olieopslag, verbrandingsmotor	6	
+3A(51.5)	bijzonder	4	
+3A(51.50)	algemeen (verzamelniveau)	5	
+3A(51.51)	warmtepomp	5	
+3A(51.51.11)	warmtepompeenheid, warmte	6	
+3A(51.52)	zonnecollectoren	5	
+3A(51.52.11)	zonnecollectoreenheid	6	
+3A(51.53)	accumulatie	5	
+3A(51.53.11)	gebouwwarmte-accumulatie-systeem, water	6	
+3A(51.53.21)	gebouwwarmte-accumulatie-systeem, lucht	6	
+3A(51.54)	aardwarmte	5	
+3A(51.55)	kernenergie	5	
+3A(52)	afvoeren	3	
+3A(52.1)	regenwater	4	
+3A(52.10)	algemeen (verzamelniveau)	5	
+3A(52.11)	afvoerinstallatie, in het gebouw	5	
+3A(52.11.41)	hemelwaterafvoer, binnen, staal	6	
+3A(52.11.42)	hemelwaterafvoer, binnen, rvs	6	
+3A(52.11.43)	hemelwaterafvoer, binnen, gietijzer	6	
+3A(52.11.44)	hemelwaterafvoer, binnen, koper	6	
+3A(52.11.51)	hemelwaterafvoer, binnen, kunststof	6	
+3A(52.11.61)	hemelwaterafvoer, binnen, gres	6	
+3A(52.11.62)	hemelwaterafvoer, binnen, beton	6	
+3A(52.12)	afvoerinstallatie, buiten het gebouw	5	
+3A(52.12.11)	dakafvoergoot, metaal	6	
+3A(52.12.16)	dakafvoergoot, kunststof	6	
+3A(52.12.21)	dakafvoergoot, bekleding, metaal	6	
+3A(52.12.26)	dakafvoergoot, bekleding, kunststo	6	
+3A(52.12.28)	dakafvoergoot, bekleding, bitumineus	6	
+3A(52.12.31)	vloerafvoergoot, steenachtig	6	
+3A(52.12.41)	hemelwaterafvoer, staal	6	
+3A(52.12.42)	hemelwaterafvoer, rvs	6	
+3A(52.12.43)	hemelwaterafvoer, gietijzer	6	
+3A(52.12.44)	hemelwaterafvoer, koper	6	
+3A(52.12.45)	hemelwaterafvoer, zink	6	
+3A(52.12.51)	hemelwaterafvoer, kunststof	6	
+3A(52.16)	pompsysteem	5	
+3A(52.16.11)	hemelwaterpompsysteem	6	
+3A(52.16.12)	hemelwaterhergebruiksysteem	6	
+3A(52.2)	faecaliën	4	
+3A(52.20)	algemeen (verzamelniveau)	5	
+3A(52.21)	standaard systeem /	5	
+3A(52.21.11)	binnenriolering, staal	6	
+3A(52.21.12)	binnenriolering, rvs	6	
+3A(52.21.13)	binnenriolering, gietijzer	6	
+3A(52.21.14)	binnenriolering, koper	6	
+3A(52.21.21)	binnenriolering, kunststof	6	
+3A(52.21.31)	binnenriolering, gres	6	
+3A(52.21.32)	binnenriolering, beton	6	
+3A(52.22)	vacuümsysteem	5	
+3A(52.22.11)	faecaliën-vacuumsysteem	6	
+3A(52.23)	overdruksysteem	5	
+3A(52.23.11)	faecaliën-overdruksysteem	6	
+3A(52.26)	pompsysteem	5	
+3A(52.26.11)	faecaliën-pompsysteem	6	
+3A(52.3)	afvalwater	4	
+3A(52.30)	algemeen (verzamelniveau)	5	
+3A(52.31)	huishoudelijk afval	5	
+3A(52.31.11)	huishoudelijk afvalwater, staal	6	
+3A(52.31.12)	huishoudelijk afvalwater, rvs	6	
+3A(52.31.13)	huishoudelijk afvalwater, gietijzer	6	
+3A(52.31.14)	huishoudelijk afvalwater, koper	6	
+3A(52.31.21)	huishoudelijk afvalwater, kunststof	6	
+3A(52.31.31)	huishoudelijk afvalwater, gres	6	
+3A(52.31.32)	huishoudelijk afvalwater, beton	6	
+3A(52.32)	bedrijfsafval	5	
+3A(52.32.11)	bedrijfs afvalwater, staal	6	
+3A(52.32.12)	bedrijfs afvalwater, rvs	6	
+3A(52.32.13)	bedrijfs afvalwater, gietijzer	6	
+3A(52.32.14)	bedrijfs afvalwater, koper	6	
+3A(52.32.21)	bedrijfs afvalwater, kunststof	6	
+3A(52.32.31)	bedrijfs afvalwater, gres	6	
+3A(52.32.32)	bedrijfs afvalwater, beton	6	
+3A(52.36)	pompsysteem	5	
+3A(52.36.11)	vuilwaterpompsysteem	6	
+3A(52.4)	gecombineerd	4	
+3A(52.40)	algemeen (verzamelniveau)	5	
+3A(52.41)	geïntegreerd systeem 	5	
+3A(52.41.11)	vuilwaterafvoer, gecombineerd, staal	6	
+3A(52.41.12)	vuilwaterafvoer, gecombineerd, rvs	6	
+3A(52.41.13)	vuilwaterafvoer, gecombineerd, gietijzer	6	
+3A(52.41.14)	vuilwaterafvoer, gecombineerd, koper	6	
+3A(52.41.21)	vuilwaterafvoer, gecombineerd, kunststof	6	
+3A(52.41.31)	vuilwaterafvoer, gecombineerd, gres	6	
+3A(52.41.32)	vuilwaterafvoer, gecombineerd, beton	6	
+3A(52.46)	pompsysteem	5	
+3A(52.46.11)	vuilwaterpompsysteem, gecombineerd	6	
+3A(52.5)	speciaal	4	
+3A(52.50)	algemeen (verzamelniveau)	5	
+3A(52.51)	chemisch verontreinigd afvalwater 	5	
+3A(52.51.11)	vuilwaterafvoer, chemisch, staal	6	
+3A(52.51.12)	vuilwaterafvoer, chemisch, rvs	6	
+3A(52.51.13)	vuilwaterafvoer, chemisch, gietijzer	6	
+3A(52.51.14)	vuilwaterafvoer, chemisch, koper	6	
+3A(52.51.21)	vuilwaterafvoer, chemisch, kunststof	6	
+3A(52.51.31)	vuilwaterafvoer, chemisch, gres	6	
+3A(52.51.32)	vuilwaterafvoer, chemisch, beton	6	
+3A(52.52)	biologisch besmet afvalwater 	5	
+3A(52.52.11)	vuilwaterafvoer, biologisch, staal	6	
+3A(52.52.12)	vuilwaterafvoer, biologisch, rvs	6	
+3A(52.52.13)	vuilwaterafvoer, biologisch, gietijzer	6	
+3A(52.52.14)	vuilwaterafvoer, biologisch, koper	6	
+3A(52.52.21)	vuilwaterafvoer, biologisch, kunststof	6	
+3A(52.52.31)	vuilwaterafvoer, biologisch, gres	6	
+3A(52.52.32)	vuilwaterafvoer, biologisch, beton	6	
+3A(52.53)	radio-actief besmet afvalwater 	5	
+3A(52.53.32)	vuilwaterafvoer, radioactief, beton	6	
+3A(52.56)	pompsysteem	5	
+3A(52.56.11)	vuilwaterpompsysteem, radioactief	6	
+3A(52.6)	vast vuil	4	
+3A(52.60)	algemeen (verzamelniveau)	5	
+3A(52.61)	stortkokers 	5	
+3A(52.61.11)	vast vuilafvoer, staal	6	
+3A(52.61.21)	vast vuilafvoer, aluminium	6	
+3A(52.61.31)	vast vuilafvoer, rvs	6	
+3A(52.62)	vacuümsysteem 	5	
+3A(52.63)	persluchtsysteem 	5	
+3A(52.64)	verdichtingssysteem 	5	
+3A(52.65)	verbrandingssysteem	5	
+3A(52.65.11)	vast afvalverbrandingsketeleenheid	6	
+3A(52.65.21)	rookgasafvoer/verbrandingsluchttoevoer, vuilverbranding	6	
+3A(53)	water	3	
+3A(53.1)	drinkwater	4	
+3A(53.10)	algemeen (verzamelniveau)	5	
+3A(53.11)	netaansluiting 	5	
+3A(53.11.11)	koud-tapwatertoevoer, koper	6	
+3A(53.11.12)	koud-tapwatertoevoer, staal	6	
+3A(53.11.13)	koud-tapwatertoevoer, rvs	6	
+3A(53.11.14)	koud-tapwatertoevoer, gietijzer	6	
+3A(53.11.16)	koud-tapwatertoevoer, kunststof	6	
+3A(53.12)	bronaansluiting 	5	
+3A(53.13)	reinwaterkelderaansluiting 	5	
+3A(53.14)	drukverhoging 	5	
+3A(53.14.11)	drukverhogingsysteem	6	
+3A(53.18)	verdeler/verzamelaar	5	
+3A(53.18.11)	koud-tapwater-verdeler/verzamelaar	6	
+3A(53.19)	opslagtanks	5	
+3A(53.2)	verwarmd tapwater	4	
+3A(53.20)	algemeen (verzamelniveau)	5	
+3A(53.21)	direct verwarmd met voorraad 	5	
+3A(53.21.11)	warm-tapwatertoestel, voorraad, electriciteit	6	
+3A(53.21.21)	warm-tapwatertoestel, voorraad, gas	6	
+3A(53.22)	indirect verwarmd met voorraad 	5	
+3A(53.22.11)	warm-tapwatertoestel, voorraad, indirect verwarmd	6	
+3A(53.23)	doorstroom, direct verwarmd 	5	
+3A(53.23.11)	warm-tapwatertoestel, doorstroom, electriciteit	6	
+3A(53.23.21)	warm-tapwatertoestel, doorstroom, gas	6	
+3A(53.24)	doorstroom, indirect verwarmd	5	
+3A(53.24.11)	warm-tapwatertoestel, doorstroom, indirect verwarmd	6	
+3A(53.25)	schoorstenen/kanalen (niet bouwkundig)	5	
+3A(53.25.11)	rookgasafvoer/verbrandingsluchttoevoer, verwarmingseenheid	6	
+3A(53.27)	distributiesystemen	5	
+3A(53.27.11)	warm-tapwatertoevoer, koper	6	
+3A(53.27.12)	warm-tapwatertoevoer, staal	6	
+3A(53.27.13)	warm-tapwatertoevoer, rvs	6	
+3A(53.27.16)	warm-tapwatertoevoer, kunststof	6	
+3A(53.28)	verdeler/verzamelaar	5	
+3A(53.28.11)	warm-tapwater-verdeler/verzamelaar	6	
+3A(53.3)	bedrijfswater	4	
+3A(53.30)	algemeen (verzamelniveau)	5	
+3A(53.31)	onthard-watersysteem 	5	
+3A(53.31.11)	onthard-watertoevoer, koper	6	
+3A(53.31.12)	onthard-watertoevoer, staal	6	
+3A(53.31.13)	onthard-watertoevoer, rvs	6	
+3A(53.31.14)	onthard-watertoevoer, gietijzer	6	
+3A(53.31.16)	onthard-watertoevoer, kunststof	6	
+3A(53.32)	demi-watersysteem 	5	
+3A(53.32.11)	demi-watertoevoer, koper	6	
+3A(53.32.12)	demi-watertoevoer, staal	6	
+3A(53.32.13)	demi-watertoevoer, rvs	6	
+3A(53.32.14)	demi-watertoevoer, gietijzer	6	
+3A(53.32.16)	demi-watertoevoer, kunststof	6	
+3A(53.33)	gedistilleerd-watersysteem 	5	
+3A(53.33.11)	gedistilleerd-watertoevoer, koper	6	
+3A(53.33.12)	gedistilleerd-watertoevoer, staal	6	
+3A(53.33.13)	gedistilleerd-watertoevoer, rvs	6	
+3A(53.33.14)	gedistilleerd-watertoevoer, gietijzer	6	
+3A(53.33.16)	gedistilleerd-watertoevoer, kunststof	6	
+3A(53.34)	zwembad-watersysteem	5	
+3A(53.34.11)	zwembad-watertoevoer, koper	6	
+3A(53.34.12)	zwembad-watertoevoer, staal	6	
+3A(53.34.13)	zwembad-watertoevoer, rvs	6	
+3A(53.34.14)	zwembad-watertoevoer, gietijzer	6	
+3A(53.34.16)	zwembad-watertoevoer, kunststof	6	
+3A(53.4)	gebruiksstoom en condens	4	
+3A(53.40)	algemeen (verzamelniveau)	5	
+3A(53.41)	lage druk stoomsysteem 	5	
+3A(53.41.11)	lage-drukstoom-opwekking, gasketeleenheid	6	
+3A(53.41.12)	lage-drukstoom-opwekking, generator, gas	6	
+3A(53.41.21)	lage-drukstoom-opwekking, olieketeleenheid	6	
+3A(53.41.22)	lage-drukstoom-opwekking, generator, olie	6	
+3A(53.41.31)	lage-drukstoom-opwekking, vaste brandstofketeleenheid	6	
+3A(53.41.41)	rookgasafvoer, metaal, lage-dryj gebruiksstoom	6	
+3A(53.41.42)	rookgasafvoer, kunststof, lage-druk gebruiksstoom	6	
+3A(53.41.43)	verbrandingsluchttoevoer, metaal, lage-druk gebruiksstoom	6	
+3A(53.41.44)	verbrandingsluchttoevoer, kunststof, lage-druk gebruiksstoom	6	
+3A(53.41.45)	rookgasafvoer/verbrandingsluchttoevoer, lage-druk gebruiksstoom	6	
+3A(53.41.52)	lage-drukstoom-toevoer, staal	6	
+3A(53.42)	hoge druk stoomsysteem 	5	
+3A(53.42.11)	hoge-drukstoom-opwekking, gasketeleenheid	6	
+3A(53.42.12)	hoge-drukstoom-opwekking, generator, gas	6	
+3A(53.42.21)	hoge-drukstoom-opwekking, olieketeleenheid	6	
+3A(53.42.22)	hoge-drukstoom-opwekking, generator, olie	6	
+3A(53.42.31)	hoge-drukstoom-opwekking, vaste brandstofketeleenheid	6	
+3A(53.42.41)	rookgasafvoer, metaal, hoge-druk gebruiksstoom	6	
+3A(53.42.42)	rookgasafvoer, KUNSTSTOF, hoge-druk gebruiksstoom	6	
+3A(53.42.43)	verbrandingsluchttoevoer, metaal, hoge-druk gebruiksstoom	6	
+3A(53.42.44)	verbrandingsluchttoevoer, kunststof, hoge-druk gebruiksstoom	6	
+3A(53.42.45)	rookgasafvoer/verbrandingsluchttoevoer, hoge-druk gebruiksstoom	6	
+3A(53.42.52)	hoge-drukstoom-toevoer, STAAL	6	
+3A(53.44)	condensverzamelsysteem	5	
+3A(53.44.12)	condensaatafvoer, staal	6	
+3A(53.5)	waterbehandeling	4	
+3A(53.50)	algemeen (verzamelniveau)	5	
+3A(53.50.11)	waterbehandelingseenheid	6	
+3A(53.51)	filtratie-systeem 	5	
+3A(53.52)	absorptie-systeem 	5	
+3A(53.53)	ontgassingssysteem 	5	
+3A(53.54)	destilatie-systeem	5	
+3A(54)	gassen	3	
+3A(54.1)	brandstof	4	
+3A(54.10)	algemeen (verzamelniveau)	5	
+3A(54.11)	aardgasvoorziening 	5	
+3A(54.11.11)	aardgastoevoer, staal	6	
+3A(54.11.12)	aardgastoevoer, gietijzer	6	
+3A(54.11.13)	aardgastoevoer, koper	6	
+3A(54.11.21)	aardgastoevoer, kunststof	6	
+3A(54.12)	butaanvoorziening 	5	
+3A(54.12.11)	butaangastoevoer, staal	6	
+3A(54.12.12)	butaangastoevoer, gietijzer	6	
+3A(54.12.13)	butaangastoevoer, koper	6	
+3A(54.12.21)	butaangastoevoer, kunststof	6	
+3A(54.13)	propaanvoorziening 	5	
+3A(54.13.11)	propaangastoevoer, staal	6	
+3A(54.13.12)	propaangastoevoer, gietijzer	6	
+3A(54.13.13)	propaangastoevoer, koper	6	
+3A(54.13.21)	propaangastoevoer, kunststof	6	
+3A(54.14)	lpg-voorziening	5	
+3A(54.14.11)	lpg-toevoer, staal	6	
+3A(54.14.12)	lpg-toevoer, gietijzer	6	
+3A(54.14.13)	lpg-toevoer, koper	6	
+3A(54.14.21)	lpg-toevoer, kunststof	6	
+3A(54.18)	verdeler/verzamelaar	5	
+3A(54.18.11)	aardgas-verdeler/verzamelaar	6	
+3A(54.19)	opslag	5	
+3A(54.19.11)	gasopslag, brandstof	6	
+3A(54.2)	perslucht en vacuüm	4	
+3A(54.20)	algemeen (verzamelniveau)	5	
+3A(54.21)	persluchtvoorziening 	5	
+3A(54.21.11)	persluchttoevoer, staal	6	
+3A(54.21.12)	persluchttoevoer, koper	6	
+3A(54.21.13)	persluchttoevoer, rvs	6	
+3A(54.21.21)	persluchttoevoer, kunststof	6	
+3A(54.22)	vacuümvoorziening	5	
+3A(54.22.11)	vacuümtoevoer, staal	6	
+3A(54.22.12)	vacuümtoevoer, koper	6	
+3A(54.22.13)	vacuümtoevoer, rvs	6	
+3A(54.22.21)	vacuümtoevoer, kunststof	6	
+3A(54.27)	drukverhoging/-verlaging	5	
+3A(54.27.11)	compressorsysteem	6	
+3A(54.27.21	vacuümpompsysteem	6	
+3A(54.28)	verdeler/verzamelaar	5	
+3A(54.28.11)	perslucht-verdeler/verzamelaar	6	
+3A(54.28.21)	vacuüm-verdeler/verzamelaar	6	
+3A(54.29)	opslag	5	
+3A(54.29.11)	persluchtopslag	6	
+3A(54.29.21)	vacuümbuffer	6	
+3A(54.3)	medisch	4	
+3A(54.30)	algemeen (verzamelniveau)	5	
+3A(54.31)	zuurstofvoorziening 	5	
+3A(54.31.13)	zuurstoftoevoer, koper	6	
+3A(54.31.21)	zuurstoftoevoer, kunststof	6	
+3A(54,32)	carbogeenvoorziening 	5	
+3A(54.32.13)	carbogeentoevoer, koper	6	
+3A(54.32.21)	carbogeentoevoer, kunststof	6	
+3A(54.33)	lachgasvoorziening 	5	
+3A(54.33.13)	lachgastoevoer, koper	6	
+3A(54.33.21)	lachgastoevoer, kunststof	6	
+3A(54.34)	koolzuurvoorziening 	5	
+3A(54.34.13)	medisch koolzuurtoevoer, koper	6	
+3A(54.34.21)	medisch koolzuurtoevoer, kunststof	6	
+3A(54.35)	medische luchtvoorziening	5	
+3A(54.35.13)	medische luchttoevoer, koper	6	
+3A(54.35.21)	medische luchttoevoer, kunststof	6	
+3A(54.38)	verdeler/verzamelaar	5	
+3A(54.38.11)	zuurstof-verdeler/verzamelaar	6	
+3A(54.38.12)	carbogeen-verdeler/verzamelaar	6	
+3A(54.38.13)	lachgas-verdeler/verzamelaar	6	
+3A(54.38.14)	medisch koolzuur-verdeler/verzamelaar	6	
+3A(54.38.15)	medische lucht-verdeler/verzamelaar	6	
+3A(54.39)	opslag	5	
+3A(54.39.11)	zuurstof-opslag	6	
+3A(54.39.12)	carbogeen-opslag	6	
+3A(54.39.13)	lachgas-opslag	6	
+3A(54.39.14)	medisch koolzuur-opslag	6	
+3A(54.39.15)	medische lucht-opslag	6	
+3A(54.4)	technisch	4	
+3A(54.40)	algemeen (verzamelniveau)	5	
+3A(54.41)	stikstofvoorziening 	5	
+3A(54.41.13)	stikstoftoevoer, koper	6	
+3A(54.41.21)	stikstoftoevoer, kunststof	6	
+3A(54.42)	waterstofvoorziening 	5	
+3A(54.42.13)	waterstoftoevoer, koper	6	
+3A(54.42.21)	waterstoftoevoer, kunststof	6	
+3A(54.43)	argonvoorziening 	5	
+3A(54.43.13)	argontoevoer, koper	6	
+3A(54.43.21)	argontoevoer, kunststof	6	
+3A(54.44)	heliumvoorziening 	5	
+3A(54.44.13)	heliumtoevoer, koper	6	
+3A(54.44.21)	heliumtoevoer, kunststof	6	
+3A(54.45)	acyteleenvoorziening 	5	
+3A(54.45.13)	acetyleentoevoer, koper	6	
+3A(54.45.21)	acetyleentoevoer, kunststof	6	
+3A(54.46)	propaanvoorziening 	5	
+3A(54.46.13)	propaantoevoer, koper	6	
+3A(54.46.21)	propaantoevoer, kunststof	6	
+3A(54.47)	koolzuurvoorziening	5	
+3A(54.47.13)	technisch koolzuurtoevoer, koper	6	
+3A(54.47.21)	technisch koolzuurtoevoer, kunststof	6	
+3A(54.48)	verdeler/verzamelaar	5	
+3A(54.48.11)	stikstof-verdeler/verzamelaar	6	
+3A(54.48.12)	waterstof-verdeler/verzamelaar	6	
+3A(54.48.13)	argon-verdeler/verzamelaar	6	
+3A(54.48.14)	helium-verdeler/verzamelaar	6	
+3A(54.48.15)	acetyleen-verdeler/verzamelaar	6	
+3A(54.48.16)	propaan-verdeler/verzamelaar	6	
+3A(54.48.17)	technisch koolzuur-verdeler/verzamelaar	6	
+3A(54.49)	opslag	5	
+3A(54.49.11)	stikstof-opslag	6	
+3A(54.49.12)	waterstof-opslag	6	
+3A(54.49.13)	argon-opslag	6	
+3A(54.49.14)	helium-opslag	6	
+3A(54.49.15)	acetyleen-opslag	6	
+3A(54.49.16)	propaan-opslag	6	
+3A(54.49.17)	technisch koolzuur-opslag	6	
+3A(54.5)	bijzonder	4	
+3A(54.50)	algemeen (verzamelniveau)	5	
+3A(54.51)	voorziening, zuivere gassen 	5	
+3A(54.51.13)	zuiver gastoevoer, koper	6	
+3A(54.51.21)	zuiver gastoevoer, kunststof	6	
+3A(54.52)	voorziening, menggassen	5	
+3A(54.52.13)	menggastoevoer, koper	6	
+3A(54.52.21)	menggastoevoer, kunststof	6	
+3A(54.58)	verdeler/verzamelaar	5	
+3A(54.58.11)	zuiver gas-verdeler/verzamelaar	6	
+3A(54.58.12)	menggas-verdeler/verzamelaar	6	
+3A(54.59)	opslag	5	
+3A(54.59.11)	zuiver gas-opslag	6	
+3A(54.59.12)	menggas-opslag	6	
+3A(55)	koude-opwekking en distributie	3	
+3A(55.1)	lokaal	4	
+3A(55.10)	algemeen (verzamelniveau)	5	
+3A(55.11)	raamkoelers 	5	
+3A(55.11.11)	raamkoelers	6	
+3A(55.12)	splitsystemen 	5	
+3A(55.12.11)	splitssysteem	6	
+3A(55.13)	compactsystemen	5	
+3A(55.13.11)	compactsysteem	6	
+3A(55.14)	warmtepompsystemen	5	
+3A(55.14.11)	warmtepompsysteem	6	
+3A(55.2)	centraal	4	
+3A(55.20)	algemeen (verzamelniveau)	5	
+3A(55.21)	compressorensystemen 	5	
+3A(55.21.11)	compressiekoelmachine-eenheid	6	
+3A(55.22)	absorptiesystemen 	5	
+3A(55.22.11)	absorptiekoelmachine-eenheid	6	
+3A(55.23)	grondwatersystemen 	5	
+3A(55.23.11)	grondwatersysteem	6	
+3A(55.24)	oppervlaktewatersystemen	5	
+3A(55.24.11)	oppervlaktewatersysteem	6	
+3A(55.25)	aardwarmte	5	
+3A(55.25.11)	aardaccumulatie/bodemoplag, koude	6	
+3A(55.26)	warmtepompsystemen	5	
+3A(55.26.11)	warmtepompeenheid, koude	6	
+3A(55.27)	toegeleverde koude	5	
+3A(55.27.11)	koudewisselaareenheid	6	
+3A(55.28)	verdeler/verzamelaar	5	
+3A(55.28.11)	koude-verdeler/verzamelaar	6	
+3A(55.3)	distributie	4	
+3A(55.30)	algemeen (verzamelniveau)	5	
+3A(55.31)	distributie-systemen	5	
+3A(55.31.11)	koeldistributie, staal	6	
+3A(55.31.21)	koeldistributie, koper	6	
+3A(55.31.31)	koeldistributie, kunststof	6	
+3A(55.33)	convectorensystemen	5	
+3A(55.33.11)	convectorsysteem, koeling	6	
+3A(55.33.21)	ventilatorconvectorsysteem, koeling	6	
+3A(55.34)	vloerkoelingsystemen	5	
+3A(55.34.11)	vloerkoelingsysteem, buis	6	
+3A(55.34.21)	vloerkoelingsysteem, buisregister	6	
+3A(55.35)	wandkoelingsystemen	5	
+3A(55.35.11)	wandkoelingsysteem, buis	6	
+3A(55.35.21)	wandkoelingsysteem, buisregister	6	
+3A(55.36)	plafondkoelingsystemen	5	
+3A(55.36.11)	klimaatplafondsysteem, koeling	6	
+3A(55.36.21)	koelplafondsysteem, buis	6	
+3A(55.36.31)	koelplafondsysteem, buisregister	6	
+3A(56)	warmtedistributie	3	
+3A(56.1)	water 	4	
+3A(56.10)	algemeen (verzamelniveau)	5	
+3A(56.11)	radiatorsystemen 	5	
+3A(56.11.11)	cv-radiatorsysteem	6	
+3A(56.11.21)	ventilatorradiatorsysteem	6	
+3A(56.12)	convectorsystemen 	5	
+3A(56.12.11)	convectorsysteem	6	
+3A(56.12.21)	ventilatorconvectorsysteem	6	
+3A(56.12.31)	cv-verwarmingsbuissysteem	6	
+3A(56.12.41)	cv-ribbenbuissysteem	6	
+3A(56.13)	vloerverwarmingssysteem	5	
+3A(56.13.11)	vloerverwarmingsysteem, buis	6	
+3A(56.13.21)	vloerverwarmingsysteem, buistregister	6	
+3A(56.14)	wandverwarmingssystemen	5	
+3A(56.14.11)	wandverwarmingssysteem, buis	6	
+3A(56.14.21)	wandverwarmingsysteem, buisregister	6	
+3A(56.15)	plafondverwarmingssystemen	5	
+3A(56.15.11)	klimaatplafondsysteem	6	
+3A(56.15.21)	cv-stralingsplafondsysteem	6	
+3A(56.15.31)	warmteplafondsysteem, buis	6	
+3A(56.15.41)	warmteplafondsysteem, buisregister	6	
+3A(56.16)	luchtverwarmersystemen	5	
+3A(56.16.11)	cv-luchtverwarmersysteem	6	
+3A(56.16.21)	ventilatie-/luchtverwarmer	6	
+3A(56.18)	distributiesystemen	5	
+3A(56.18.11)	cv-distributie, staal	6	
+3A(56.18.21)	cv-distributie, koper	6	
+3A(56.18.31)	cv-distributie, kunststof	6	
+3A(56.2)	stoom 	4	
+3A(56.20)	algemeen (verzamelniveau)	5	
+3A(56.21)	radiatorsystemen 	5	
+3A(56.21.11)	stoom-radiatorsysteem	6	
+3A(56.22)	convectorsystemen 	5	
+3A(56.22.11)	stoom-convectorsysteem	6	
+3A(56.22.31)	stoom-verwarmingsbuissysteem	6	
+3A(56.22.41)	stoom-ribbenbuissysteem	6	
+3A(56.24)	stralingspaneel	5	
+3A(56.24.11)	stoom-stralingsplafondsysteem	6	
+3A(56.26)	luchtverwarmersystemen	5	
+3A(56.26.11)	stoom-luchtverwarmersysteem	6	
+3A(56.28)	distributiesystemen	5	
+3A(56.28.11)	stoomdistributie, staal	6	
+3A(56.28.21)	condensaatdistributiesysteem, staal	6	
+3A(56.3)	lucht 	4	
+3A(56.30)	algemeen (verzamelniveau)	5	
+3A(56.31)	directe distributiesysteem 	5	
+3A(56.31.11)	luchtverwarmingskanaal, mineraal	6	
+3A(56.31.21)	luchtverwarmingskanaal, staal	6	
+3A(56.31.31)	luchtverwarmingskanaal, rvs	6	
+3A(56.31.41)	luchtverwarmingskanaal, aluminium	6	
+3A(56.31.61)	luchtverwarmingskanaal, kunststof	6	
+3A(56.32)	systeem met stralingsoverdracht	5	
+3A(56.32.11)	luchtverwarmingskanaal, register aluminium	6	
+3A(56.35)	luchtafgiftesystemen	5	
+3A(56.35.11)	luchtafgifte, wandsysteem	6	
+3A(56.35.21)	luchtafgifte, plafondsysteem	6	
+3A(56.35.22)	luchtafgifte, klimaatplafondsysteem	6	
+3A(56.35.31)	luchtafgifte, vloersysteem	6	
+3A(56.35.41)	luchtafgifte, kanaalsysteem	6	
+3A(56.35.42)	luchtafgifte, distributieslangsysteem	6	
+3A(56.35.51)	luchtafgifte, boxsysteem	6	
+3A(56.4)	bijzonder	4	
+3A(56.40)	algemeen (verzamelniveau)	5	
+3A(56.41)	zonnewarmtesysteem 	5	
+3A(56.42)	aardwarmtesysteem 	5	
+3A(56.43)	centraal warmte-pompsysteem	5	
+3A(57)	luchtbehandeling	3	
+3A(57.1)	natuurlijke ventilatie	4	
+3A(57.10)	algemeen (verzamelniveau)	5	
+3A(57.11)	voorzieningen, regelbaar 	5	
+3A(57.12)	voorzieningen, niet regelbaar	5	
+3A(57.15)	luchtdistributiesystemen	5	
+3A(57.15.11)	natuurlijk ventilatiekanaal, mineraal	6	
+3A(57.15.21)	natuurlijk ventilatiekanaal, staal	6	
+3A(57.15.31)	natuurlijk ventilatiekanaal, rvs	6	
+3A(57.15.41)	natuurlijk ventilatiekanaal, aluminium	6	
+3A(57.15.61)	natuurlijk ventilatiekanaal, kunststof	6	
+3A(57.16)	luchtinname-/afgiftesystemen	5	
+3A(57.16.11)	wandrooster, natuurlijke ventilatie	6	
+3A(57.16.21)	plafondrooster, natuurlijke ventilatie	6	
+3A(57.16.41)	kanaalrooster, natuurlijke ventilatie	6	
+3A(57.2)	lokale mechanische afzuiging	4	
+3A(57.20)	algemeen (verzamelniveau)	5	
+3A(57.21)	afzuiginstallatie	5	
+3A(57.21.11)	afzuigtoestel	6	
+3A(57.24)	luchtdistributiesystemen	5	
+3A(57.24.11)	afzuigkanaal, mineraal	6	
+3A(57.24.21)	afzuigkanaal, staal	6	
+3A(57.24.31)	afzuigkanaal, rvs	6	
+3A(57.24.41)	afzuigkanaal, aluminium	6	
+3A(57.24.61)	afzuigkanaal, kunststof	6	
+3A(57.25)	luchtinname-/afgiftesystemen	5	
+3A(57.25.11)	wandrooster, lucht afzuiging	6	
+3A(57.25.21)	plafondrooster, lucht afzuiging	6	
+3A(57.25.41)	kanaalrooster, lucht afzuiging	6	
+3A(57.3)	centrale mechanische afzuiging	4	
+3A(57.30)	algemeen (verzamelniveau)	5	
+3A(57.31)	afzuiginstallatie	5	
+3A(57.31.11)	afzuigeenheid	6	
+3A(57.34)	luchtdistributiesystemen	5	
+3A(57.34.11)	afzuigkanaalsysteem, mineraal	6	
+3A(57.34.21)	afzuigkanaalsysteem, staal	6	
+3A(57.34.31)	afzuigkanaalsysteem, rvs	6	
+3A(57.34.41)	afzuigkanaalsysteem, aluminium	6	
+3A(57.34.61)	afzuigkanaalsysteem, kunststof	6	
+3A(57.35)	luchtinname-/afgiftesystemen	5	
+3A(57.35.11)	wandroostersysteem, lucht, afzuiging	6	
+3A(57.35.21)	plafondroostersysteem, lucht, afzuiging	6	
+3A(57.35.41)	kanaalroostersysteem, lucht, afzuiging	6	
+3A(57.4)	lokale mechanische ventilatie	4	
+3A(57.40)	algemeen (verzamelniveau)	5	
+3A(57.41)	ventilatie-installatie	5	
+3A(57.41.41)	ventilatie-eenheid, toestel	6	
+3A(57.42)	warmtetoevoersystemen, lbk	5	
+3A(57.42.11)	cv-distributie, staal, ventilatietoestel	6	
+3A(57.44)	luchtdistributiesystemen	5	
+3A(57.44.11)	ventilatiekanaal, mineraal	6	
+3A(57.44.21)	ventilatiekanaal, staal	6	
+3A(57.44.31)	ventilatiekanaal, rvs	6	
+3A(57.44.41)	ventilatiekanaal, aluminium	6	
+3A(57.44.61)	ventilatiekanaal, kunststof	6	
+3A(57.45)	luchtinname-/afgiftesystemen	5	
+3A(57.45.11)	wandrooster, ventilatie lucht	6	
+3A(57.45.21)	plafondrooster, ventilatie lucht	6	
+3A(57.45.31)	vloerrooster, ventilatie lucht	6	
+3A(57.45.41)	kanaalrooster, ventilatie lucht	6	
+3A(57.45.42)	verdeelslang, ventilatie lucht	6	
+3A(57.45.51)	luchtbox, ventilatie lucht	6	
+3A(57.5)	centrale mechanische ventilatie	4	
+3A(57.50)	algemeen (verzamelniveau)	5	
+3A(57.51)	ventilatie-installatie 	5	
+3A(57.51.11)	ventilatie-eenheid	6	
+3A(57.52)	ventilatie-installatie met warmte-terugwinning	5	
+3A(57.53)	warmtetoevoersystemen, lbk	5	
+3A(57.53.11)	cv-distributie, staal, ventilatie-eenheid	6	
+3A(57.55)	luchtdistributiesystemen	5	
+3A(57.55.11)	ventilatiekanaalsysteem, mineraal	6	
+3A(57.55.21)	ventilatiekanaalsysteem, staal	6	
+3A(57.55.31)	ventilatiekanaalsysteem, rvs	6	
+3A(57.55.41)	ventilatiekanaalsysteem, aluminium	6	
+3A(57.55.61)	ventilatiekanaalsysteem, kunststof	6	
+3A(57.56)	luchtinname-/afgiftesystemen	5	
+3A(57.56.11)	wandroostersysteem, ventilatie lucht	6	
+3A(57.56.21)	plafondroostersystem, ventilatie lucht	6	
+3A(57.56.31)	vloerroostersysteem, ventilatie lucht	6	
+3A(57.56.41)	kanaalroostersysteem, ventilatie lucht	6	
+3A(57.56.42)	verdeelslangsysteem, ventilatie lucht	6	
+3A(57.56.51)	luchtboxsysteem, ventilatie lucht	6	
+3A(57.6)	lokaal	4	
+3A(57.60)	algemeen (verzamelniveau)	5	
+3A(57.61)	luchtbehandelingsinstallatie	5	
+3A(57.61.11)	luchtbehandelingstoestel	6	
+3A(57.62)	warmtetoevoersystemen, lbk	5	
+3A(57.62.11)	cv-distributie, staal, lbh-toestel	6	
+3A(57.63)	koudetoevoersystemen, lbk	5	
+3A(57.63.11)	koude-distributie, staal, lbh-toestel	6	
+3A(57.64)	luchtdistributiesystemen	5	
+3A(57.64.11)	luchtbehandelingskanaal, mineraal	6	
+3A(57.64.21)	luchtbehandelingskanaal, staal	6	
+3A(57.64.31)	luchtbehandelingskanaal, rvs	6	
+3A(57.64.41)	luchtbehandelingskanaal, aluminium	6	
+3A(57.64.61)	luchtbehandelingskanaal, kunststof	6	
+3A(57.65)	luchtinname-/afgiftesystemen	5	
+3A(57.65.11)	wandrooster, geklimatiseerde lucht	6	
+3A(57.65.21)	plafondrooster, geklimatiseerde lucht	6	
+3A(57.65.22)	klimaatplafond, geklimatiseerde lucht	6	
+3A(57.65.31)	vloerrooster, geklimatiseerde lucht	6	
+3A(57.65.41)	kanaalrooster, geklimatiseerde lucht	6	
+3A(57.65.42)	verdeelslang, geklimatiseerde lucht	6	
+3A(57.65.51)	luchtbox, geklimatiseerde lucht	6	
+3A(57.65.61)	inductie-unit, geklimatiseerde lucht	6	
+3A(57.7)	centraal	4	
+3A(57.70)	algemeen (verzamelniveau)	5	
+3A(57.71)	luchtbehandelingsinstallatie	5	
+3A(57.71.11)	luchtbehandelingseenheid	6	
+3A(57.72)	warmtetoevoersystemen, lbk	5	
+3A(57.72.11)	cv-distributie, staal, lbh-eenheid	6	
+3A(57.73)	koudetoevoersystemen, lbk	5	
+3A(57.73.11)	koude-distributie, staal, lbh-eenheid	6	
+3A(57.74)	luchtdistributiesystemen	5	
+3A(57.74.11)	luchtbehandelingskanaalsysteem, mineraal	6	
+3A(57.74.21)	luchtbehandelingskanaalsysteem, staal	6	
+3A(57.74.31)	luchtbehandelingskanaalsysteem, rvs	6	
+3A(57.74.41)	luchtbehandelingskanaalsysteem, aluminium	6	
+3A(57.74.61)	luchtbehandelingskanaalsysteem, kunststof	6	
+3A(57.75)	luchtinname-/afgiftesystemen	5	
+3A(57.75.11)	wandroostersysteem, geklimatiseerde lucht	6	
+3A(57.75.21)	plafondroostersysteem, geklimatiseerde lucht	6	
+3A(57.75.22)	klimaatplafondsysteem, geklimatiseerde lucht	6	
+3A(57.75.31)	vloerroostersysteem, geklimatiseerde lucht	6	
+3A(57.75.41)	kanaalroostersysteem, geklimatiseerde lucht	6	
+3A(57.75.42)	verdeelslangsysteem, geklimatiseerde lucht	6	
+3A(57.75.51)	luchtboxsysteem, geklimatiseerde lucht	6	
+3A(57.75.61)	inductie-unitsysteem, geklimatiseerde lucht	6	
+3A(58)	regeling klimaat en sanitair	3	
+3A(58.1)	specifieke regelingen	4	
+3A(58.10)	algemeen (verzamelniveau)	5	
+3A(58.11)	specifieke regeling 	5	
+3A(58.12)	gecombineerde regeling	5	
+3A(58.13)	regeling opwekking, distributie, afgifte	5	
+3A(58.13.11)	regeling/besturing	6	
+3A(58.2)	centrale melding, meting en sturing	4	
+3A(58.20)	algemeen (verzamelniveau)	5	
+3A(58.21)	specifieke regeling	5	
+3A(58.22)	gecombineerde regeling	5	
+3AU	algemene uitvoeringskosten	3	
+3B	electrotechnische installaties	2	
+3B(61)	centrale electrotechnische voorzieningen	3	
+3B(61.1)	energie, noodstroom	4	
+3B(61.10)	algemeen (verzamelniveau)	5	
+3B(61.11)	eigen energie-opwekking	5	
+3B(61.11.1)	noodstroominstallatie, diesel aangedreven	6	
+3B(61.11.2)	dynamische diesel no-breakinstallatie	6	
+3B(61.11.4)	statische no-breakinstallatie	6	
+3B(61.11.5)	pv-installatie	6	
+3B(61.11.6)	windenergie-installatie	6	
+3B(61.2)	aarding	4	
+3B(61.20)	algemeen (verzamelniveau)	5	
+3B(61.21)	veiligheidsaarding	5	
+3B(61.21.1)	gecombineerde aardingsinstallatie	6	
+3B(61.22)	medische aarding	5	
+3B(61.22.1)	medische aardingsinstallatie	6	
+3B(61.23)	speciale aarding	5	
+3B(61.23.1)	funcionele aardingsinstallatie	6	
+3B(61.24)	afvoer t.b.v. statische elektriciteit	5	
+3B(61.24.1)	statische aardingsinstallatie	6	
+3B(61.25)	afvoer t.b.v. bliksemafleiding	5	
+3B(61.26)	potentiaalvereffening	5	
+3B(61.3)	kanalisatie	4	
+3B(61.30)	algemeen (verzamelniveau)	5	
+3B(61.30.1)	gemeenschappelijke elektrische leidingweg	6	
+3B(61.31)	t.b.v. installaties voor hoge spanning 	5	
+3B(61.32)	t.b.v. installaties voor lage spanning	5	
+3B(61.33)	t.b.v. installaties voor communicatie of beveiliging	5	
+3B(61.4)	energie, hoogspanning	4	
+3B(61.40)	algemeen (verzamelniveau)	5	
+3B(61.41)	1 kv en hoger	5	
+3B(61.41.1)	hoogspanningsvoedingsnet	6	
+3B(61.5)	energie, laagspanning	4	
+3B(61.50)	algemeen (verzamelniveau)	5	
+3B(61.51)	lager dan l kv en hoger dan 100 v	5	
+3B(61.51.1)	laagspanningsvoedingsnet	6	
+3B(61.6)	zeer lage spanning	4	
+3B(61.60)	algemeen (verzamelniveau)	5	
+3B(61.61)	lager dan 100 v	5	
+3B(61.7)	bliksemafleiding	4	
+3B(61.70)	algemeen (verzamelniveau)	5	
+3B(61.70.1)	bliksembeveiligingsinstallatie	6	
+3B(61.71)	volgens nen 1014	5	
+3B(62)	krachtstroom	3	
+3B(62.1)	hoogspanning	4	
+3B(62.10)	algemeen (verzamelniveau)	5	
+3B(62.10.1)	krachtinstalllatie hoogspanning	6	
+3B(62.11)	1 t/m 3 kv 	5	
+3B(62.12)	boven 3 kv	5	
+3B(62.2)	onbewaakt	4	
+3B(62.20)	algemeen (verzamelniveau)	5	
+3B(62.20.1)	krachtinstallatie laagspanning	6	
+3B(62.20.2)	railkokersysteem laagspanning	6	
+3B(62.21)	220 v - 380 v 	5	
+3B(62.22)	380 v - 660 v 	5	
+3B(62.23)	660 v - 1 kv	5	
+3B(62.3)	laagspanning, bewaakt	4	
+3B(62.30)	algemeen (verzamelniveau)	5	
+3B(62.31)	220 v - 380 v 	5	
+3B(62.32)	380 v - 660 v 	5	
+3B(62.33)	660 v - l kv	5	
+3B(62.4)	gestabiliseerd	4	
+3B(62.40)	algemeen (verzamelniveau)	5	
+3B(62.41)	220 v - 380 v 	5	
+3B(62.42)	380 v - 660 v 	5	
+3B(62.43)	660 v - l kv	5	
+3B(62.5)	gecompenseerd	4	
+3B(62.50)	algemeen (verzamelniveau)	5	
+3B(62.51)	220 v - 380 v 	5	
+3B(62.52)	380 v - 660 v 	5	
+3B(62.53)	660 v - l kv	5	
+3B(63)	verlichting	3	
+3B(63.1)	standaard, onbewaakt	4	
+3B(63.10)	algemeen (verzamelniveau)	5	
+3B(63.10.1)	algemene verlichtingsinstallatie	6	
+3B(63.10.2)	binnenverlichtingsinstallatie, werkplekverlichting	6	
+3B(63.11)	220 v 	5	
+3B(63.12)	115 v 	5	
+3B(63.13)	42 v 	5	
+3B(63.14)	24 v	5	
+3B(63.2)	calamiteiten, decentraal	4	
+3B(63.20)	algemeen (verzamelniveau)	5	
+3B(63.20.1)	decentrale noodverlichtingsinstallatie	6	
+3B(63.23)	gevoed, 42 v	5	
+3B(63.24)	gevoed, 24 v	5	
+3B(63.3)	bijzonder, onbewaakt	4	
+3B(63.30)	algemeen (verzamelniveau)	5	
+3B(63.30.1)	accentverlichtingsinstallatie	6	
+3B(63.30.2)	binnenverlichtingsinstallatie, sportverlichting	6	
+3B(63.30.3)	toneelverlichtingsinstallatie	6	
+3B(63.31)	220 v 	5	
+3B(63.32)	115 v 	5	
+3B(63.33)	42 v 	5	
+3B(63.34)	24 v	5	
+3B(63.4)	standaard, bewaakt	4	
+3B(63.40)	algemeen (verzamelniveau)	5	
+3B(63.41)	220 v 	5	
+3B(63.42)	115 v 	5	
+3B(63.43)	42 v 	5	
+3B(63.44)	24 v	5	
+3B(63.5)	calamiteiten, centraal gevoed	4	
+3B(63.50)	algemeen (verzamelniveau)	5	
+3B(63.50.1)	centrale noodverlichtingsinstallatie	6	
+3B(63.51)	220 v 	5	
+3B(63.52)	115 v 	5	
+3B(63.53)	42 v 	5	
+3B(63.54)	24 v	5	
+3B(63.6)	bewaakt	4	
+3B(63.60)	algemeen (verzamelniveau)	5	
+3B(63.61)	220 V 	5	
+3B(63.62)	115 V 	5	
+3B(63.63)	42 V 	5	
+3B(63.64)	24 V	5	
+3B(63.7)	reklame	4	
+3B(63.70)	algemeen (verzamelniveau)	5	
+3B(63.70.1)	reclameverlichtingsinstallatie	6	
+3B(63.71)	220 V	5	
+3B(63.72)	115 V	5	
+3B(63.73)	42 V	5	
+3B(63.74)	24 V	5	
+3B(63.75)	1 kV en hoger	5	
+3B(63.75.1)	neonverlichtingsinstallatie	6	
+3B(64)	communicatie	3	
+3B(64.1)	signalen	4	
+3B(64.10)	algemeen (verzamelniveau)	5	
+3B(64.11)	overdracht van signalen, algemene signaleringen 	5	
+3B(64.11.1)	huisbelinstallatie	6	
+3B(64.11.2)	volgnummerinstallatie	6	
+3B(64.11.3)	ontruimingsinstallatie, luid alarm b installatie	6	
+3B(64.11.4)	ontruimingsinstallatie, stil alarm met attentiepanelen	6	
+3B(64.12)	overdracht van signalen, algemene personenoproep 	5	
+3B(64.12.1)	personenoproepinstallatie	6	
+3B(64.13)	overdracht van signalen, tijdsignalering 	5	
+3B(64.13.1)	tijdsignaleringsinstallatie	6	
+3B(64.14)	overdracht van signalen, aanwezigheid-/beletsignalering	5	
+3B(64.14.1)	beletinstallatie	6	
+3B(64.14.2)	tijdregistratie-installatie	6	
+3B(64.2)	geluiden	4	
+3B(64.20)	algemeen (verzamelniveau)	5	
+3B(64.21)	overdracht van geluid/spraak, telefoon 	5	
+3B(64.21.1)	telefooninstallatie	6	
+3B(64.22)	overdracht van geluid/spraak, intercom 	5	
+3B(64.22.1)	intercominstallatie	6	
+3B(64.22.2)	deurintercominstallatie	6	
+3B(64.22.3)	loketintercominstallatie	6	
+3B(64.23)	overdracht van geluid/spraak, radio/mobilofoon 	5	
+3B(64.24)	overdracht van geluid/spraak, geluiddistributie 	5	
+3B(64.24.1)	geluidsdistributie-installatie	6	
+3B(64.24.2)	ontruimingsinstallatie, luid alarm a installatie	6	
+3B(64.25)	overdracht van geluid/spraak, vertaalsystemen 	5	
+3B(64.25.1)	vertaalinstallatie	6	
+3B(64.25.2)	vertaalinstallatie (infrarood)	6	
+3B(64.26)	overdracht van geluid/spraak, conferentie-systemen	5	
+3B(64.26.1)	vergaderinstallatie	6	
+3B(64.26.2)	videoconferentiesysteem	6	
+3B(64.3)	beelden	4	
+3B(64.30)	algemeen (verzamelniveau)	5	
+3B(64.31)	overdracht van beelden, gesloten televisiecircuits 	5	
+3B(64.31.1)	gesloten televisie-installatie	6	
+3B(64.32)	overdracht van beelden, beeldreproductie 	5	
+3B(64.33)	overdracht van beelden, film/dia/overhead	5	
+3B(64.33.1)	beeldprojectie-installatie	6	
+3B(64.4)	data	4	
+3B(64.40)	algemeen (verzamelniveau)	5	
+3B(64.41)	overdracht van data, gesloten data-net 	5	
+3B(64.41.1)	gesloten datanetinstallatie	6	
+3B(64.42)	overdracht van data, openbaar data-net	5	
+3B(64.5)	geïntegreerde systemen	4	
+3B(64.50)	algemeen (verzamelniveau)	5	
+3B(64.51)	geïntegreerde systemen, gesloten netwerken 	5	
+3B(64.51.1)	universele gebouwbekabeling	6	
+3B(64.52)	geïntegreerde systemen, openbare netwerken	5	
+3B(64.6)	antenne inrichtingen	4	
+3B(64.60)	algemeen (verzamelniveau)	5	
+3B(64.60.1)	cai gebouwinstallatie	6	
+3B(64.60.2)	satellietontvangstinstallatie	6	
+3B(65)	beveiliging	3	
+3B(65.1)	brand	4	
+3B(65.10)	algemeen (verzamelniveau)	5	
+3B(65.11)	brand, detectie en alarmering 	5	
+3B(65.11.1)	brandmeldinstallatie	6	
+3B(65.11.2)	brandmeld-/ontruimingsinst., luid alarm b inst.	6	
+3B(65.12)	brand, deurgrendelingen en -ontgrendelingen 	5	
+3B(65.12.1)	grendelings-/ontgrendelingsinstallatie	6	
+3B(65.13)	brand, brandbestrijding	5	
+3B(65.13.11)	brandblusmiddeltoevoer, staal	6	
+3B(65.13.12)	brandblusmiddeltoevoer, koper	6	
+3B(65.13.13)	brandblusmiddeltoevoer, gietijzer	6	
+3B(65.13.51)	brandblustoestel, water	6	
+3B(65.13.52)	brandblustoestel, poeder	6	
+3B(65.13.71)	brandblusmiddelopslag, water	6	
+3B(65.13.72)	brandblusmiddelopslag, poeder	6	
+3B(65.13.73)	brandblusmiddelopslag, gas	6	
+3B(65.2)	braak	4	
+3B(65.20)	algemeen (verzamelniveau)	5	
+3B(65.21)	braak, detectie en alarmering 	5	
+3B(65.21.1)	inbraaksignaleringsinstallatie	6	
+3B(65.21.2)	uitbraaksignaleringsinstallatie	6	
+3B(65.22)	braak, toegangscontrole	5	
+3B(65.22.1)	toegangscontrolesysteem	6	
+3B(65.3)	overlast	4	
+3B(65.30)	algemeen (verzamelniveau)	5	
+3B(65.31)	overlast, detectie en alarmering, zonweringsinstallatie 	5	
+3B(65.31.1)	zonweringsinstallatie	6	
+3B(65.32)	overlast, detectie en alarmering, elektro-magnetische voorz. 	5	
+3B(65.33)	overlast, detectie en alarmering, elektro-magnetische voorz. 	5	
+3B(65.34)	overlast, detectie en alarmering, overspanningsBeveiliging 	5	
+3B(65.34.1)	overspanningsbeveiligingsinstallatie	6	
+3B(65.35)	overlast, detectie en alarmering, gassen beveiliging 	5	
+3B(65.35.1)	gasdetectie-installatie	6	
+3B(65.36)	overlast, detectie en alarmering, vloeistof beveiliging 	5	
+3B(65.37)	overlast, detectie en alarmering, stralingsbeveiliging 	5	
+3B(65.37.1)	stralingsdetectie-installatie	6	
+3B(65.39)	overlast, detectie en alarmering, overige beveiligingen	5	
+3B(65.39.1)	overvalmeldinstallatie	6	
+3B(65.39.2)	corrosiebeschermingsinstallatie	6	
+3B(65.39.3)	stofdetectie-installatie	6	
+3B(65.39.4)	personen-/goederendetectie-installatie	6	
+3B(65.4)	sociale alarmering	4	
+3B(65.40)	algemeen (verzamelniveau)	5	
+3B(65.40.1)	verpleegroepinstallatie	6	
+3B(65.40.2)	mindervaliden alarminstallatie	6	
+3B(65.41)	nooddetectie, gesloten systemen 	5	
+3B(65.42)	nooddetectie, open systemen	5	
+3B(65.5)	milieu-overlast, detectie en alarmering	4	
+3B(67)	gebouwbeheervoorzieningen	3	
+3B(67.1)	bediening en signalering	4	
+3B(67.10)	algemeen (verzamelniveau)	5	
+3B(67.10.1)	gebouwbeheerinstallatie	6	
+3B(67.10.2)	domotica-installatie (basisvoorzieningen)	6	
+3B(67.11)	bediening en signalering, elektrotechnische systemen 	5	
+3B(67.12)	bediening en signalering, optische systemen 	5	
+3B(67.13)	bediening en signalering, pneumatische systemen 	5	
+3B(67.14)	bediening en signalering, geïntegreerde systemen	5	
+3B(67.2)	automatisering	4	
+3B(67.20)	algemeen (verzamelniveau)	5	
+3B(67.21)	gebouwautomatisering, elektrotechnische systemen 	5	
+3B(67.22)	gebouwautomatisering, optische systemen 	5	
+3B(67.23)	gebouwautomatisering, pneumatische systemen 	5	
+3B(67.24)	gebouwautomatisering, geïntegreerde systemen	5	
+3B(67.3)	regelinstallaties klimaat/sanitair (op afstand)	4	
+3B(67.30)	algemeen (verzamelniveau)	5	
+3B(67.31)	regelinstallaties klimaat/sanitair (op afstand), elektrotechnische systemen	5	
+3B(67.32)	regelinstallaties klimaat/sanitair (op afstand), optische systemen	5	
+3B(67.33)	regelinstallaties klimaat/sanitair (op afstand), pneumatische systemen	5	
+3B(67.34)	regelinstallaties klimaat/sanitair (op afstand), geïntegreerde systemen	5	
+3BU	algemene uitvoeringskosten	3	
+3C	lift en Transport	2	
+3C(66)	lift en Transport	3	
+3C(66.1)	liften en heftableau's	4	
+3C(66.10)	algemeen (verzamelniveau) 	5	
+3C(66.11)	elektrische liften 	5	
+3C(66.11.1)	elektrische personenlift	6	
+3C(66.11.2)	elektr. pers.lift met vooraf verv. liftschacht	6	
+3C(66.11.3)	elektrische personen-goederenlift	6	
+3C(66.11.4)	elektr. pers.-goed.lift met vooraf verv. liftschacht	6	
+3C(66.11.5)	elektrische woonhuislift	6	
+3C(66.11.6)	elektrische personen-autolift	6	
+3C(66.12)	hydraulische liften 	5	
+3C(66.12.1)	hydraulische personenlift	6	
+3C(66.12.2)	hydr. pers. lift met vooraf verv. liftschacht	6	
+3C(66.12.3)	hydraulische personen-goederenlift	6	
+3C(66.12.4)	hydr. pers.-goed.lift met vooraf  verv. liftschacht	6	
+3C(66.12.5)	hydraulische woonhuislift	6	
+3C(66.12.6)	hydraulische personen-autolift	6	
+3C(66.13)	trapliften 	5	
+3C(66.13.1)	stoeltraplift	6	
+3C(66.13.3)	plateautraplift	6	
+3C(66.14)	heftableau's	5	
+3C(66.14.1)	personenheftableau	6	
+3C(66.2)	roltrappen en rolpaden	4	
+3C(66.20)	algemeen (verzamelniveau) 	5	
+3C(66.21)	roltrappen 	5	
+3C(66.21.1)	roltrap	6	
+3C(66.22)	rolpaden	5	
+3C(66.22.1)	rolpad	6	
+3C(66.3)	goederen	4	
+3C(66.30)	algemeen (verzamelniveau) 	5	
+3C(66.31)	goederenliften 	5	
+3C(66.31.1)	elektrische klein-goederenlift	6	
+3C(66.31.2)	hydraulische klein-goederenlift	6	
+3C(66.32)	goederenheffers 	5	
+3C(66.32.1)	elektrische heftafel	6	
+3C(66.32.2)	hydraulische heftafel	6	
+3C(66.32.3)	elektrische hefbrug	6	
+3C(66.32.4)	hydraulische hefbrug	6	
+3C(66.33)	baantransportmiddelen 	5	
+3C(66.33.1)	rollentransportbaan	6	
+3C(66.33.2)	kettingtransportbaan	6	
+3C(66.33.3)	riemtransportbaan	6	
+3C(66.34)	bandtransportmiddelen 	5	
+3C(66.34.1)	transportband	6	
+3C(66.35)	baktransportmiddelen 	5	
+3C(66.35.1)	baktransportbaan	6	
+3C(66.36)	hijswerktuigen 	5	
+3C(66.36.1)	loopkraaninstallatie	6	
+3C(66.36.2)	zwenkkraaninstallatie	6	
+3C(66.36.3)	takel/lier	6	
+3C(66.37)	vrije baan transport-voertuigen	5	
+3C(66.4)	documenten	4	
+3C(66.40)	algemeen (verzamelniveau) 	5	
+3C(66.41)	buizenpost 	5	
+3C(66.41.11)	buizenpostdistributie, staal	6	
+3C(66.41.16)	buizenpostdistributie, kunststof	6	
+3C(66.41.22)	document vacuumpompsysteem	6	
+3C(66.41.31)	documentstation	6	
+3C(66.42)	railcontainerbanen 	5	
+3C(66.44)	bandtransportmiddelen	5	
+3CU	algemene uitvoeringskosten	3	
+4	vaste inrichtingen	1	
+4A	vaste inrichting	2	
+4A(38)	inbouwpakketten	3	
+4A(38.1)	inbouwpakketten	4	
+4A(38.10)	algemeen (verzamelniveau)	5	
+4A(38.11)	inbouwpakketten met te openen delen	5	
+4A(38.11.11)	technische kast	6	
+4A(38.12)	inbouwpakketten met gesloten delen	5	
+4A(48)	afwerkingspakketten	3	
+4A(48.1)	afwerkingspakketten	4	
+4A(48.10)	algemeen (verzamelniveau)	5	
+4A(48.11)	naadloze afwerkingen	5	
+4A(48.11.14)	spuitpleistersysteem	6	
+4A(48.12)	overige afwerkingen	5	
+4A(48.12.30)	separatieruimte	6	
+4A(48.12.80)	akoestische na-isolatie	6	
+4A(48.12.81)	thermische na-isolatie	6	
+4A(48.12.82)	hygrische na-isolatie	6	
+4A(71)	vaste verkeersvoorzieningen	3	
+4A(71.1)	standaard	4	
+4A(71.10)	algemeen (verzamelniveau)	5	
+4A(71.11)	meubileringen 	5	
+4A(71.11.11)	baliemeubel	6	
+4A(71.11.18)	halmeubel	6	
+4A(71.11.62)	brievenbus	6	
+4A(71.12)	bewegwijzeringen 	5	
+4A(71.12.83)	aanduiding	6	
+4A(71.13)	kunstwerken 	5	
+4A(71.13.77)	kunst	6	
+4A(71.14)	decoraties e.d.	5	
+4A(71.14.78)	aankleding	6	
+4A(71.2)	bijzonder	4	
+4A(71.20)	algemeen (verzamelniveau)	5	
+4A(71.21)	meubileringen	5	
+4A(71.21.12)	receptie	6	
+4A(71.21.18)	wachtruimte-meubel	6	
+4A(71.21.62)	postbus	6	
+4A(71.22)	bewegwijzeringen	5	
+4A(71.22.83)	richtingwijzer	6	
+4A(71.23)	specifieke voorzieningen	5	
+4A(71.23.66)	loopleuning	6	
+4A(72)	vaste gebruikersvoorzieningen	3	
+4A(72.1)	standaard	4	
+4A(72.10)	algemeen (verzamelniveau)	5	
+4A(72.11)	meubilering 	5	
+4A(72.11.18)	vestibule-meubilering	6	
+4A(72.12)	lichtweringen 	5	
+4A(72.12.75)	binnenzonwering	6	
+4A(72.13)	gordijnvoorzieningen 	5	
+4A(72.13.76)	scherm	6	
+4A(72.14)	beschermende voorzieningen	5	
+4A(72.14.67)	stootvoorziening	6	
+4A(72.2)	bijzonder	4	
+4A(72.20)	algemeen (verzamelniveau)	5	
+4A(72.21)	meubilering voor specifieke functie-doeleinden	5	
+4A(72.22)	instrumenten/apparatuur	5	
+4A(72.22.81)	aansluitingen, bijzondere gebruiksapparatuur	6	
+4A(73)	vaste keukenvoorzieningen	3	
+4A(73.1)	standaard	4	
+4A(73.10)	algemeen (verzamelniveau)	5	
+4A(73.11)	keukenmeubilering 	5	
+4A(73.12)	keukenapparatuur	5	
+4A(73.12.71)	klimaatapparatuur	6	
+4A(73.12.81)	aansluitingen, standaard keukenapparatuur	6	
+4A(73.2)	bijzonder	4	
+4A(73.20)	algemeen (verzamelniveau)	5	
+4A(73.21)	keukenmeubilering 	5	
+4A(73.21.21)	pantry	6	
+4A(73.21.22)	buffet	6	
+4A(72.21.21)	werkblad	6	
+4A(73.22)	keukenapparatuur	5	
+4A(73.22.71)	klimaatapparatuur, bijzonder	6	
+4A(73.22.81)	aansluitingen, bijzondere keukenapparatuur	6	
+4A(74)	vaste sanitaire voorzieningen	3	
+4A(74.1)	standaard	4	
+4A(74.10)	algemeen (verzamelniveau)	5	
+4A(74.11)	sanitaire toestellen, normaal 	5	
+4A(74.11.11)	closetcombinatie	6	
+4A(74.11.12)	urinoircombinatie	6	
+4A(74.11.21)	douchecombinatie	6	
+4A(74.11.22)	badcombinatie	6	
+4A(74.11.23)	bidetcombinatie	6	
+4A(74.11.31)	wastafelcombinatie	6	
+4A(74.11.32)	wastrogcombinatie	6	
+4A(74.11.41)	gootsteencombinatie	6	
+4A(74.11.42)	spoelbakcombinatie	6	
+4A(74.11.51)	kraancombinatie	6	
+4A(74.11.52)	gevelkomcombinatie	6	
+4A(74.11.53)	drinkgarnituurcombinatie	6	
+4A(74.11.54)	gootsteenkraancombinatie	6	
+4A(74.12)	sanitaire toestellen, aangepast 	5	
+4A(74.12.11)	closetcombinatie, aangepast	6	
+4A(74.12.21)	douchecombinatie, aangepast	6	
+4A(74.12.22)	badcombinatie, aangepast	6	
+4A(74.12.31)	wastafelcombinatie, aangepast	6	
+4A(74.12.41)	gootsteencombinatie, aangepast	6	
+4A(74.13)	accessoires	5	
+4A(74.13.11)	afscheiding, sanitair	6	
+4A(74.13.12)	spiegel, sanitair	6	
+4A(74.13.13)	houder/haak, sanitair	6	
+4A(74.2)	bijzonder	4	
+4A(74.20)	algemeen (verzamelniveau)	5	
+4A(74.21)	sanitaire, toestellen voor bijzondere toepassing	5	
+4A(74.21.11)	nooddouchecombinatie	6	
+4A(74.21.81)	aansluitingen, bijzonder sanitair	6	
+4A(74.22)	ingebouwde sanitaire voorzieningen	5	
+4A(74.22.81)	aansluitingen, bijzonder sanitair, ingebouwd	6	
+4A(75)	vaste onderhoudsvoorzieningen	3	
+4A(75.1)	standaard 	4	
+4A(75.10)	algemeen (verzamelniveau)	5	
+4A(75.11)	gebouwonderhoudsvoorziening 	5	
+4A(75.12)	interieur onderhoudsvoorziening 	5	
+4A(75.13)	gevelonderhoudsvoorziening	5	
+4A(75.13.1)	hangladdersysteem, vast, met vaste bordessen	6	
+4A(75.13.2)	hangladdersysteem, vast, met verplaatsbare bordessen	6	
+4A(75.13.3)	hangladdersysteem, verrijdbaar, met vaste bordessen	6	
+4A(75.13.4)	hangladdersysteem, verrijdbaar, met verplaatsbare bordessen	6	
+4A(75.2)	bijzonder	4	
+4A(75.20)	algemeen (verzamelniveau)	5	
+4A(75.21)	gebouwonderhoudsvoorziening	5	
+4A(75.22)	interieur onderhoudsvoorziening	5	
+4A(75.22.11)	stofafvoervoorziening, staal	6	
+4A(75.22.16)	stofafvoervoorziening, kunststof	6	
+4A(75.22.21)	compressorsysteem	6	
+4A(75.22.22)	stofzuig vacuumpompsysteem	6	
+4A(75.22.31)	stofzuig aansluitpunt	6	
+4A(75.22.41)	stofzuigeenheid	6	
+4A(75.23)	gemechaniseerde gevelonderhoudsvoorzieningen	5	
+4A(75.23.1)	hangsteigerinstallatie, vast, dakwagenconstructie	6	
+4A(75.23.2)	hangsteigerinstallatie, verrijdbaar, dakwagenconstructie	6	
+4A(75.23.3)	hangsteigerinstallatie, telescoopsysteem	6	
+4A(75.23.4)	hangsteigerinstallatie, monorailsysteem	6	
+4A(75.23.5)	masthangsteigerinstallatie	6	
+4A(76)	vaste opslagvoorzieningen	3	
+4A(76.1)	standaard	4	
+4A(76.10)	algemeen (verzamelniveau)	5	
+4A(76.11)	meubileringen	5	
+4A(76.11.21)	bergkast	6	
+4A(76.11.22)	verdeelkast/verzamelkast	6	
+4A(76.11.23)	kluis	6	
+4A(76.11.24)	verzamelbak	6	
+4A(76.11.42)	stelling	6	
+4A(76.11.43)	vitrine	6	
+4A(76.2)	bijzonder	4	
+4A(76.20)	algemeen (verzamelniveau)	5	
+4A(76.21)	gemechaniseerde voorziening 	5	
+4A(76.22)	specifieke voorziening	5	
+5	terrein	1	
+5A(90)	terrein, bouwkundig	2	
+5A(90.1)	grondvoorzieningen	3	
+5A(90.10)	algemeen (verzamelniveau) 	4	
+5A(90.11)	verwijderen opstakels 	4	
+5A(90.11.80)	terrein/opstal, onderhoud	5	
+5A(90.12)	grondwaterverlagingen 	4	
+5A(90.12.11)	grondwaterstandverlaging	5	
+5A(90.13)	drainagevoorzieningen	4	
+5A(90.13.11)	drainagesysteem	5	
+5A(90.13.12)	drainage	5	
+5A(90.2)	opstallen	3	
+5A(90.20)	algemeen (verzamelniveau) 	4	
+5A(90.21)	gebouwtjes met speciale functie 	4	
+5A(90.21.10)	bijgebouw	5	
+5A(90.22)	overkappingen	4	
+5A(90.22.10)	afdak	5	
+5A(90.3)	omheiningen	3	
+5A(90.30)	algemeen (verzamelniveau) 	4	
+5A(90.31)	muren	4	
+5A(90.31.44)	afscheidingsmuur, steen	5	
+5A(90.31.47)	afscheidingsmuur, beton	5	
+5A(90.31.54)	stapelmuur, steen	5	
+5A(90.32)	hekwerken 	4	
+5A(90.32.10)	afzetting	5	
+5A(90.32.11)	omheining	5	
+5A(90.33)	overige afscheidingen 	4	
+5A(90.33.12)	geluidwerend scherm	5	
+5A(90.33.17)	haag	5	
+5A(90.34)	toegangen	4	
+5A(90.34.13)	afsluiting	5	
+5A(90.4)	terreinafwerkingen	3	
+5A(90.40)	algemeen (verzamelniveau) 	4	
+5A(90.41)	verhardingen 	4	
+5A(90.41.11)	straatsteenbestrating	5	
+5A(90.41.12)	tegelbestrating	5	
+5A(90.41.13)	asfaltverharding	5	
+5A(90.41.14)	betonverharding	5	
+5A(90.41.15)	steenslagverharding	5	
+5A(90.41.16)	onverhard pad	5	
+5A(90.42)	beplantingen 	4	
+5A(90.42.10)	beplanting	5	
+5A(90.42.80)	beplanting, onderhoud	5	
+5A(90.43)	waterpartijen 	4	
+5A(90.43.10)	vijver	5	
+5A(90.44)	keerwanden/balustrades 	4	
+5A(90.44.11)	grondkering	5	
+5A(90.44.18)	balustrade	5	
+5A(90.45)	pergola's	4	
+5A(90.45.10)	pergola	5	
+5A(90.7)	terreininrichtingen, standaard	3	
+5A(90.70)	algemeen (verzamelniveau) 	4	
+5A(90.71)	terreinmeubilering 	4	
+5A(90.71.10)	terreinmeubel	5	
+5A(90.71.20)	parkeervoorziening	5	
+5A(90.72)	bewegwijzering 	4	
+5A(90.72.83)	wegwijzer	5	
+5A(90.73)	kunstwerken 	4	
+5A(90.73.77)	object	5	
+5A(90.74)	decoraties e.d.	4	
+5A(90.74.10)	decoratie	5	
+5A(90.8)	terreininrichtingen, bijzonder	3	
+5A(90.80)	algemeen (verzamelniveau) 	4	
+5A(90.81)	terreinmeubilering 	4	
+5A(90.81.83)	terreinmarkering	5	
+5A(90.82)	specifieke voorzieningen 	4	
+5A(90.82.20)	toestel	5	
+5A(90.83)	bijzondere verhardingen	4	
+5A(90.83.15)	gravel	5	
+5A(90.83.16)	kunststof verharding	5	
+5B(90)	terrein, werktuigbouwkundige installaties	2	
+5B(90.5)	werktuigbouwkundig, algemeen (verzamelniveau)	3	
+5A(90.50)	algemeen (verzamelniveau) 	4	
+5B(90.51)	verwarmingsvoorzieningen 	4	
+5B(90.51.11)	warmtecentrale, gasketeleenheid, water	5	
+5B(90.51.12)	warmtecentrale, olieketeleenheid, water	5	
+5B(90.51.13)	warmtecentrale, vaste brandstofketeleenheid, water	5	
+5B(90.51.14)	warmtecentrale, vast afvalverbrandingseenheid, water	5	
+5B(90.51.21)	warmtecentrale, gasketeleenheid, thermische vloeistof	5	
+5B(90.51.22)	warmtecentrale, olieketeleenheid, thermische vloeistof	5	
+5B(90.51.23)	warmtecentrale, vaste brandstofketeleenheid, thermische vloeistof	5	
+5B(90.51.31)	warmtecentrale, gasketeleenheid, stoom	5	
+5B(90.51.32)	warmtecentrale, olieketeleenheid, stoom	5	
+5B(90.51.33)	warmtecentrale, vaste brandstofketeleenheid, stoom	5	
+5B(90.51.41)	warmtecentrale, warmtewisselaareenheid, water/water	5	
+5B(90.51.43)	warmtecentrale, wkk, water	5	
+5B(90.51.51)	warmtecentrale, warmtepomp, water	5	
+5B(90.51.52)	warmtecentrale, zonnecollector, water	5	
+5B(90.51.53)	warmtecentrale, wegdekzonnecollector, water	5	
+5B(90.51.54)	warmtecentrale, aardaccumulatie/bodemopslag	5	
+5B(90.51.61)	warmtecentrale, rookgasafvoer/verbrandingsluchttoevoer	5	
+5B(90.51.65)	warmtecentrale, brandstoffenopslag	5	
+5B(90.51.81)	warmtecentrale, ketelcircuit	5	
+5B(90.51.82)	warmtecentrale, verdeler/verzamelaar	5	
+5B(90.52)	afvoervoorzieningen 	4	
+5B(90.52.11)	vuilwaterafvoer, terrein, aarden buis	5	
+5B(90.52.12)	vuilwaterafvoer, terrein, gres	5	
+5B(90.52.13)	vuilwaterafvoer, terrein, beton	5	
+5B(90.52.14)	vuilwaterafvoer, terrein, vezelcement	5	
+5B(90.52.21)	vuilwaterafvoer, terrein, gietijzer	5	
+5B(90.52.27)	vuilwaterafvoer, terrein, kunststof	5	
+5B(90.52.31)	hemelwaterafvoer, terrein, aarden buis	5	
+5B(90.52.32)	hemelwaterafvoer, terrein, gres	5	
+5B(90.52.33)	hemelwaterafvoer, terrein, beton	5	
+5B(90.52.34)	hemelwaterafvoer, terrein, vezelcement	5	
+5B(90.52.41)	hemelwaterafvoer, terrein, gietijzer	5	
+5B(90.52.47)	hemelwaterafvoer, terrein, kunststof	5	
+5B(90.52.71)	hemelwater infiltratiesysteem	5	
+5B(90.52.72)	hemelwater infiltratiegebied	5	
+5B(90.53)	watervoorzieningen 	4	
+5B(90.53.11)	tapwaterdistributie, terrein, koper	5	
+5B(90.53.12)	tapwaterdistributie, terrein, staal	5	
+5B(90.53.13)	tapwaterdistributie, terrein, gietijzer	5	
+5B(90.53.21)	tapwaterdistributie, terrein, kunststof	5	
+5B(90.53.31)	warm-tapwaterdistributie, terrein, koper	5	
+5B(90.53.32)	warm-tapwaterdistributie, terrein, staal	5	
+5B(90.53.41)	warm-tapwaterdistributie, terrein, kunststof	5	
+5B(90.53.51)	wateropslag, terrein	5	
+5B(90.53.61)	brandblusvoorziening	5	
+5B(90.53.62)	nooddouche, terrein	5	
+5B(90.54)	gasvoorzieningen 	4	
+5B(90.54.11)	aardgastoevoer, terrein, staal	5	
+5B(90.54.12)	aardgastoevoer, terrein, gietijzer	5	
+5B(90.54.21)	aardgastoevoer, terrein, kunststof	5	
+5B(90.55)	koude-opwekkingsvoorzieningen 	4	
+5B(90.55.11)	koude-centrale, koelmachine	5	
+5B(90.55.12)	koude-centrale, grondwatersysteem	5	
+5B(90.55.13)	koude-centrale, oppervlaktewatersysteem	5	
+5B(90.55.14)	koude-centrale, aardaccumulatie/bodemopslag	5	
+5B(90.55.31)	koude-centrale, circuit	5	
+5B(90.55.32)	koude-centrale, verdeler/verzamelaar	5	
+5B(90.55.41)	koelwaterdistributie, terrein, staal	5	
+5B(90.55.42)	koelwaterdistributie, terrein, kunststof	5	
+5B(90.56)	warmte-distributievoorzieningen 	4	
+5B(90.56.11)	cv-waterdistributie, terrein, staal	5	
+5B(90.56.21)	stoomdistributie, terrein, staal	5	
+5B(90.56.25)	condensaatafvoer, terrein, staal	5	
+5B(90.57)	luchtbehandelingsvoorzieningen	4	
+5B(90.58)	regelingsvoorzieningen	4	
+5B(90.58.11)	opwekking, distributie, afgifte	5	
+5C(90)	terrein, elektrotechnische installaties	2	
+5C(90.6)	elektrotechnisch, algemeen (verzamelniveau)	3	
+5A(90.60)	algemeen (verzamelniveau) 	4	
+5C(90.61)	elektrotechnische/aardings voorzieningen 	4	
+5C(90.61.1)	hoogspanningsdistributienet	5	
+5C(90.61.2)	laagspanningsdistributienet	5	
+5C(90.61.3)	statische aardingsinstallatie	5	
+5C(90.62)	krachtvoorzieningen 	4	
+5C(90.63)	lichtvoorzieningen 	4	
+5C(90.63.1)	wegverlichtingsinstallatie	5	
+5C(90.63.3)	algemene terreinverlichtingsinstallatie	5	
+5C(90.63.4)	bewakingsverlichtingsinstallatie	5	
+5C(90.63.5)	sportveldverlichtingsinstallatie	5	
+5C(90.63.6)	vliegveldverlichtingsinstallatie	5	
+5C(90.63.7)	object-accentverlichtingsinstalltie	5	
+5C(90.63.8)	reclameverlichtingsinstallatie	5	
+5C(90.64)	communicatievoorzieningen 	4	
+5C(90.64.1)	telefoondistributienet	5	
+5C(90.64.2)	datadistributienet	5	
+5C(90.64.3)	universele terreinbekabeling	5	
+5C(90.64.4)	cai distributienet	5	
+5C(90.64.5)	geluidinstallatie	5	
+5C(90.64.7)	klimaatinformatie-installatie	5	
+5C(90.65)	beveiligingsvoorzieningen 	4	
+5C(90.65.1)	videobewakingsinstallatie	5	
+5C(90.65.2)	personendetectie-installatie, hekdetectie	5	
+5C(90.65.3)	personendetectie-installatie, gronddetectie	5	
+5C(90.65.4)	personendetectie-installatie, velddetectie radar	5	
+5C(90.65.5)	personendetectie-installatie, velddetectie infrarood	5	
+5C(90.65.6)	schrikdraadinstallatie	5	
+5C(90.65.7)	corrosiebeschermingsinstallatie anode opofferingssysteem	5	
+5C(90.65.8)	corrosiebeschermingsinstallatie opgedrukt stroomsysteem	5	
+5C(90.66)	transportvoorzieningen 	4	
+5C(90.67)	beheersvoorzieningen	4	
+5C(90.67.1)	toegangsbedieningsinstallatie	5	
+5C(90.67.2)	verkeersregelinstallatie	5	
+5C(90.67.3)	parkeerbeheersysteem	5	
+5C(90.67.4)	parkeergeleidingssysteem	5	
+6	AUK	1	
+6(U1)	AUK geheel gebouw	2	
+6(U2)	AUK project/bouwplaatsinrichting	2	
+6(00.1)	werkterreininrichting	3	
+6(00.10)	algemeen (verzamelniveau)	4	
+6(00.11)	bijkomende werken (algemeen, bouwwegen, toegangen, reclameborden, grondonderzoek, afwatering, water, bouwaansluitingen, telefoon/telefax, precario's) 	4	
+6(00.12)	personen/materiaalvoorzieningen (algemeen, kleedruimten, eetgelegenheid/kantine, toiletten, keten (containers e.d.), werkplaatsen, magazijnen) 	4	
+6(00.12.20)	bouwweg	5	
+6(00.12.30)	directievoorziening	5	
+6(00.12.31)	maatvoering	5	
+6(00.13)	energievoorzieningen (algemeen, elektra, olie, gas, perslucht) 	4	
+6(00.14)	beveiligingsvoorzieningen (algemeen, bewaking werkterrein, toegangscontrole) 	4	
+6(00.14.40)	afscheiding	5	
+6(00.15)	doorwerkvoorzieningen (algemeen bij vorst, bij regen/sneeuw, overige) 	4	
+6(00.16)	voorzieningen belendende percelen (algemeen, damwanden, stutwerk) 	4	
+6(00.17)	onderhoudsvoorzieningen (algemeen, keten/loodsen, materieel, gereedschap, apparatuur, schoonmaken cq -houden van bouwplaats) 	4	
+6(00.17.50)	schoonmaak	5	
+6(00.2)	materieelvoorzieningen	3	
+6(00.20)	algemeen (verzamelniveau)	4	
+6(00.21)	transport (algemeen, vaste kranen, verrijdbare kranen, mobiele kranen, liften, heftableau's, overige hijs-/hefwerktuigen, werkplaats gereedschappen, steigers, ladders) 	4	
+6(00.22)	gereedschappen (algemeen)	4	
+6(U3)	AUK project/werkvoorbereiding en uitvoering	2	
+6(00.3)	risicodekking	3	
+6(00.30)	algemeen (verzamelniveau) 	4	
+6(00.31)	verzekeringen (algemeen, CAR,WA)	4	
+6(00.32)	waarborgen (algemeen, betalingsregelingen, bankgarantie)	4	
+6(00.33)	prijsstijgingen (algemeen, lonen, materialen, diensten)	4	
+6(00.4)	projectorganisatie	3	
+6(00.40)	algemeen (verzamelniveau)	4	
+6(00.41)	administratie (algemeen, projectadministratie, loonadministratie, projectkosten) 	4	
+6(00.42)	uitvoering (algemeen, bouwvergaderingen, werkbesprekingen, coördinatie, kwaliteitscontrole, opneming en goedkeuring) 	4	
+6(00.43)	documentatie (algemeen, bedienings- /onderhoudsinstructie, tekeningen, documentatie, verwerkingsvoorschriften) 	4	
+6(00.5)	bedrijfsorganisatie	3	
+6(00.50)	algemeen (verzamelniveau)	4	
+6(00.51)	bestuur en directie (algemeen, bestuur, directie)	4	
+6(00.52)	winstregelingen (algemeen, winstdeling)	4	
+7	losse inrichtingen en bedrijfsinstallaties	1	
+7A	losse inrichtingen	2	
+7A(81)	losse verkeersinventaris	3	
+7A(81.1)	standaard	4	
+7A(81.10)	algemeen (verzamelniveau) 	5	
+7A(81.11)	meubilering 	5	
+7A(81.12)	bewegwijzering 	5	
+7A(81.13)	kunstwerken 	5	
+7A(81.14)	decoraties e.d.	5	
+7A(81.2)	bijzonder	4	
+7A(81.20)	algemeen (verzamelniveau)	5	
+7A(81.21)	meubilering	5	
+7A(81.22)	bewegwijzering	5	
+7A(81.23)	specifieke voorzieningen (o.a. asbakken)	5	
+7A(82)	losse gebruikersinventaris	3	
+7A(82.1)	standaard	4	
+7A(82.10)	algemeen (verzamelniveau) 	5	
+7A(82.11)	meubilering 	5	
+7A(82.12)	lichtweringen/verduisteringen 	5	
+7A(82.13)	stofferingen	5	
+7A(82.2)	bijzonder	4	
+7A(82.20)	algemeen (verzamelniveau)	5	
+7A(82.21)	meubilering voor specifieke functie-doeleinden	5	
+7A(82.22)	instrumenten/apparatuur	5	
+7A(82.22.81)	aansluitingen, bijzondere losse gebruiksapparatuur	6	
+7A(83)	losse keukeninventaris	3	
+7A(83.1)	standaard	4	
+7A(83.10)	algemeen (verzamelniveau) 	5	
+7A(83.11)	keukenmeubilering 	5	
+7A(83.11.81)	aansluitingen, standaard losse keukenmeubilering	6	
+7A(83.12)	keukenapparatuur 	5	
+7A(83.12.81)	aansluitingen, standaard losse keukenapparatuur	6	
+7A(83.13)	klein keukeninventaris	5	
+7A(83.2)	bijzonder	4	
+7A(83.20)	algemeen (verzamelniveau) 	5	
+7A(83.21)	keukeninrichting 	5	
+7A(83.21.81)	aansluitingen, bijzondere losse keukenmeubilering	6	
+7A(83.22)	keukenapparatuur 	5	
+7A(83.22.81)	aansluitingen, bijzondere losse keukenapparatuur	6	
+7A(83.23)	klein keukeninventaris 	5	
+7A(83.24)	transportmiddelen	5	
+7A(84)	losse sanitaire inventaris	3	
+7A(84.1)	standaard	4	
+7A(84.10)	algemeen (verzamelniveau) 	5	
+7A(84.11)	afvalvoorzieningen 	5	
+7A(84.12)	voorzieningen t.b.v. hygiëne 	5	
+7A(84.13)	accessoires	5	
+7A(84.13.12)	spiegel, los sanitair	6	
+7A(84.13.13)	houder/haak, los sanitair	6	
+7A(84.2)	bijzonder	4	
+7A(84.20)	algemeen (verzamelniveau) 	5	
+7A(84.21)	sanitaire toestellen voor bijzondere toepassing	5	
+7A(84.21.81)	aansluitingen, bijzonder los sanitair	6	
+7A(85)	losse schoonmaakinventaris	3	
+7A(85.1)	standaard	4	
+7A(85.10)	algemeen (verzamelniveau) 	5	
+7A(85.11)	schoonmaakapparatuur 	5	
+7A(85.12)	vuilopslag 	5	
+7A(85.13)	vuiltransport	5	
+7A(85.2)	bijzonder	4	
+7A(85.20)	algemeen (verzamelniveau) 	5	
+7A(85.21)	schoonmaakapparatuur 	5	
+7A(85.22)	vuilopslag 	5	
+7A(85.23)	vuiltransport	5	
+7A(86)	losse opslaginventaris	3	
+7A(86.1)	standaard	4	
+7A(86.10)	algemeen (verzamelniveau) 	5	
+7A(86.11)	meubileringen	5	
+7A(86.2)	bijzonder	4	
+7A(86.20)	algemeen (verzamelniveau) 	5	
+7A(86.21)	gemechaniseerde voorzieningen 	5	
+7A(86.22)	specifieke voorzieningen	5	
+7B	bedrijfsinstallaties	2	
+8	bijkomende kosten	1	
+8A	voorbereidings- en begeleidingskosten 	2	
+8B	heffingen enz. 	2	
+8C	verzekeringen 	2	
+8D	aanloopkosten 	2	
+8E	financieringskosten 	2	
+8F	risicoverrekeningen 	2	
+8G	onvoorziene uitgaven 	2	
+8H	onderhoudskosten van het verworven terrein	2	
+8I	omzetbelasting 	2	
+8J	onvoorzien 	2	
+8K	veiligheidscoördinator 	2	
+8L	coördinatie van de verschillende disciplines 	2	

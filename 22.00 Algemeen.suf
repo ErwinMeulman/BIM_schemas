@@ -1,0 +1,42 @@
+#22.00 Algemeen.suf  STABU UITWISSELFORMAAT
+#102
+#91.38.02.E
+#KubusStabu 3 r5 voor Ms-Windows
+#datum: 06/05/09
+#BESTEK
+#
+#
+#  Kubus informatiesystemen
+#  Gebruiksrecht voor: HANZEHOGESCHOOL, Faculteit techniek
+#  Kubus Stabu Licentie : 99999
+#
+#  Project: 
+#  Auteur: CC248152-A
+#
+#
+@ST_BEGIN:
+220032 .101
+220032 .S01.101.B000010.000.a01.102
+220032 .S01.101.B000010.000.a01.102-I01-S01
+    tras- en gevelsteen.
+220032 .S01.101.B000010.000.a01.102-I02-S01
+    , ondertoon en tint.
+220032 .S01.101.B000010.000.a01.102-I03-S01
+    structuur, textuur en reli‰f.
+    - vorm en afmetingen.
+    - hardheid.
+220032 .101-END
+
+220040 .101
+220040 .S01.101.A210022.002.a01.102
+220040 .S01.101.A210022.002.a01.102-I01-S02
+220040 .S01.101.A210022.002.a01.102-I02-S01
+    
+    - spouwisolatie.
+220040 .S01.101.A210022.002.a01.102-I03-S01
+    hoofdaannemer
+220040 .S01.101.A210022.002.a01.102-I04-S01
+    10 jaar.
+220040 .101-END
+
+@ST_END
