@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <!--Simple types-->
+  <xs:simpleType name="nametype">
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+
+  <xs:simpleType name="propertynametype">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="Model[a-zA-Z](([a-zA-Z0-9])*)"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="unitsgrouptype">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="any"/>
+      <xs:enumeration value="dimensionless" />
+      <xs:enumeration value="length"/>
+      <xs:enumeration value="area" />
+      <xs:enumeration value="volume"/>
+      <xs:enumeration value="angle"/>
+      <xs:enumeration value="time" />
+      <xs:enumeration value="currency"/>
+      <xs:enumeration value="weight"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="selectedtype">
+     <xs:restriction base="xs:integer">
+        <xs:pattern value="0|1"/>
+     </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="unitstype">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value=""/>
+      <xs:enumeration value="count"/>
+      <xs:enumeration value="currency"/>
+      <xs:enumeration value="second"/>
+      <xs:enumeration value="minute"/>
+      <xs:enumeration value="hour"/>
+      <xs:enumeration value="day"/>
+      <xs:enumeration value="week"/>
+      <xs:enumeration value="month"/>
+      <xs:enumeration value="year"/>
+      <xs:enumeration value="meter"/>
+      <xs:enumeration value="centimeter"/>
+      <xs:enumeration value="millimeter"/>
+      <xs:enumeration value="feet"/>
+      <xs:enumeration value="inch"/>
+      <xs:enumeration value="yard"/>
+      <xs:enumeration value="mile"/>
+      <xs:enumeration value="kilometer"/>
+      <xs:enumeration value="micrometer"/>
+      <xs:enumeration value="mil"/>
+      <xs:enumeration value="microinch"/>
+      <xs:enumeration value="squaremeter"/>
+      <xs:enumeration value="squarecentimeter"/>
+      <xs:enumeration value="squaremillimeter"/>
+      <xs:enumeration value="squarefeet"/>
+      <xs:enumeration value="squareinch"/>
+      <xs:enumeration value="squareyard"/>
+      <xs:enumeration value="squaremile"/>
+      <xs:enumeration value="squarekilometer"/>
+      <xs:enumeration value="squaremicrometer"/>
+      <xs:enumeration value="squaremil"/>
+      <xs:enumeration value="cubicmeter"/>
+      <xs:enumeration value="cubiccentimeter"/>
+      <xs:enumeration value="cubicmillimeter"/>
+      <xs:enumeration value="cubicfeet"/>
+      <xs:enumeration value="cubicinch"/>
+      <xs:enumeration value="cubicyard"/>
+      <xs:enumeration value="cubicmile"/>
+      <xs:enumeration value="cubicmil"/>
+      <xs:enumeration value="gallon"/>
+      <xs:enumeration value="degree"/>
+      <xs:enumeration value="radian"/>
+      <xs:enumeration value="kilogram"/>
+      <xs:enumeration value="gram"/>
+      <xs:enumeration value="pound"/>
+      <xs:enumeration value="ounce"/>
+      <xs:enumeration value="metricton"/>
+      <xs:enumeration value="ton"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:complexType name="Propertytype">
+    <xs:sequence>
+       <xs:element name="UnitsGroup" type="unitsgrouptype"/>
+       <xs:element name="ImperialUnits" type="unitstype"/>
+       <xs:element name="MetricUnits" type="unitstype"/>
+       <xs:element name="Selected" type="selectedtype"/>
+    </xs:sequence>
+    <xs:attribute name="Name" type="propertynametype" use="required" />
+  </xs:complexType>
+
+  <xs:complexType name="PropertyGrouptype">
+     <xs:sequence>
+        <xs:element name="Property" type="Propertytype" minOccurs="1" maxOccurs="unbounded"/>
+     </xs:sequence>
+     <xs:attribute name="Name" type="nametype" use="required" />
+  </xs:complexType>
+
+  <xs:complexType name="TakeoffPropertiestype">
+    <xs:sequence>
+      <xs:element name="PropertyGroup" type="PropertyGrouptype" minOccurs="1" maxOccurs="unbounded">
+        <xs:unique name="PropertyNameDefinition">
+          <xs:selector xpath="Property" />
+          <xs:field xpath="@Name" />
+        </xs:unique>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:element name="TakeoffProperties" type="TakeoffPropertiestype">
+    <xs:unique name="PropertyGroupNameDefinition">
+      <xs:selector xpath="PropertyGroup" />
+      <xs:field xpath="@Name" />
+    </xs:unique>
+  </xs:element>
+
+</xs:schema>

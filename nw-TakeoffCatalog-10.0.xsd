@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema targetNamespace="http://download.autodesk.com/us/navisworks/schemas/nw-TakeoffCatalog-10.0.xsd" xmlns="http://download.autodesk.com/us/navisworks/schemas/nw-TakeoffCatalog-10.0.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+
+<xs:simpleType name="GuidType">
+	<xs:restriction base="xs:string">
+		<xs:pattern value="[a-fA-F0-9]{8}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{4}-[a-fA-F0-9]{12}"/>
+	</xs:restriction>
+</xs:simpleType> 
+
+<xs:complexType name="VariableType">
+	<xs:attribute name="Name" type="xs:string" use="required"/>
+	<xs:attribute name="Value" type="xs:string" />
+	<xs:attribute name="OriginalValue" type="xs:string" />
+	<xs:attribute name="Units" type="xs:string" />
+	<xs:attribute name="OriginalUnits" type="xs:string" />
+	<xs:attribute name="Formula" type="xs:string" />
+</xs:complexType>
+
+<xs:complexType name="VariableCollectionType">
+	<xs:sequence>
+		<xs:element name="Variable" type="VariableType" minOccurs="0" maxOccurs="unbounded" />
+	</xs:sequence>
+</xs:complexType>
+
+
+
+ <xs:complexType name="StepResourceType">                                 
+    <xs:sequence>
+      <xs:element name="VariableCollection" type="VariableCollectionType"  minOccurs="0" maxOccurs="1"/>
+    </xs:sequence>
+    <xs:attribute name="ID"  type="xs:long" />
+    <xs:attribute name="Description"  type="xs:string" />
+    <xs:attribute name="StepID" type="xs:long" />
+    <xs:attribute name="ResourceID" type="xs:long" />
+    <xs:attribute name="CatalogId" type="GuidType" />
+    <xs:attribute name="ResourceCatalogId" type="GuidType" use="required"/>
+</xs:complexType>	
+
+
+
+<xs:complexType name="StepType" >
+    <xs:sequence>
+        <xs:element name="VariableCollection" type="VariableCollectionType"  minOccurs="0" maxOccurs="1"/>
+        <xs:element name="StepResource" type="StepResourceType" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+    <xs:attribute name="ID" type="xs:long" />
+    <xs:attribute name="Name" type="xs:string" use="required" />
+    <xs:attribute name="Description" type="xs:string" />
+    <xs:attribute name="ItemID" type="xs:long" />
+    <xs:attribute name="CatalogId" type="GuidType" />
+</xs:complexType>
+
+
+
+<xs:complexType name="ItemType" >
+    <xs:sequence>
+        <xs:element name="VariableCollection" type="VariableCollectionType"  minOccurs="0" maxOccurs="1" />
+		<xs:element name="Step" type="StepType" minOccurs="0" maxOccurs="unbounded"/>
+	</xs:sequence>
+	<xs:attribute name="ID" type="xs:long" />
+    <xs:attribute name="Parent" type="xs:long" />
+    <xs:attribute name="Name" type="xs:string" use="required"/>
+    <xs:attribute name="WBS" type="xs:string" use="required"/>
+    <xs:attribute name="Description" type="xs:string" />
+    <xs:attribute name="Transparency" type="xs:double" use="required"/>
+    <xs:attribute name="Color" type="xs:long" use="required"/>
+    <xs:attribute name="CatalogId" type="GuidType" />
+    <xs:attribute name="Status" type="xs:integer"/>
+    <xs:attribute name="LineThickness" type="xs:double"/>
+    <xs:attribute name="CountSymbol" type="xs:long"/>
+    <xs:attribute name="CountSize" type="xs:double"/>
+</xs:complexType>
+
+<xs:complexType name="ItemGroupType" >
+    <xs:sequence>
+        <xs:element name="VariableCollection" type="VariableCollectionType"  minOccurs="0" maxOccurs="1" />
+        <xs:element name="ItemGroup" type="ItemGroupType" minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element name="Item" type="ItemType" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+    <xs:attribute name="ID" type="xs:long" />
+    <xs:attribute name="Name" type="xs:string" use="required"/>
+    <xs:attribute name="Description" type="xs:string" />
+    <xs:attribute name="WBS" type="xs:string" use="required"/>
+    <xs:attribute name="CatalogId" type="GuidType" />
+    <xs:attribute name="Parent" type="xs:long" />
+</xs:complexType>
+
+ <xs:complexType name="ResourceType">
+    <xs:sequence>
+        <xs:element name="VariableCollection" type="VariableCollectionType"  minOccurs="0" maxOccurs="1"/>
+    </xs:sequence>
+    <xs:attribute name="ID" type="xs:long" />
+    <xs:attribute name="Parent" type="xs:long" />
+    <xs:attribute name="Name" type="xs:string" use="required" />
+    <xs:attribute name="Description" type="xs:string" />
+    <xs:attribute name="RBS" type="xs:string" use="required" />
+    <xs:attribute name="CatalogId" type="GuidType" />
+</xs:complexType>
+<xs:complexType name="ResourceGroupType" >
+    <xs:sequence>
+        <xs:element name="VariableCollection" type="VariableCollectionType"  minOccurs="0" maxOccurs="1"/>
+		<xs:element name="ResourceGroup" type="ResourceGroupType" minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element name="Resource" type="ResourceType" minOccurs="0" maxOccurs="unbounded"/>
+	</xs:sequence>
+	<xs:attribute name="ID" type="xs:long" />
+	<xs:attribute name="Name" type="xs:string" use="required" />
+	<xs:attribute name="Description" type="xs:string" />
+	<xs:attribute name="RBS" type="xs:string" use="required" />
+	<xs:attribute name="CatalogId" type="GuidType" />
+	<xs:attribute name="Parent" type="xs:long" />
+</xs:complexType>
+
+<xs:complexType name="CatalogType">
+	<xs:sequence>
+            <xs:choice minOccurs="0" maxOccurs="unbounded">
+		<xs:element name="ItemGroup" type="ItemGroupType" />
+		<xs:element name="Item" type="ItemType" />
+		<xs:element name="ResourceGroup" type="ResourceGroupType" />
+		<xs:element name="Resource" type="ResourceType" />
+            </xs:choice>
+	</xs:sequence>
+</xs:complexType>
+<xs:complexType name="ConfigFileType">
+	<xs:sequence>
+		<xs:any minOccurs="0" processContents="skip"/>
+	</xs:sequence>
+</xs:complexType>
+<xs:complexType name="TakeoffType">
+	<xs:sequence>
+	<xs:element name="Catalog" type="CatalogType" minOccurs="0" maxOccurs="1"/>
+	<xs:element name="ConfigFile" type="ConfigFileType" minOccurs="0" maxOccurs="1"/>
+	</xs:sequence>
+</xs:complexType>
+
+<xs:element name="Takeoff" type="TakeoffType">
+</xs:element>
+
+</xs:schema>

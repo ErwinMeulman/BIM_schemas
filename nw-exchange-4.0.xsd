@@ -1,0 +1,569 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+ elementFormDefault="unqualified">
+
+<xs:element name="exchange">
+  <xs:complexType>
+    <xs:choice>
+      <xs:element ref="viewpoints" minOccurs="0"/>
+      <xs:element ref="findspec" minOccurs="0"/>
+      <xs:element ref="selectionsets" minOccurs="0"/>
+    </xs:choice>
+  </xs:complexType>
+</xs:element>
+
+<xs:element name="viewpoints">
+  <xs:complexType>
+    <xs:choice minOccurs="0" maxOccurs="unbounded">
+      <xs:element ref="view"/>
+      <xs:element ref="viewfolder"/>
+      <xs:element ref="animation"/>
+      <xs:element ref="cutview"/>
+    </xs:choice>
+	<xs:attribute name="model_units" type="modelunitsType"/>
+  </xs:complexType>
+</xs:element>
+
+<xs:simpleType name="modelunitsType">
+  <xs:restriction base="xs:string">
+    <xs:enumeration value="m"/>
+    <xs:enumeration value="cm"/>
+    <xs:enumeration value="mm"/>
+    <xs:enumeration value="ft"/>
+    <xs:enumeration value="in"/>
+    <xs:enumeration value="yrd"/>
+    <xs:enumeration value="km"/>
+    <xs:enumeration value="mi"/>
+    <xs:enumeration value="um"/>
+    <xs:enumeration value="mils"/>
+    <xs:enumeration value="uin"/>
+  </xs:restriction>
+</xs:simpleType>
+
+<xs:element name="viewfolder">
+  <xs:complexType>
+    <xs:choice minOccurs="0" maxOccurs="unbounded">
+	  <xs:element ref="comments"/>
+      <xs:element ref="view"/>
+      <xs:element ref="viewfolder"/>
+      <xs:element ref="animation"/>
+      <xs:element ref="cutview"/>
+    </xs:choice>
+    <xs:attribute name="name" type="xs:string"/>
+  </xs:complexType>
+</xs:element>
+
+<xs:element name="animation">
+  <xs:complexType>
+    <xs:choice minOccurs="0" maxOccurs="unbounded">
+	  <xs:element ref="comments"/>
+      <xs:element ref="view"/>
+      <xs:element ref="viewfolder"/>
+      <xs:element ref="animation"/>
+      <xs:element ref="cutview"/>
+    </xs:choice>
+    <xs:attribute name="name" type="xs:string"/>
+  </xs:complexType>
+</xs:element>
+
+<xs:element name="cutview">
+  <xs:complexType>
+    <xs:sequence>
+	  <xs:element ref="comments" minOccurs="0"/>
+      <xs:element name="delay" type="xs:string"/>
+    </xs:sequence>
+    <xs:attribute name="name" type="xs:string"/>
+  </xs:complexType>
+</xs:element>
+
+<xs:element name="view">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element ref="viewpoint" minOccurs="1"/>
+      <xs:element ref="clipplaneset" minOccurs="0"/>
+      <xs:element ref="comments" minOccurs="0"/>
+      <xs:element ref="redlines" minOccurs="0"/>
+    </xs:sequence>
+    <xs:attribute name="name" type="xs:string"/>
+  </xs:complexType>
+</xs:element>
+
+<xs:element name="viewpoint">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element ref="camera" minOccurs="1"/>
+      <xs:element ref="primitives" minOccurs="0"/>
+      <xs:element name="up" type="vector3fType" minOccurs="0"/>
+      <xs:element ref="tilt" minOccurs="0"/>
+    </xs:sequence>
+    <xs:attribute name="paradigm" type="paradigmType"/>
+    <xs:attribute name="render" type="renderType"/>
+    <xs:attribute name="lighting" type="lightingType"/>
+    <xs:attribute name="linear" type="xs:float"/>
+    <xs:attribute name="angular" type="xs:float"/>
+    <xs:attribute name="focal" type="xs:float"/>
+    <xs:attribute name="fov" type="xs:float"/>
+  </xs:complexType>
+</xs:element>
+
+<xs:simpleType name="paradigmType">
+  <xs:restriction base="xs:string">
+    <xs:enumeration value="fixed"/>
+    <xs:enumeration value="swivel"/>
+    <xs:enumeration value="examine"/>
+    <xs:enumeration value="walk"/>
+    <xs:enumeration value="fly"/>
+    <xs:enumeration value="turntable"/>
+    <xs:enumeration value="app"/>
+    <xs:enumeration value="zoom"/>
+    <xs:enumeration value="pan"/>
+    <xs:enumeration value="pan_world"/>
+    <xs:enumeration value="swivel_world"/>
+    <xs:enumeration value="orbit_world"/>
+    <xs:enumeration value="zoombox"/>
+  </xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="renderType">
+  <xs:restriction base="xs:string">
+    <xs:enumeration value="textured"/>
+    <xs:enumeration value="preview"/>
+    <xs:enumeration value="shaded"/>
+    <xs:enumeration value="wireframe"/>
+    <xs:enumeration value="hiddenline"/>
+  </xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="lightingType">
+  <xs:restriction base="xs:string">
+    <xs:enumeration value="none"/>
+    <xs:enumeration value="user"/>
+    <xs:enumeration value="headlight"/>
+    <xs:enumeration value="full"/>
+  </xs:restriction>
+</xs:simpleType>
+
+<xs:element name="camera">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element name="position" type="position3fType"/>
+      <xs:element ref="rotation"/>
+    </xs:sequence>
+    <xs:attribute name="projection" type="projectionType"/>
+    <xs:attribute name="near" type="xs:float"/>
+    <xs:attribute name="far" type="xs:float"/>
+    <xs:attribute name="aspect" type="xs:float"/>
+    <xs:attribute name="height" type="xs:float"/>
+  </xs:complexType>
+</xs:element>
+
+<xs:simpleType name="projectionType">
+  <xs:restriction base="xs:string">
+    <xs:enumeration value="persp"/>
+    <xs:enumeration value="ortho"/>
+  </xs:restriction>
+</xs:simpleType>
+
+<xs:element name="rotation">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element name="quaternion">
+        <xs:complexType>
+          <xs:attribute name="a" type="xs:float"/>
+          <xs:attribute name="b" type="xs:float"/>
+          <xs:attribute name="c" type="xs:float"/>
+          <xs:attribute name="d" type="xs:float"/>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+</xs:element>
+
+<xs:element name="primitives">
+  <xs:complexType>
+    <xs:attribute name="polygons" type="integerBoolean"/>
+    <xs:attribute name="lines" type="integerBoolean"/>
+    <xs:attribute name="points" type="integerBoolean"/>
+    <xs:attribute name="snappoints" type="integerBoolean"/>
+  </xs:complexType>
+</xs:element>
+
+<xs:element name="tilt">
+  <xs:complexType>
+    <xs:attribute name="min" type="xs:float"/>
+    <xs:attribute name="max" type="xs:float"/>
+  </xs:complexType>
+</xs:element>
+
+<xs:element name="clipplaneset">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element name="range" type="box3fType"/>
+      <xs:element ref="clipplanes"/>
+    </xs:sequence>
+    <xs:attribute name="linked" type="integerBoolean"/>
+    <xs:attribute name="current" type="xs:nonNegativeInteger"/>
+  </xs:complexType>
+</xs:element>
+
+<xs:element name="clipplanes">
+  <xs:complexType>
+    <xs:choice minOccurs="0" maxOccurs="unbounded">
+      <xs:element ref="clipplane"/>
+    </xs:choice>
+  </xs:complexType>
+</xs:element>
+
+<xs:element name="clipplane">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element ref="plane"/>
+    </xs:sequence>
+    <xs:attribute name="enabled" type="integerBoolean"/>
+    <xs:attribute name="distance" type="xs:float"/>
+    <xs:attribute name="alignment" type="alignmentType"/>
+  </xs:complexType>
+</xs:element>
+
+<xs:simpleType name="alignmentType">
+  <xs:restriction base="xs:string">
+    <xs:enumeration value="none"/>
+    <xs:enumeration value="view"/>
+    <xs:enumeration value="back"/>
+    <xs:enumeration value="front"/>
+    <xs:enumeration value="left"/>
+    <xs:enumeration value="right"/>
+    <xs:enumeration value="top"/>
+    <xs:enumeration value="bottom"/>
+  </xs:restriction>
+</xs:simpleType>
+
+<xs:element name="comments">
+  <xs:complexType>
+    <xs:choice minOccurs="0" maxOccurs="unbounded">
+      <xs:element ref="comment"/>
+    </xs:choice>
+  </xs:complexType>
+</xs:element>
+
+<xs:element name="comment">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element name="user" type="xs:string"/>
+      <xs:element name="body" type="xs:string"/>
+      <xs:element ref="date"/>
+    </xs:sequence>
+    <xs:attribute name="id" type="xs:nonNegativeInteger"/>
+  </xs:complexType>
+</xs:element>
+
+<xs:element name="date">
+  <xs:complexType>
+    <xs:attribute name="year" type="xs:positiveInteger"/>
+    <xs:attribute name="month" type="xs:positiveInteger"/>
+    <xs:attribute name="day" type="xs:positiveInteger"/>
+    <xs:attribute name="hour" type="xs:nonNegativeInteger"/>
+    <xs:attribute name="minute" type="xs:nonNegativeInteger"/>
+    <xs:attribute name="second" type="xs:nonNegativeInteger"/>
+  </xs:complexType>
+</xs:element>
+
+<xs:element name="redlines">
+  <xs:complexType>
+    <xs:choice minOccurs="0" maxOccurs="unbounded">
+      <xs:element ref="rlline"/>
+      <xs:element ref="rltext"/>
+      <xs:element ref="rltag"/>
+      <xs:element ref="rlellipse"/>
+      <xs:element ref="rlcloud"/>
+    </xs:choice>
+  </xs:complexType>
+</xs:element>
+
+<xs:element name="rlline">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element name="colour" type="colourType"/>
+      <xs:element name="start" type="position2fType"/>
+      <xs:element name="end" type="position2fType"/>
+    </xs:sequence>
+    <xs:attribute name="thickness" type="xs:nonNegativeInteger"/>
+  </xs:complexType>
+</xs:element>
+
+<xs:element name="rlellipse">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element name="colour" type="colourType"/>
+      <xs:element name="start" type="position2fType"/>
+      <xs:element name="end" type="position2fType"/>
+    </xs:sequence>
+    <xs:attribute name="thickness" type="xs:nonNegativeInteger"/>
+  </xs:complexType>
+</xs:element>
+
+<xs:element name="rlcloud">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element name="colour" type="colourType"/>
+      <xs:element name="points">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element ref="pos2f" minOccurs="0" maxOccurs="unbounded"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+    <xs:attribute name="thickness" type="xs:nonNegativeInteger"/>
+  </xs:complexType>
+</xs:element>
+
+<xs:element name="rltext">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element name="colour" type="colourType"/>
+      <xs:element name="pos" type="position2fType"/>
+      <xs:element name="text" type="xs:string"/>
+    </xs:sequence>
+    <xs:attribute name="thickness" type="xs:nonNegativeInteger"/>
+  </xs:complexType>
+</xs:element>
+
+<xs:element name="rltag">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element name="colour" type="colourType"/>
+      <xs:element name="pos1" type="position2fType"/>
+      <xs:element name="pos2" type="position2fType"/>
+      <xs:element name="pos3d" type="position3fType" minOccurs="0"/>
+      <xs:element name="bounds" type="box3fType" minOccurs="0"/>
+    </xs:sequence>
+    <xs:attribute name="thickness" type="xs:nonNegativeInteger"/>
+    <xs:attribute name="id" type="xs:nonNegativeInteger"/>
+    <xs:attribute name="status" type="tagstatusType"/>
+  </xs:complexType>
+</xs:element>
+
+<xs:simpleType name="tagstatusType">
+  <xs:restriction base="xs:string">
+    <xs:enumeration value="new"/>
+    <xs:enumeration value="active"/>
+    <xs:enumeration value="approved"/>
+    <xs:enumeration value="resolved"/>
+    <xs:enumeration value="custom"/>
+  </xs:restriction>
+</xs:simpleType>
+
+<xs:element name="findspec">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element name="conditions">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element ref="condition" minOccurs="0" maxOccurs="unbounded"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+    <xs:attribute name="mode" type="modeType"/>
+    <xs:attribute name="disjoint" type="integerBoolean"/>
+  </xs:complexType>
+</xs:element>
+
+<xs:simpleType name="modeType">
+  <xs:restriction base="xs:string">
+    <xs:enumeration value="all"/>
+    <xs:enumeration value="selected"/>
+    <xs:enumeration value="below"/>
+  </xs:restriction>
+</xs:simpleType>
+
+<xs:element name="condition">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element name="category" type="nameType" minOccurs="0"/>
+      <xs:element name="property" type="nameType"/>
+      <xs:element name="value" type="dataType"/>
+    </xs:sequence>
+    <xs:attribute name="test" type="findspectestType"/>
+    <xs:attribute name="flags" type="xs:integer"/>
+  </xs:complexType>
+</xs:element>
+
+<xs:simpleType name="findspectestType">
+  <xs:restriction base="xs:string">
+    <xs:enumeration value="never"/>
+    <xs:enumeration value="attrib"/>
+    <xs:enumeration value="no_attrib"/>
+    <xs:enumeration value="prop"/>
+    <xs:enumeration value="no_prop"/>
+    <xs:enumeration value="same_type"/>
+    <xs:enumeration value="equals"/>
+    <xs:enumeration value="not_equals"/>
+    <xs:enumeration value="less_than"/>
+    <xs:enumeration value="less_equal"/>
+    <xs:enumeration value="greater_equal"/>
+    <xs:enumeration value="greater_than"/>
+    <xs:enumeration value="contains"/>
+    <xs:enumeration value="wildcard"/>
+    <xs:enumeration value="within_day"/>
+    <xs:enumeration value="within_week"/>
+  </xs:restriction>
+</xs:simpleType>
+
+<xs:complexType name="nameType">
+  <xs:sequence>
+    <xs:element ref="name"/>
+  </xs:sequence>
+</xs:complexType>
+
+<xs:element name="name">
+  <xs:complexType>
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute name="internal" type="xs:string"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+</xs:element>
+
+<xs:complexType name="dataType">
+  <xs:sequence>
+    <xs:element ref="data"/>
+  </xs:sequence>
+</xs:complexType>
+
+<xs:element name="data">
+  <xs:complexType>
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute name="type" type="datatypeType"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+</xs:element>
+
+<xs:simpleType name="datatypeType">
+  <xs:restriction base="xs:string">
+    <xs:enumeration value="float"/>
+    <xs:enumeration value="int32"/>
+    <xs:enumeration value="bool"/>
+    <xs:enumeration value="wstring"/>
+    <xs:enumeration value="time"/>
+    <xs:enumeration value="linear"/>
+    <xs:enumeration value="angle"/>
+    <xs:enumeration value="name"/>
+  </xs:restriction>
+</xs:simpleType>
+
+<xs:element name="selectionsets">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element ref="selectionset" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:element>
+
+<xs:element name="selectionset">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element ref="findspec"/>
+    </xs:sequence>
+    <xs:attribute name="name" type="xs:string"/>
+  </xs:complexType>
+</xs:element>
+
+<xs:simpleType name="integerBoolean">
+  <xs:restriction base="xs:integer">
+    <xs:minInclusive value="0"/>
+    <xs:maxInclusive value="1"/>
+  </xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="floatComponent">
+  <xs:restriction base="xs:float">
+    <xs:minInclusive value="0.0"/>
+    <xs:maxInclusive value="1.0"/>
+  </xs:restriction>
+</xs:simpleType>
+
+<xs:complexType name="box3fType">
+  <xs:sequence>
+    <xs:element ref="box3f"/>
+  </xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="colourType">
+  <xs:attribute name="red" type="floatComponent"/>
+  <xs:attribute name="green" type="floatComponent"/>
+  <xs:attribute name="blue" type="floatComponent"/>
+</xs:complexType>
+
+<xs:complexType name="position2fType">
+  <xs:sequence>
+    <xs:element ref="pos2f"/>
+  </xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="position3fType">
+  <xs:sequence>
+    <xs:element ref="pos3f"/>
+  </xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="vector3fType">
+  <xs:sequence>
+    <xs:element ref="vec3f"/>
+  </xs:sequence>
+</xs:complexType>
+
+<xs:element name="plane">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element ref="vec3f"/>
+    </xs:sequence>
+    <xs:attribute name="distance" type="xs:float"/>
+  </xs:complexType>
+</xs:element>
+
+<xs:element name="box3f">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element name="min" type="position3fType"/>
+      <xs:element name="max" type="position3fType"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:element>
+
+<xs:element name="pos2f">
+  <xs:complexType>
+    <xs:attribute name="x" type="xs:float"/>
+    <xs:attribute name="y" type="xs:float"/>
+  </xs:complexType>
+</xs:element>
+
+<xs:element name="vec2f">
+  <xs:complexType>
+    <xs:attribute name="x" type="xs:float"/>
+    <xs:attribute name="y" type="xs:float"/>
+  </xs:complexType>
+</xs:element>
+
+<xs:element name="pos3f">
+  <xs:complexType>
+    <xs:attribute name="x" type="xs:float"/>
+    <xs:attribute name="y" type="xs:float"/>
+    <xs:attribute name="z" type="xs:float"/>
+  </xs:complexType>
+</xs:element>
+
+<xs:element name="vec3f">
+  <xs:complexType>
+    <xs:attribute name="x" type="xs:float"/>
+    <xs:attribute name="y" type="xs:float"/>
+    <xs:attribute name="z" type="xs:float"/>
+  </xs:complexType>
+</xs:element>
+
+</xs:schema>

@@ -1,0 +1,1033 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+ elementFormDefault="unqualified">
+
+  <xs:element name="exchange">
+    <xs:complexType>
+      <xs:choice>
+        <xs:element ref="viewpoints" minOccurs="0" />
+        <xs:element ref="findspec" minOccurs="0" />
+        <xs:element ref="selectionsets" minOccurs="0" />
+        <xs:element ref="batchtest" minOccurs="0" />
+        <xs:element ref="dbreadlink" minOccurs="0" maxOccurs="unbounded" />
+      </xs:choice>
+      <xs:attribute name="units" type="modelunitsType" use="optional" />
+      <xs:attribute name="filename" type="xs:string" use="optional" />
+      <xs:attribute name="filepath" type="xs:string" use="optional" />
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="viewpoints">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="view" />
+        <xs:element ref="viewfolder" />
+        <xs:element ref="animation" />
+        <xs:element ref="cutview" />
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:simpleType name="modelunitsType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="m"/>
+      <xs:enumeration value="cm"/>
+      <xs:enumeration value="mm"/>
+      <xs:enumeration value="ft"/>
+      <xs:enumeration value="in"/>
+      <xs:enumeration value="yrd"/>
+      <xs:enumeration value="km"/>
+      <xs:enumeration value="mi"/>
+      <xs:enumeration value="um"/>
+      <xs:enumeration value="mils"/>
+      <xs:enumeration value="uin"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:element name="viewfolder">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="comments"/>
+        <xs:element ref="view"/>
+        <xs:element ref="viewfolder"/>
+        <xs:element ref="animation"/>
+        <xs:element ref="cutview"/>
+        <xs:element ref="selectionset"></xs:element>
+      </xs:choice>
+      <xs:attribute name="name" type="xs:string"/>
+      <xs:attribute name="guid" type="xs:string"/>       
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="animation">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="comments"/>
+        <xs:element ref="view"/>
+        <xs:element ref="viewfolder"/>
+        <xs:element ref="animation"/>
+        <xs:element ref="cutview"/>
+      </xs:choice>
+      <xs:attribute name="name" type="xs:string"/>
+      <xs:attribute name="guid" type="xs:string"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="cutview">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="comments" minOccurs="0"/>
+        <xs:element name="delay" type="xs:string"/>
+      </xs:sequence>
+      <xs:attribute name="name" type="xs:string"/>
+      <xs:attribute name="guid" type="xs:string"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="view">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="viewpoint" minOccurs="1"/>
+        <xs:element ref="clipplaneset" minOccurs="0"/>
+        <xs:element ref="comments" minOccurs="0"/>
+        <xs:element ref="redlines" minOccurs="0"/>
+      </xs:sequence>
+      <xs:attribute name="name" type="xs:string"/>
+      <xs:attribute name="guid" type="xs:string"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="viewpoint">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="camera" minOccurs="1"/>
+        <xs:element ref="viewer" minOccurs="0"/>
+        <xs:element ref="primitives" minOccurs="0"/>
+        <xs:element name="up" type="vector3fType" minOccurs="0"/>
+        <xs:element ref="tilt" minOccurs="0"/>
+      </xs:sequence>
+      <xs:attribute name="tool" type="toolType"/>
+      <xs:attribute name="render" type="renderType"/>
+      <xs:attribute name="lighting" type="lightingType"/>
+      <xs:attribute name="linear" type="xs:float"/>
+      <xs:attribute name="angular" type="xs:float"/>
+      <xs:attribute name="focal" type="xs:float"/>
+      <xs:attribute name="fov" type="xs:float"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:simpleType name="toolType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="none"/>
+      <xs:enumeration value="wheel_view_object"/>
+      <xs:enumeration value="wheel_tour_building"/>
+      <xs:enumeration value="wheel_full_navigation"/>
+      <xs:enumeration value="wheel_mini_view_object"/>
+      <xs:enumeration value="wheel_mini_tour_building"/>
+      <xs:enumeration value="wheel_mini_full_navigation"/>
+      <xs:enumeration value="autocam_pan"/>
+      <xs:enumeration value="autocam_zoom"/>
+      <xs:enumeration value="autocam_zoom_window"/>
+      <xs:enumeration value="autocam_orbit"/>
+      <xs:enumeration value="autocam_orbit_free"/>
+      <xs:enumeration value="autocam_orbit_constrained"/>
+      <xs:enumeration value="autocam_look_at"/>
+      <xs:enumeration value="autocam_look_around"/>
+      <xs:enumeration value="autocam_walk"/>
+      <xs:enumeration value="navigator_fixed"/>
+      <xs:enumeration value="navigator_swivel"/>
+      <xs:enumeration value="navigator_examine"/>
+      <xs:enumeration value="navigator_walk"/>
+      <xs:enumeration value="navigator_fly"/>
+      <xs:enumeration value="navigator_turntable"/>
+      <xs:enumeration value="navigator_zoom"/>
+      <xs:enumeration value="navigator_pan_local"/>
+      <xs:enumeration value="navigator_pan_world"/>
+      <xs:enumeration value="navigator_swivel_world"/>
+      <xs:enumeration value="navigator_orbit_world"/>
+      <xs:enumeration value="navigator_zoom_box"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="renderType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="textured"/>
+      <xs:enumeration value="preview"/>
+      <xs:enumeration value="shaded"/>
+      <xs:enumeration value="wireframe"/>
+      <xs:enumeration value="hiddenline"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="lightingType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="none"/>
+      <xs:enumeration value="user"/>
+      <xs:enumeration value="headlight"/>
+      <xs:enumeration value="full"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:element name="camera">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="position" type="position3fType"/>
+        <xs:element ref="rotation"/>
+      </xs:sequence>
+      <xs:attribute name="projection" type="projectionType"/>
+      <xs:attribute name="near" type="xs:float"/>
+      <xs:attribute name="far" type="xs:float"/>
+      <xs:attribute name="aspect" type="xs:float"/>
+      <xs:attribute name="height" type="xs:float"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:simpleType name="projectionType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="persp"/>
+      <xs:enumeration value="ortho"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:complexType name="rotation3fType">
+    <xs:sequence>
+      <xs:element ref="rotation"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:element name="rotation">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="quaternion">
+          <xs:complexType>
+            <xs:attribute name="a" type="xs:float"/>
+            <xs:attribute name="b" type="xs:float"/>
+            <xs:attribute name="c" type="xs:float"/>
+            <xs:attribute name="d" type="xs:float"/>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="primitives">
+    <xs:complexType>
+      <xs:attribute name="polygons" type="integerBoolean"/>
+      <xs:attribute name="lines" type="integerBoolean"/>
+      <xs:attribute name="points" type="integerBoolean"/>
+      <xs:attribute name="snappoints" type="integerBoolean"/>
+      <xs:attribute name="text" type="integerBoolean"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="viewer">
+    <xs:complexType>
+      <xs:attribute name="radius" type="xs:float"/>
+      <xs:attribute name="height" type="xs:float"/>
+      <xs:attribute name="actual_height" type="xs:float"/>
+      <xs:attribute name="eye_height" type="xs:float"/>
+      <xs:attribute name="avatar" type="xs:string"/>
+      <xs:attribute name="camera_mode" type="cameraMode"/>
+      <xs:attribute name="first_to_third_angle" type="xs:float"/>
+      <xs:attribute name="first_to_third_distance" type="xs:float"/>
+      <xs:attribute name="first_to_third_param" type="xs:float"/>
+      <xs:attribute name="first_to_third_correction" type="integerBoolean"/>
+      <xs:attribute name="collision_detection" type="integerBoolean"/>
+      <xs:attribute name="auto_crouch" type="integerBoolean"/>
+      <xs:attribute name="gravity" type="integerBoolean"/>
+      <xs:attribute name="gravity_value" type="xs:float"/>
+      <xs:attribute name="terminal_velocity" type="xs:float"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:simpleType name="cameraMode">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="first"/>
+      <xs:enumeration value="third"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:element name="tilt">
+    <xs:complexType>
+      <xs:attribute name="min" type="xs:float"/>
+      <xs:attribute name="max" type="xs:float"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="clipplaneset">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="range" type="box3fType"/>
+        <xs:element ref="clipplanes"/>
+        <xs:element name="box" type="box3fType" minOccurs="0"/>
+		<xs:element name="box-rotation" type="rotation3fType" minOccurs="0"/>
+      </xs:sequence>
+      <xs:attribute name="linked" type="integerBoolean"/>
+      <xs:attribute name="current" type="xs:nonNegativeInteger"/>
+      <xs:attribute name="mode" type="clipPlaneModeType" use="optional"/>
+      <xs:attribute name="enabled" type="integerBoolean" use="optional"/>
+    </xs:complexType>
+  </xs:element>
+
+
+  <xs:simpleType name="clipPlaneModeType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="planes"/>
+      <xs:enumeration value="box"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:element name="clipplanes">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="clipplane"/>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="clipplane">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="plane"/>
+      </xs:sequence>
+      <xs:attribute name="state" type="clipPlaneStateType"/>
+      <xs:attribute name="distance" type="xs:float"/>
+      <xs:attribute name="alignment" type="alignmentType"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:simpleType name="clipPlaneStateType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="default"/>
+      <xs:enumeration value="disabled"/>
+      <xs:enumeration value="enabled"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="alignmentType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="none"/>
+      <xs:enumeration value="view"/>
+      <xs:enumeration value="back"/>
+      <xs:enumeration value="front"/>
+      <xs:enumeration value="left"/>
+      <xs:enumeration value="right"/>
+      <xs:enumeration value="top"/>
+      <xs:enumeration value="bottom"/>
+      <xs:enumeration value="surface"/>
+      <xs:enumeration value="line"/>
+      <xs:enumeration value="custom"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:element name="comments">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="comment"/>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="comment">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="user" type="xs:string"/>
+        <xs:element name="body" type="xs:string" />
+        <xs:element ref="createddate"></xs:element>
+      </xs:sequence>
+      <xs:attribute name="id" type="xs:nonNegativeInteger"/>
+      <xs:attribute name="status" type="commentstatusType"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:complexType name="dateType">
+    <xs:sequence>
+      <xs:element ref="date"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:element name="date">
+    <xs:complexType>
+      <xs:attribute name="year" type="xs:positiveInteger"/>
+      <xs:attribute name="month" type="xs:positiveInteger"/>
+      <xs:attribute name="day" type="xs:positiveInteger"/>
+      <xs:attribute name="hour" type="xs:nonNegativeInteger"/>
+      <xs:attribute name="minute" type="xs:nonNegativeInteger"/>
+      <xs:attribute name="second" type="xs:nonNegativeInteger"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:complexType name="timeType">
+    <xs:sequence>
+      <xs:element ref="time"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:element name="time">
+    <xs:complexType>
+      <xs:attribute name="hour" type="xs:nonNegativeInteger"/>
+      <xs:attribute name="minute" type="xs:nonNegativeInteger"/>
+      <xs:attribute name="second" type="xs:nonNegativeInteger"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:complexType name="dateOrTimeType">
+    <xs:choice>
+      <xs:element ref="date"/>
+      <xs:element ref="time"/>
+    </xs:choice>
+  </xs:complexType>
+
+  <xs:element name="redlines">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="rlline"/>
+        <xs:element ref="rltext"/>
+        <xs:element ref="rltag"/>
+        <xs:element ref="rlellipse"/>
+        <xs:element ref="rlcloud"/>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="rlline">
+    <xs:complexType>
+       <xs:sequence>
+        <xs:element name="colour" type="colourType"/>
+        <xs:element name="start" type="position2fType"/>
+        <xs:element name="end" type="position2fType"/>
+      </xs:sequence>
+      <xs:attribute name="thickness" type="xs:nonNegativeInteger"/>
+      <xs:attribute name="pattern" type="xs:nonNegativeInteger" use="optional" />
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="rlellipse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="colour" type="colourType"/>
+        <xs:element name="start" type="position2fType"/>
+        <xs:element name="end" type="position2fType"/>
+      </xs:sequence>
+      <xs:attribute name="thickness" type="xs:nonNegativeInteger"/>
+      <xs:attribute name="pattern" type="xs:nonNegativeInteger" use="optional" />
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="rlcloud">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="colour" type="colourType"/>
+        <xs:element name="points">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="pos2f" minOccurs="0" maxOccurs="unbounded"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute name="thickness" type="xs:nonNegativeInteger"/>
+      <xs:attribute name="pattern" type="xs:nonNegativeInteger" use="optional" />
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="rltext">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="colour" type="colourType"/>
+        <xs:element name="pos" type="position2fType"/>
+        <xs:element name="text" type="xs:string"/>
+      </xs:sequence>
+      <xs:attribute name="thickness" type="xs:nonNegativeInteger"/>
+      <xs:attribute name="pattern" type="xs:nonNegativeInteger" use="optional" />
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="rltag">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="colour" type="colourType"/>
+        <xs:element name="pos1" type="position2fType"/>
+        <xs:element name="pos2" type="position2fType"/>
+        <xs:element name="pos3d" type="position3fType" minOccurs="0"/>
+        <xs:element name="bounds" type="box3fType" minOccurs="0"/>
+      </xs:sequence>
+      <xs:attribute name="thickness" type="xs:nonNegativeInteger"/>
+      <xs:attribute name="pattern" type="xs:nonNegativeInteger" use="optional" />
+      <xs:attribute name="id" type="xs:nonNegativeInteger"/>
+      <xs:attribute name="commentid" type="xs:nonNegativeInteger"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:simpleType name="commentstatusType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="new"/>
+      <xs:enumeration value="active"/>
+      <xs:enumeration value="approved"/>
+      <xs:enumeration value="resolved"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:element name="findspec">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="conditions">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="condition" minOccurs="0" maxOccurs="unbounded"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element ref="locator" minOccurs="0"/>
+      </xs:sequence>
+      <xs:attribute name="mode" type="modeType"/>
+      <xs:attribute name="disjoint" type="integerBoolean"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="locator" type="xs:string"/>
+
+  <xs:simpleType name="modeType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="all"/>
+      <xs:enumeration value="selected"/>
+      <xs:enumeration value="below"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:element name="condition">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="category" type="nameType" minOccurs="0"/>
+        <xs:element name="property" type="nameType" minOccurs="0"/>
+        <xs:element name="value" type="dataType"/>
+      </xs:sequence>
+      <xs:attribute name="test" type="findspectestType"/>
+      <xs:attribute name="flags" type="xs:integer"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:simpleType name="findspectestType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="never"/>
+      <xs:enumeration value="attrib"/>
+      <xs:enumeration value="no_attrib"/>
+      <xs:enumeration value="prop"/>
+      <xs:enumeration value="no_prop"/>
+      <xs:enumeration value="same_type"/>
+      <xs:enumeration value="equals"/>
+      <xs:enumeration value="not_equals"/>
+      <xs:enumeration value="less_than"/>
+      <xs:enumeration value="less_equal"/>
+      <xs:enumeration value="greater_equal"/>
+      <xs:enumeration value="greater_than"/>
+      <xs:enumeration value="contains"/>
+      <xs:enumeration value="wildcard"/>
+      <xs:enumeration value="within_day"/>
+      <xs:enumeration value="within_week"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:complexType name="nameType">
+    <xs:sequence>
+      <xs:element ref="name"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:element name="name">
+    <xs:complexType>
+      <xs:simpleContent>
+        <xs:extension base="xs:string">
+          <xs:attribute name="internal" type="xs:string"/>
+        </xs:extension>
+      </xs:simpleContent>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:complexType name="dataType">
+    <xs:sequence>
+      <xs:element ref="data"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:element name="data">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element ref="name" minOccurs="0" maxOccurs="1"/>
+      </xs:sequence>
+      <xs:attribute name="type" type="datatypeType"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:simpleType name="datatypeType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="float"/>
+      <xs:enumeration value="int32"/>
+      <xs:enumeration value="bool"/>
+      <xs:enumeration value="wstring"/>
+      <xs:enumeration value="time"/>
+      <xs:enumeration value="linear"/>
+      <xs:enumeration value="area"/>
+      <xs:enumeration value="volume"/>
+      <xs:enumeration value="angle"/>
+      <xs:enumeration value="name"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:element name="selectionsets">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="selectionset"/>
+        <xs:element ref="selectionsets"/>
+        <xs:element ref="viewfolder"></xs:element>
+      </xs:choice>
+      <xs:attribute name="name" type="xs:string"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="selectionset">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="findspec"/>
+        <xs:element ref="comments" minOccurs="0"/>
+      </xs:sequence>
+      <xs:attribute name="name" type="xs:string"/>
+      <xs:attribute name="guid" type="xs:string"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="batchtest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="clashtests"/>
+        <xs:element ref="selectionsets" minOccurs="0"/>
+      </xs:sequence>
+      <xs:attribute name="name" type="xs:string"/>
+      <xs:attribute name="internal_name" type="xs:string" />
+      <xs:attribute name="units" type="modelunitsType"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="clashtests">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="clashtest" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="clashtest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="linkage"/>
+        <xs:element name="customtype" type="xs:string" minOccurs="0" />
+        <xs:element ref="tolerances" minOccurs="0" />
+        <xs:element name="left" type="clashselectionType" minOccurs="0" />
+        <xs:element name="right" type="clashselectionType" minOccurs="0" />
+        <xs:element ref="rules" minOccurs="0" />
+        <xs:element ref="summary" minOccurs="0" />
+        <xs:element ref="clashresults" minOccurs="0" />
+      </xs:sequence>
+      <xs:attribute name="name" type="xs:string" />
+      <xs:attribute name="guid" type="xs:string"/>
+       <xs:attribute name="test_type" type="clashtesttypeType" />
+      <xs:attribute name="status" type="clashstatusType" />
+       <xs:attribute name="tolerance" type="xs:float" />
+       <xs:attribute name="merge_composites" type="integerBoolean" use="optional" />
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="linkage">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="linkedanimation" type="elementitempathType" minOccurs="0" />
+      </xs:sequence>
+      <xs:attribute name="mode" type="xs:string" />
+      <xs:attribute name="stepsize" type="xs:float" use="optional" />
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="elementitempath">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="pathpart" type="xs:string" minOccurs="1" maxOccurs="unbounded" />
+      </xs:sequence>
+      <xs:attribute name="element" type="xs:string"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:complexType name="elementitempathType">
+    <xs:sequence>
+      <xs:element ref="elementitempath" />
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:simpleType name="clashtesttypeType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="hard"/>
+      <xs:enumeration value="hard_conservative"/>
+      <xs:enumeration value="clearance"/>
+      <xs:enumeration value="duplicate"/>
+      <xs:enumeration value="custom"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="clashstatusType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="new"/>
+      <xs:enumeration value="old"/>
+      <xs:enumeration value="partial"/>
+      <xs:enumeration value="ok"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:element name="tolerances">
+    <xs:complexType>
+      <xs:attribute name="rel_touch" type="integerBoolean"/>
+      <xs:attribute name="rel_touch_tol" type="xs:float"/>
+      <xs:attribute name="abs_touch_tol" type="xs:float"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:complexType name="clashselectionType">
+    <xs:sequence>
+      <xs:element name="clashselection">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element ref="locator"/>
+          </xs:sequence>
+          <xs:attribute name="selfintersect" type="integerBoolean"/>
+          <xs:attribute name="primtypes" type="xs:integer"/>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:element name="summary">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="testtype" type="xs:string"/>
+        <xs:element name="teststatus" type="xs:string"/>
+      </xs:sequence>
+      <xs:attribute name="total" type="xs:integer"/>
+      <xs:attribute name="new" type="xs:integer"/>
+      <xs:attribute name="active" type="xs:integer"/>
+      <xs:attribute name="reviewed" type="xs:integer"/>
+      <xs:attribute name="approved" type="xs:integer"/>
+      <xs:attribute name="resolved" type="xs:integer"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="clashresults">
+    <xs:complexType>
+       <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="clashresult"/>
+        <xs:element ref="clashgroup"/>
+      </xs:choice>     
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="clashresult">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="parentgroup" type="xs:string" minOccurs="0"/>
+        <xs:element name="description" type="xs:string" minOccurs="0"/>
+        <xs:element name="resultstatus" type="xs:string" minOccurs="0"/>
+        <xs:element name="clashpoint" type="position3fType" minOccurs="0" />
+        <xs:element name="approveddate" type="dateType" minOccurs="0" />
+        <xs:element ref="createddate" minOccurs="0"></xs:element>
+        <xs:element name="approvedby" type="xs:string" minOccurs="0" />
+        <xs:element ref="comments" minOccurs="0" />
+        <xs:element name="clashobjects" minOccurs="0">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="clashobject" minOccurs="0" maxOccurs="unbounded"></xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="clashtasklink" minOccurs="0">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="starttime" type="dateOrTimeType" minOccurs="0"/>
+              <xs:element name="endtime" type="dateOrTimeType" minOccurs="0"/>
+              <xs:element name="taskname" type="xs:string" minOccurs="0"/>
+              <xs:element name="tasklink" type="xs:string" minOccurs="0"/>
+              <xs:element name="taskuid" type="xs:string" minOccurs="0"/>
+              <xs:element name="animatorscene" type="xs:string" minOccurs="0"/>
+              <xs:element name="animatoranim" type="xs:string" minOccurs="0"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute name="href" type="xs:string"/>
+      <xs:attribute name="name" type="xs:string"/>
+      <xs:attribute name="guid" type="xs:string"/>
+       <xs:attribute name="status" type="resultstatusType"/>
+      <xs:attribute name="distance" type="xs:float"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="clashgroup">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="description" type="xs:string" minOccurs="0"/>
+        <xs:element name="resultstatus" type="xs:string" minOccurs="0"/>
+        <xs:element name="clashpoint" type="position3fType" minOccurs="0" />
+        <xs:element name="approveddate" type="dateType" minOccurs="0" />
+        <xs:element ref="createddate" minOccurs="0"></xs:element>
+        <xs:element name="approvedby" type="xs:string" minOccurs="0" />
+        <xs:element ref="comments" minOccurs="0" />
+        <xs:element name="clashobjects" minOccurs="0">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="clashobject" minOccurs="0" maxOccurs="unbounded"></xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="clashtasklink" minOccurs="0">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="starttime" type="dateOrTimeType" minOccurs="0"/>
+              <xs:element name="endtime" type="dateOrTimeType" minOccurs="0"/>
+              <xs:element name="taskname" type="xs:string" minOccurs="0"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element ref="clashresults" minOccurs="0" />
+      </xs:sequence>
+      <xs:attribute name="href" type="xs:string"/>
+      <xs:attribute name="name" type="xs:string"/>
+       <xs:attribute name="guid" type="xs:string"/>
+       <xs:attribute name="status" type="resultstatusType"/>
+      <xs:attribute name="distance" type="xs:float"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="clashobject">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="objectattribute" minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element name="layer" type="xs:string" minOccurs="0"/>
+        <xs:element ref="pathlink" minOccurs="0"/>
+        <xs:element ref="smarttags" minOccurs="0" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="objectattribute">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="name" type="xs:string"/>
+        <xs:element name="value" type="xs:string"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="pathlink">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="node" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="smarttags">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="smarttag" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="smarttag">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="name" type="xs:string"/>
+        <xs:element name="value" type="xs:string"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="rules">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="rule" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="rule">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="ruleparams"/>
+      </xs:sequence>
+      <xs:attribute name="name" type="xs:string"/>
+      <xs:attribute name="enabled" type="integerBoolean"/>
+      <xs:attribute name="creator" type="xs:string"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="ruleparams">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="ruleparam" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="ruleparam">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="value" type="dataType"/>
+      </xs:sequence>
+      <xs:attribute name="specific_data" type="xs:integer"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:simpleType name="resultstatusType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="new"/>
+      <xs:enumeration value="active"/>
+      <xs:enumeration value="reviewed"/>
+      <xs:enumeration value="approved"/>
+      <xs:enumeration value="resolved"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="integerBoolean">
+    <xs:restriction base="xs:integer">
+      <xs:minInclusive value="0"/>
+      <xs:maxInclusive value="1"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="floatComponent">
+    <xs:restriction base="xs:float">
+      <xs:minInclusive value="0.0"/>
+      <xs:maxInclusive value="1.0"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:complexType name="box3fType">
+    <xs:sequence>
+      <xs:element ref="box3f"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="colourType">
+    <xs:attribute name="red" type="floatComponent"/>
+    <xs:attribute name="green" type="floatComponent"/>
+    <xs:attribute name="blue" type="floatComponent"/>
+  </xs:complexType>
+
+  <xs:complexType name="position2fType">
+    <xs:sequence>
+      <xs:element ref="pos2f"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="position3fType">
+    <xs:sequence>
+      <xs:element ref="pos3f"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="vector3fType">
+    <xs:sequence>
+      <xs:element ref="vec3f"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:element name="plane">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="vec3f"/>
+      </xs:sequence>
+      <xs:attribute name="distance" type="xs:float"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="box3f">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="min" type="position3fType"/>
+        <xs:element name="max" type="position3fType"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="pos2f">
+    <xs:complexType>
+      <xs:attribute name="x" type="xs:float"/>
+      <xs:attribute name="y" type="xs:float"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="vec2f">
+    <xs:complexType>
+      <xs:attribute name="x" type="xs:float"/>
+      <xs:attribute name="y" type="xs:float"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="pos3f">
+    <xs:complexType>
+      <xs:attribute name="x" type="xs:float"/>
+      <xs:attribute name="y" type="xs:float"/>
+      <xs:attribute name="z" type="xs:float"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="vec3f">
+    <xs:complexType>
+      <xs:attribute name="x" type="xs:float"/>
+      <xs:attribute name="y" type="xs:float"/>
+      <xs:attribute name="z" type="xs:float"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="dbreadlink">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="dblinkconnection"/>
+        <xs:element ref="dblinkname"/>
+        <xs:element ref="dblinksql"/>
+        <xs:element ref="dbfieldmapping" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+      <xs:attribute name="active" type="integerBoolean" use="optional"/>
+      <xs:attribute name="holdopen" type="integerBoolean"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="dblinkconnection">
+    <xs:complexType>
+      <xs:attribute name="encrypted" type="integerBoolean" use="optional"/>
+      <xs:attribute name="connection" type="xs:string"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="dblinkname">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="name"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="dblinksql">
+    <xs:complexType>
+      <xs:attribute name="sql" type="xs:string"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="dbfieldmapping">
+    <xs:complexType>
+      <xs:attribute name="field" type="xs:string"/>
+      <xs:attribute name="display" type="xs:string"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="createddate" type="dateType"></xs:element>
+
+</xs:schema>

@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:simpleType name="takeoffPropertyNameType">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="[a-zA-Z](([a-zA-Z0-9])*)"/>
+    </xs:restriction>
+  </xs:simpleType>
+  
+  <xs:element name="TakeoffFileMap">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="conditions"/>
+        <xs:element ref="TakeoffObjectMap" minOccurs="1" maxOccurs="unbounded"/>
+      </xs:sequence>
+      <xs:attribute name="Name" type="xs:string" use="required"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="TakeoffObjectMap">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="conditions"/>
+        <xs:element ref="TakeoffPropertyMap" minOccurs="1" maxOccurs="unbounded"/>
+      </xs:sequence>
+      <xs:attribute name="Name" type="xs:string" use="required"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="TakeoffPropertyMap">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="TakeoffPropertyName" type="takeoffPropertyNameType"/>
+        <xs:element ref="condition"/>
+      </xs:sequence>
+      <xs:attribute name="Name" type="xs:string" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:element name="conditions">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="condition" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="condition">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="category" type="nameType" minOccurs="0"/>
+        <xs:element name="property" type="nameType" minOccurs="0"/>
+        <xs:element name="value" type="dataType" minOccurs="0"/>
+      </xs:sequence>
+      <xs:attribute name="test" type="testType"/>
+      <xs:attribute name="flags" type="xs:integer"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:simpleType name="testType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="never"/>
+      <xs:enumeration value="attrib"/>
+      <xs:enumeration value="no_attrib"/>
+      <xs:enumeration value="prop"/>
+      <xs:enumeration value="no_prop"/>
+      <xs:enumeration value="same_type"/>
+      <xs:enumeration value="equals"/>
+      <xs:enumeration value="not_equals"/>
+      <xs:enumeration value="less_than"/>
+      <xs:enumeration value="less_equal"/>
+      <xs:enumeration value="greater_equal"/>
+      <xs:enumeration value="greater_than"/>
+      <xs:enumeration value="contains"/>
+      <xs:enumeration value="wildcard"/>
+      <xs:enumeration value="within_day"/>
+      <xs:enumeration value="within_week"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:complexType name="nameType">
+    <xs:sequence>
+      <xs:element ref="name"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:element name="name">
+    <xs:complexType>
+      <xs:simpleContent>
+        <xs:extension base="xs:string">
+          <xs:attribute name="internal" type="xs:string"/>
+        </xs:extension>
+      </xs:simpleContent>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:complexType name="dataType">
+    <xs:sequence>
+      <xs:element ref="data"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:element name="data">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element ref="name" minOccurs="0" maxOccurs="1"/>
+      </xs:sequence>
+      <xs:attribute name="type" type="datatypeType"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:simpleType name="datatypeType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="float"/>
+      <xs:enumeration value="int32"/>
+      <xs:enumeration value="bool"/>
+      <xs:enumeration value="wstring"/>
+      <xs:enumeration value="time"/>
+      <xs:enumeration value="linear"/>
+      <xs:enumeration value="area"/>
+      <xs:enumeration value="volume"/>
+      <xs:enumeration value="angle"/>
+      <xs:enumeration value="name"/>
+    </xs:restriction>
+  </xs:simpleType>
+  
+</xs:schema>
